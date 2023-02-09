@@ -32,6 +32,7 @@ baseurl: /biometix.github.io/
 url: https://biometix.github.io
 domain: biometix.github.io
 heading_anchors: true
+github: [metadata]
 
 # Build settings
 theme: just-the-docs
