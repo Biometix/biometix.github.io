@@ -3,8 +3,7 @@ title_separator: "|"
 subtitle: "BQAT"
 description: "A Biometric Quality Assessment Tool by Biometix Pty Ltd"
 logo: "/assets/images/logo.png"
-color-scheme: biometix
-# color-scheme: dark
+color_scheme: biometix
 aux_links:
   "Biometix on Github":
     - "//github.com/Biometix"
@@ -14,18 +13,11 @@ nav_external_links:
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# baseurl: /biometix.github.io/
 url: https://biometix.github.io
-# domain: biometix.github.io
 repository: Biometix/biometix.github.io
 
 heading_anchors: true
 enable_copy_code_button: true
-
-# lsi: false
-# safe: true
-# source: biometix.github.io
-# incremental: false
 highlighter: rouge
 gist:
   noscript: false
