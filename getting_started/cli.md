@@ -5,9 +5,11 @@ parent: Getting Started
 nav_order: 1
 ---
 
-## Installation
+## Setup
 
-This tool is designed to be run as container.
+This tool is designed to be run as container. You can simply pull the Docker image and start it with the script provided.
+
+> Download: [Run Script](https://github.com/Biometix/bqat-cli/blob/main/run.sh)
 
 ### Pull the Docker Image from Registry
 
@@ -31,11 +33,8 @@ The tool is designed to be executed on a directory of /data. You will need to mo
 
 The tool does require additional shared memory and this can be set by using the `--shm-size` option in Docker. Generally setting this to 8G works well.
 
-### Commands
+### Examples
 
-The `run.sh` is a convenience script for running BQAT.
-
-Example:
 ``` sh
 # Run samples in /input with fingerprint mode as default
 ./run.sh --input data/input/
