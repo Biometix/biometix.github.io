@@ -7,4 +7,4 @@ nav_order: 3
 
 Desktop version of BQAT.
 
-_WIP_
+> Coming soon

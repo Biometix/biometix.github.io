@@ -8,7 +8,8 @@ This is a quick start guide for __Biometric Quality Assessment Tool__ created by
 
 > Find us at [biometix.com](https://biomeitix.com/)
 
-You can find the source code for BQAT at GitHub:
+You can find BQAT at GitHub:
+
 + [Biometix][biometix-organization] /
 [BQAT CLI](https://github.com/Biometix/bqat-cli)
 + [Biometix][biometix-organization] /

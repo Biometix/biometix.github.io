@@ -5,7 +5,7 @@ parent: Limitation
 nav_order: 5
 ---
 
-## Limitations
+# Limitations
 Please note that only the following file extensions (file types) are supported:
 * `.jpeg`
 * `.jpg`
@@ -14,11 +14,12 @@ Please note that only the following file extensions (file types) are supported:
 * `.jp2`
 * `.wsq` (fingerprint only)
 
-> For fingerprint samples, by default, all input types will be converted to `.png`.
+> Note: For fingerprint samples, by default, all input types will be converted to `.png`.
 
-> For iris samples, if the resolution of the input is higher than 640 by 480, it will be resized.
+> note: For iris samples, if the resolution of the input is higher than 640 by 480, it will be resized.
 
-## Known Issues
+# Known Issues
 
-### BQAT CLI
-+ For large dataset on Linux, in the runtime, when the memory is exhausted, the kernel will try to reclaim some memory, which could freeze the system if critical system process was killed. This may not affect the final output because the docker runtime are still alive. This will not happen on MacOS or windows. Try to limit the memory or cpu available to Docker runtime or increase physical memory. Modify `--cpus` or `--memory` flags in `run.sh` or in the vanilla docker command.
+## BQAT CLI
+
+For large dataset on Linux, in the runtime, when the memory is exhausted, the kernel will try to reclaim some memory, which could freeze the system if critical system process was killed. This may not affect the final output because the docker runtime are still alive. This will not happen on MacOS or windows. Try to limit the memory or cpu available to Docker runtime or increase physical memory. Modify `--cpus` or `--memory` flags in `run.sh` or in the vanilla docker command.

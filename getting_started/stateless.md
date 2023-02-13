@@ -7,4 +7,4 @@ nav_order: 4
 
 BQAT as serverless functions. 
 
-_WIP_
+> Coming soon
