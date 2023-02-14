@@ -28,6 +28,7 @@ nav_order: 1
 ```
 
 ## Option Flags
+
 Short | Long            | Description
 ----- | --------------- | -----------
 `-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (Fingerprint, Face, IRIS)
@@ -47,7 +48,7 @@ The log file will keep record of information on the analysis process, including 
 
 # Validation & Benchmarking
 
-The tool has a benchmark module to profile the host machine. It will go through a dataset of 1000 files which consist of multiple formats and even corrupted files. The output also includes brief spec of the host machine. It can also be used to validate the setup.
+The tool has a benchmark module to profile the host machine. It will go through a dataset of 1000 samples which consist of multiple formats and even corrupted files. The output also includes brief spec of the host machine. It can also be used to validate the setup.
 
 ``` sh
 # Start benchmarking

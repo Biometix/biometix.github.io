@@ -18,7 +18,7 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 docker pull ghcr.io/biometix/bqat-cli:latest
 ```
 
-## Or Build the Image Locally
+## _Or_ Build the Image Locally
 
 ``` sh
 # Clone the repo
@@ -30,7 +30,7 @@ docker build -t ghcr.io/biometix/bqat-cli:latest .
 
 # Usage
 
-Create a folder named `data` under your working directory. And put your input images in this folder.
+Create a folder named `data` under your working directory and put your input images in this folder.
 
 > Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted on the container. Read and write permission is required for this folder. 
 
@@ -48,4 +48,4 @@ Then just run the script provided (You might need to give it execution permissio
 
 ## Output
 
-The default location for outputs: `data/output/`.
+The default location for the output is: `data/output/`.
