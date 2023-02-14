@@ -84,4 +84,4 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 
-> Note: WIP
+
