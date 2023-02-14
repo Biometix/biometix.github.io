@@ -13,6 +13,7 @@ Our current development roadmap for future products part of the BQAT suite can b
 gantt
     title BQAT Roadmap
     dateFormat  DD-MM
+    axisFormat  %d-%m
 
     section BQAT-Serverless
     Initial Planning    : a1, 01-04, 3d
