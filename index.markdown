@@ -26,7 +26,7 @@ BQAT is a biometric quality assessment tool for generating and analysing given b
 
 The quality of biometric samples is a key aspect of the performance and usefulness of a biometric systems. Whilst there are a variety of tools per modality, this project is aimed to provide an open source framework to support all common modalities and allow for expansion as new methods are developed. 
 
-Key features of the project:
+### Key features of the project:
 
 - a variety of different methods of access including via CLI, GUI and as a server
 - simple installation via docker
@@ -34,11 +34,22 @@ Key features of the project:
 - built by an experienced (>15 years) biometric consulting team
 - an active open source community
 
-Supporting libraries include:
+### Supporting libraries include:
 
-- [NFIQ](https://github.com/usnistgov/NFIQ2),
+- [NFIQ2](https://github.com/usnistgov/NFIQ2),
 - [BIQT](https://github.com/mitre/biqt), 
-- [Media Pipe](https://github.com/google/mediapipe)
+- [MediaPipe](https://github.com/google/mediapipe)
+
+### Examples of biometric data quality variation:
+
+Fingerprint
+![finger_example](assets/images/finger_example.png)
+
+Face
+![face_example](assets/images/face_example.png)
+
+Iris
+![iris_example](assets/images/iris_example.png)
 
 ## Versions
 
