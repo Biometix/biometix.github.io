@@ -5,8 +5,10 @@ parent: Solutions
 nav_order: 4
 ---
 
-# Limitations
+## Limitations
+
 Please note that only the following file extensions (file types) are supported:
+
 * `.jpeg`
 * `.jpg`
 * `.bmp`
@@ -18,7 +20,7 @@ Please note that only the following file extensions (file types) are supported:
 
 > Note: For iris samples, if the resolution of the input is higher than 640 by 480, it will be resized.
 
-# Known Issues
+## Known Issues
 
 ## BQAT CLI
 

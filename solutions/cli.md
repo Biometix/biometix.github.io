@@ -5,7 +5,7 @@ parent: Solutions
 nav_order: 1
 ---
 
-# Use Cases
+## Use Cases
 
 ``` sh
 # Run samples in /input with iris mode
@@ -25,6 +25,12 @@ nav_order: 1
 
 # Run samples in /input with face mode, limit to 100k scan
 ./run.sh --input data/input/ --mode face --limit 100000
+
+# Run with the output filtered by specified query
+./run.sh --input data/input/ --mode finger --attributes NFIQ2 --query "NFIQ2>20"
+
+# Filter the output with specified query
+./run.sh --output data/output.csv --attributes NFIQ2 --query "NFIQ2>20"
 ```
 
 ## Option Flags
@@ -42,20 +48,26 @@ Short | Long            | Description
 `-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
 `-X`  | `--interactive` | (OPTIONAL)  Enter terminal interactive UI
+`-D`  | `--attributes`  | (OPTIONAL)  Specify attributes (columns) to investigate
+`-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
+`-R`  | `--sort`  | (OPTIONAL)  Specify attributes (columns) to sort by
+`-W`  | `--cwd`  | (OPTIONAL)  Specify current working directory for url in the report
 
 ## Log
+
 The log file will keep record of information on the analysis process, including errors, warnings, and other metadata of the job.
 
-# Validation & Benchmarking
+## Benchmarking
 
 The tool has a benchmark module to profile the host machine. It will go through a dataset of 1000 samples which consist of multiple formats and even corrupted files. The output also includes brief spec of the host machine. It can also be used to validate the setup.
 
 ``` sh
 # Start benchmarking
-./run.sh --benchmarking
+./run.sh --mode face --benchmarking
 ```
 
-# Alternative interface
+## Alternative interface
+
 ``` sh
 # Enter interactive CLI
 ./run.sh --interactive

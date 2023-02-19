@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-# Biometric Quality Assessment Tool (BQAT)
+# __Biometric Quality Assessment Tool (BQAT)__
 
 ## Overview
 
@@ -22,36 +22,39 @@ BQAT is a biometric quality assessment tool for generating and analysing given b
 
     The face image assessment provides various quality attributes, features, and ISO metrics.
 
-## Importance
+### Examples of biometric data quality variation
 
-The quality of biometric samples is a key aspect of the performance and usefulness of a biometric systems. Whilst there are a variety of tools per modality, this project is aimed to provide an open source framework to support all common modalities and allow for expansion as new methods are developed. 
+#### _Fingerprint_
 
-### Key features of the project:
-
-- a variety of different methods of access including via CLI, GUI and as a server
-- simple installation via docker
-- outlier identification
-- built by an experienced (>15 years) biometric consulting team
-- an active open source community
-
-### Supporting libraries include:
-
-- [NFIQ2](https://github.com/usnistgov/NFIQ2),
-- [BIQT](https://github.com/mitre/biqt), 
-- [MediaPipe](https://github.com/google/mediapipe)
-
-### Examples of biometric data quality variation:
-
-Fingerprint
 ![finger_example](assets/images/finger_example.png)
 
-Face
-![face_example](assets/images/face_example.png)
+#### _Iris_
 
-Iris
 ![iris_example](assets/images/iris_example.png)
 
-## Versions
+#### _Face_
+
+![face_example](assets/images/face_example.png)
+
+## Importance
+
+The quality of biometric samples is a key aspect of the performance and usefulness of a biometric systems. Whilst there are a variety of tools per modality, this project is aimed to provide an open source framework to support all common modalities and allow for expansion as new methods are developed.
+
+### Key features of the project
+
++ A variety of different methods of access including via CLI, GUI and as a server
++ Simple installation via docker
++ Outlier identification
++ Built by an experienced (>15 years) biometric consulting team
++ An active open source community
+
+### Supporting libraries include
+
++ [NFIQ2](https://github.com/usnistgov/NFIQ2)
++ [BIQT](https://github.com/mitre/biqt)
++ [MediaPipe](https://github.com/google/mediapipe)
+
+## Variation of the Tool
 
 BQAT is available in multiple form factors:
 
