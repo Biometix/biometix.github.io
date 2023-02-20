@@ -29,15 +29,18 @@ nav_order: 1
 # Run with the output filtered by specified query
 ./run.sh --input data/input/ --mode finger --attributes NFIQ2 --query "NFIQ2>20"
 
-# Filter the output with specified query
-./run.sh --output data/output.csv --attributes NFIQ2 --query "NFIQ2>20"
+# Filter existing output CSV file with specified query
+./run.sh --mode filter --output data/output.csv --query "NFIQ2>20"
+
+# Filter existing output CSV file with query on specified attributes (columns)
+./run.sh --mode filter --output data/output.csv --attributes NFIQ2 --query "NFIQ2>20"
 ```
 
 ## Option Flags
 
 Short | Long            | Description
 ----- | --------------- | -----------
-`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (Fingerprint, Face, IRIS)
+`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, filter)
 `-I`  | `--input`       | (REQUIRED)  Specify input directory
 `-O`  | `--output`      | (OPTIONAL)  Specify output csv file or directory
 `-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis

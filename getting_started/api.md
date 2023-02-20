@@ -13,8 +13,6 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 
 ### Get the Compose file
 
-Docker Compose File:
-
 [Download](https://github.com/Biometix/bqat-api/blob/main/docker-compose.yml){: .btn }
 
 ### Pull the Docker Image from Registry
