@@ -5,9 +5,6 @@ parent: Solutions
 nav_order: 2
 ---
 
-## Endpoints
-{: .no_toc .text-delta }
-
 <details open markdown="block">
   <summary>
     Table of contents
@@ -16,6 +13,9 @@ nav_order: 2
 - TOC
 {:toc}
 </details>
+
+## Endpoints
+{: .no_toc .text-delta }
 
 ---
 

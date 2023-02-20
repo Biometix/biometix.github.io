@@ -13,7 +13,7 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 
 ### Get the Script
 
-[Download](https://github.com/Biometix/bqat-cli/blob/main/run.sh){: .btn }
+[Download](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
 
 ### Pull the Docker Image from Registry
 
