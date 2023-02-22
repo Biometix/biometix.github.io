@@ -37,3 +37,7 @@ plugins:
   - "jekyll-github-metadata"
 
 last_modified_date: true
+
+# Google Analytics Tracking
+ga_tracking: G-MPCJGC8V56
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
