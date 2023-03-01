@@ -1,7 +1,7 @@
 title: "Biometix"
 title_separator: "|"
 subtitle: "BQAT"
-description: "A Biometric Quality Assessment Tool from Biometix"
+description: "BQAT - A Biometric Quality Assessment Toolbox from Biometix"
 url: https://biometix.github.io
 repository: Biometix/biometix.github.io
 logo: "/assets/images/logo.png"

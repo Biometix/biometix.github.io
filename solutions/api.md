@@ -14,8 +14,10 @@ nav_order: 2
 {:toc}
 </details>
 
+---
+
 ## Endpoints
-{: .no_toc .text-delta }
+{: .no_toc }
 
 ---
 

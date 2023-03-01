@@ -76,4 +76,14 @@ The tool has a benchmark module to profile the host machine. It will go through 
 ./run.sh --interactive
 ```
 
+## Build the image locally
+
+``` sh
+# Clone the repo
+git clone https://github.com/Biometix/bqat-api.git
+
+# Build the image
+docker compose build
+```
+
 > Note: For powershell (windows) replace volumn mounted in the script as: `-v ${PWD}/data:/app/data`
