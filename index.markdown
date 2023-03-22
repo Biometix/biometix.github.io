@@ -66,6 +66,10 @@ BQAT is available in multiple form factors:
 
     BQAT functionalities provided via RESTful API. A server with BQAT core algorithm.
 
++ __[Stateless](https://github.com/Biometix/bqat-stateless)__
+
+    Stateless version of BQAT API. No data was store on the server.
+
 + __GUI__
 
     BQAT as desktop application. _Coming soon._

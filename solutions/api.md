@@ -19,6 +19,8 @@ nav_order: 2
 ## Endpoints
 {: .no_toc }
 
+> Note: Refer to `localhost:8848/docs` for full list of endpoints.
+
 ---
 
 ### POST /scan/
@@ -50,5 +52,3 @@ Retrieve outliers of this dataset.
 Get assesment report of this dataset.
 
 ---
-
-> Note: Refer to `localhost:8848/docs` for full list of endpoints.
