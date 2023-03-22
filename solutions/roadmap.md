@@ -16,21 +16,21 @@ gantt
     axisFormat  %d-%m
 
     section BQAT-Stateless
-    Initial Planning    : a1, 01-04, 3d
+    Planning    : a1, 01-04, 3d
     Proof of Concept    : a2, after a1, 7d
     MVP                 : a3, after a2, 7d
     Quality Assurance   : a4, after a3, 7d
     Documentation       : after a3, 7d
 
-    section BQAT GUI
-    Initial Planning    : a1, 01-05, 3d
-    Proof of Concept    : a2, after a1, 10d
-    MVP                 : a3, after a2, 10d
-    Quality Assurance   : a4, after a3, 10d
-    Documentation       : after a3, 10d
+    section BQAT-GUI
+    planning    : a5, 01-05, 3d
+    Proof of Concept    : a6, after a5, 5d
+    MVP                 : a7, after a6, 20d
+    Quality Assurance   : a8, after a7, 10d
+    Documentation       : after a7, 10d
 ```
 
 Upcomming features:
 
-+ Speech assessment module.
-+ Pure Python entrypoint for BQAT CLI.
++ Speech assessment module for BQAT Core.
++ Pythonic entrypoint for BQAT CLI.

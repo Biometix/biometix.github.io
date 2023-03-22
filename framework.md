@@ -37,9 +37,9 @@ graph LR
     core{Core} --> iris(Iris)
 ```
 
-## BQAT Interfaces
+## Interfaces
 
-The interface wrappers take care of the image loadings and then send them to the core component for processing. When the task is done, load the raw outputs and save them in respective formats.
+The different interface wrappers take care of the image loadings and then send them to the core component for processing. When the task is done, load the raw outputs and save them in respective formats.
 
 ***
 
@@ -67,6 +67,17 @@ graph LR
     db[(Database)] --> report(Report)
     db[(Database)] --> output(JSON)
     db[(Database)] --> log(Log)
+```
+
+***
+
+``` mermaid
+---
+title: BQAT Stateless
+---
+graph LR
+    upload(HTTP) --> api{Endpoints}
+    api{Endpoints} --> output(JSON Response)
 ```
 
 ***

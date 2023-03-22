@@ -10,6 +10,8 @@ nav_order: 1
 
 BQAT is a biometric quality assessment tool for generating and analysing given biometric samples’ quality to international standards as well as to customized metrics. The BQAT tool functions by taking an input directory of biometric data and will produce both the raw quality information as well as an analysis report.
 
+## Modality
+
 + __Fingerprint__
 
     The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
@@ -21,6 +23,10 @@ BQAT is a biometric quality assessment tool for generating and analysing given b
 + __Iris__
 
     The face image assessment provides various quality attributes, features, and ISO metrics.
+
++ __Speech__
+
+    _Upcoming_
 
 ### Examples of biometric data quality variation
 
