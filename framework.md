@@ -32,9 +32,10 @@ title: BQAT Core
 ---
 graph LR
     input(Biometric samples) --> core{Core}
-    core{Core Interface} --> face(Face)
+    core{Core} --> face(Face)
     core{Core} --> finger(Fingerprint)
     core{Core} --> iris(Iris)
+    core{Core} --> speech(Speech)
 ```
 
 ## Interfaces

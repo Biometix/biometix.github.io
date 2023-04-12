@@ -40,7 +40,7 @@ nav_order: 1
 
 Short | Long            | Description
 ----- | --------------- | -----------
-`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, filter)
+`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, speech, filter)
 `-I`  | `--input`       | (REQUIRED)  Specify input directory
 `-O`  | `--output`      | (OPTIONAL)  Specify output csv file or directory
 `-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis
@@ -80,7 +80,7 @@ The tool has a benchmark module to profile the host machine. It will go through 
 
 ``` sh
 # Clone the repo
-git clone https://github.com/Biometix/bqat-api.git
+git clone https://github.com/Biometix/bqat-cli.git
 
 # Build the image
 docker compose build

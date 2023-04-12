@@ -32,5 +32,4 @@ gantt
 
 Upcomming features:
 
-+ Speech assessment module for BQAT Core.
 + Pythonic entrypoint for BQAT CLI.

@@ -99,6 +99,19 @@ __Iris__:
 
 ***
 
+__Speech__:
+
+| Column | Description |
+| ------ | ----------- |
+| Naturalness | Estimation of the naturalness of synthetic speech generated |
+| Quality | Overall quality estimation of speech that sent through a communication system |
+| Noisiness | Quality dimension of speech that leads to quality degradation |
+| Discontinuity | Quality dimension of speech that leads to quality degradation |
+| Coloration | Quality dimension of speech that leads to quality degradation |
+| Loudness | Quality dimension of speech that leads to quality degradation |
+
+> [NISQA Model](https://www.isca-speech.org/archive/pdfs/interspeech_2021/mittag21_interspeech.pdf)
+
 ## Report
 
 The BQAT will produce a overview statistical report on the resulting assessment scores.

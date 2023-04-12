@@ -26,7 +26,7 @@ BQAT is a biometric quality assessment tool for generating and analysing given b
 
 + __Speech__
 
-    _Upcoming_
+    The speech assessment provides various quality metrics, including naturalness, coloration, noisiness, etc.
 
 ### Examples of biometric data quality variation
 
@@ -59,6 +59,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 + [NFIQ2](https://github.com/usnistgov/NFIQ2)
 + [BIQT](https://github.com/mitre/biqt)
 + [MediaPipe](https://github.com/google/mediapipe)
++ [NISQA](https://github.com/gabrielmittag/NISQA)
 
 ## Variation of the Tool
 
