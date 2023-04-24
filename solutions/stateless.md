@@ -36,10 +36,10 @@ Upload a biometric file for quality assessment:
 
 Upload a biometric file (base64) for quality assessment:
 
-    - **modality**: specify modality of the biometric.
-    - **type**: biometric file type (png, jpg, wav, jp2, etc.).
-    - **data**: biometric file encoded as base64 string.
-    - **id**: biometric file identifier.
-    - **timestamp**: ISO 8601 date and time format.
+- **modality**: specify modality of the biometric.
+- **type**: biometric file type (png, jpg, wav, jp2, etc.).
+- **data**: biometric file encoded as base64 string.
+- **id**: biometric file identifier.
+- **timestamp**: ISO 8601 date and time format.
 
 ---
