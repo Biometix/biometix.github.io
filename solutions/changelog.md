@@ -31,3 +31,7 @@ nav_order: 6
 ### 0.2.0 alpha
 
 + Introduce speech assessment feature.
+
+### 0.3.0 alpha
+
++ Support base64.
