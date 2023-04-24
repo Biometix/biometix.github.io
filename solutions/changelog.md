@@ -25,3 +25,9 @@ nav_order: 6
 ### 1.2.1
 
 + Introduce speech assessment feature.
+
+## BQAT-Stateless
+
+### 0.2.0 alpha
+
++ Introduce speech assessment feature.
