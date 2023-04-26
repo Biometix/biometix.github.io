@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Changelog
-parent: Solutions
-nav_order: 6
+nav_order: 5
 ---
 
 <details open markdown="block">
@@ -39,3 +38,7 @@ nav_order: 6
 ### 0.3.1 alpha
 
 + Support base64url.
+
+### 0.3.2 alpha
+
++ Include testing coverage reports.
