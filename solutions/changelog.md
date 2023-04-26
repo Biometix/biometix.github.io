@@ -35,3 +35,7 @@ nav_order: 6
 ### 0.3.0 alpha
 
 + Support base64.
+
+### 0.3.1 alpha
+
++ Support base64url.
