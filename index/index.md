@@ -76,8 +76,8 @@ BQAT is available in multiple form factors:
     [![Build Status](https://github.com/Biometix/bqat-cli/actions/workflows/build.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/build.yml)
     [![Test Status](https://github.com/Biometix/bqat-cli/actions/workflows/test.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/test.yml)
     [![Release Status](https://github.com/Biometix/bqat-cli/actions/workflows/release.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/release.yml)
-    [![Tests Status](./reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/junit/report.html)
-    [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/coverage/index.html)
+    [![Tests Status](https://github.com/Biometix/bqat-cli/blob/main/reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/junit/report.html)
+    [![Coverage Status](https://github.com/Biometix/bqat-cli/blob/main/reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/coverage/index.html)
 
     BQAT that runs in a terminal. A CLI tool with Docker container backend.
 
@@ -102,8 +102,8 @@ BQAT is available in multiple form factors:
     [![Build Status](https://github.com/Biometix/bqat-stateless/actions/workflows/build.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/build.yml)
     [![Test Status](https://github.com/Biometix/bqat-stateless/actions/workflows/test.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/test.yml)
     [![Release Status](https://github.com/Biometix/bqat-stateless/actions/workflows/release.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/release.yml)
-    [![Tests Status](./reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/junit/report.html)
-    [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/coverage/index.html)
+    [![Tests Status](https://github.com/Biometix/bqat-stateless/blob/main//reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/junit/report.html)
+    [![Coverage Status](https://github.com/Biometix/bqat-stateless/blob/main/reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/coverage/index.html)
 
     Stateless version of BQAT API. No data was store on the server.
 
