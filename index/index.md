@@ -32,15 +32,15 @@ BQAT is a biometric quality assessment tool for generating and analysing given b
 
 #### _Fingerprint_
 
-![finger_example](assets/images/finger_example.png)
+![finger_example](../assets/images/finger_example.png)
 
 #### _Iris_
 
-![iris_example](assets/images/iris_example.png)
+![iris_example](../assets/images/iris_example.png)
 
 #### _Face_
 
-![face_example](assets/images/face_example.png)
+![face_example](../assets/images/face_example.png)
 
 ## Importance
 
