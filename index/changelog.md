@@ -2,6 +2,7 @@
 layout: default
 title: Changelog
 nav_order: 5
+permalink: /changelog/
 ---
 
 <details open markdown="block">
@@ -42,3 +43,7 @@ nav_order: 5
 ### 0.3.2 alpha
 
 + Include testing coverage reports.
+
+### 0.3.3 alpha
+
++ Bug fix

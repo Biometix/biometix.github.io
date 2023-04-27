@@ -2,6 +2,7 @@
 layout: default
 title: Framework Concept
 nav_order: 4
+permalink: /framework/
 ---
 
 # BQAT Framework
