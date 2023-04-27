@@ -1,1 +1,0 @@
-# View at [biometix.github.io](https://biometix.github.io/)
