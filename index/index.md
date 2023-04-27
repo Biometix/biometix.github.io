@@ -68,13 +68,42 @@ BQAT is available in multiple form factors:
 
 + __[CLI](https://github.com/Biometix/bqat-cli)__
 
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-cli">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-cli">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-cli">
+    <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-cli">
+    [![Build Status](https://github.com/Biometix/bqat-cli/actions/workflows/build.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/build.yml)
+    [![Test Status](https://github.com/Biometix/bqat-cli/actions/workflows/test.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/test.yml)
+    [![Release Status](https://github.com/Biometix/bqat-cli/actions/workflows/release.yml/badge.svg)](https://github.com/Biometix/bqat-cli/actions/workflows/release.yml)
+    [![Tests Status](./reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/junit/report.html)
+    [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-cli/blob/main/reports/coverage/index.html)
+
     BQAT that runs in a terminal. A CLI tool with Docker container backend.
 
 + __[API](https://github.com/Biometix/bqat-api)__
 
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-api">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-api">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/biometix/bqat-api/github-actions.yml">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-api">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-api">
+    <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-api">
+
     BQAT functionalities provided via RESTful API. A server with BQAT core algorithm.
 
 + __[Stateless](https://github.com/Biometix/bqat-stateless)__
+
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-stateless">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-stateless">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-stateless">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
+    <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-stateless">
+    [![Build Status](https://github.com/Biometix/bqat-stateless/actions/workflows/build.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/build.yml)
+    [![Test Status](https://github.com/Biometix/bqat-stateless/actions/workflows/test.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/test.yml)
+    [![Release Status](https://github.com/Biometix/bqat-stateless/actions/workflows/release.yml/badge.svg)](https://github.com/Biometix/bqat-stateless/actions/workflows/release.yml)
+    [![Tests Status](./reports/junit/tests-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/junit/report.html)
+    [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8585744)](https://htmlpreview.github.io/?https://github.com/Biometix/bqat-stateless/blob/main/reports/coverage/index.html)
 
     Stateless version of BQAT API. No data was store on the server.
 
@@ -82,4 +111,5 @@ BQAT is available in multiple form factors:
 
     BQAT as desktop application. _Coming soon._
 
-> Please contact us at info@biometix.com if you'd like more information.
+{: .highlight }
+Please contact us at info@biometix.com if you'd like more information.

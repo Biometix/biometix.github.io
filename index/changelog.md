@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: CHANGELOG
 nav_order: 5
 permalink: /changelog/
 ---
