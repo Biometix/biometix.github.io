@@ -110,4 +110,4 @@ BQAT is available in multiple form factors:
     BQAT as desktop application. _Coming soon._
 
 {: .highlight }
-Please contact us at info@biometix.com if you'd like more information.
+> Please contact us at info@biometix.com if you'd like more information.
