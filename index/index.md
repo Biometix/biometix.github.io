@@ -60,7 +60,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 + [MediaPipe](https://github.com/google/mediapipe)
 + [NISQA](https://github.com/gabrielmittag/NISQA)
 
-## Variation of the Tool
+## Variation of the Toolbox
 
 BQAT is available in multiple form factors:
 
@@ -72,7 +72,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-cli">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-cli">
 
-    BQAT that runs in a terminal. A CLI tool with Docker container backend.
+    BQAT in the terminal. A CLI tool for biometrics.
 
 + __[API](https://github.com/Biometix/bqat-api)__
 
@@ -83,7 +83,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-api">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-api">
 
-    BQAT functionalities provided via RESTful API. A server with BQAT core algorithm.
+    BQAT via RESTful API. A self-contained server solution.
 
 + __[Stateless](https://github.com/Biometix/bqat-stateless)__
 
@@ -93,11 +93,13 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-stateless">
 
-    Stateless version of BQAT API. No data was store on the server.
+    Stateless version of BQAT API. No data will be stored on the server, similar to a serverless function.
 
 + __GUI__
 
     BQAT as desktop application. _Coming soon._
+
+---
 
 {: .highlight }
 > Please contact us at info@biometix.com if you'd like more information.
