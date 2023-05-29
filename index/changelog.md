@@ -26,6 +26,14 @@ permalink: /changelog/
 
 + Introduce speech assessment feature.
 
+### 1.2.2
+
++ Bud fixes.
+
+### 1.2.3
+
++ Update quality report module.
+
 ## BQAT-Stateless
 
 ### 0.2.0 alpha
