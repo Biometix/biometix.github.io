@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Framework Concept
+title: Framework
 nav_order: 4
 permalink: /framework/
 ---
@@ -89,12 +89,12 @@ graph LR
 title: BQAT GUI
 ---
 graph LR
-    file(File System) --> gui{GUI}
-    upload(Upload) --> gui{GUI}
-    gui{GUI} --> db[(Database)]
-    db[(Database)] --> report(Report)
-    db[(Database)] --> output(JSON)
-    db[(Database)] --> log(Log)
+    upload(Upload) --> gui{Web}
+    gui{Web GUI} --> api(Backend)
+    api(Backend) --> db[(Database)]
+    db[(Database)] --> report(Quality Report)
+    db[(Database)] --> output(Raw Output (JSON))
+    db[(Database)] --> outlier(Outlier Report)
 ```
 
 
