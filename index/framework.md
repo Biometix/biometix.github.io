@@ -93,7 +93,7 @@ graph LR
     gui{Web GUI} --> api(Backend)
     api(Backend) --> db[(Database)]
     db[(Database)] --> report(Quality Report)
-    db[(Database)] --> output(Raw Output (JSON))
+    db[(Database)] --> output(Raw CSV)
     db[(Database)] --> outlier(Outlier Report)
 ```
 
