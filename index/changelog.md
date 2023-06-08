@@ -55,3 +55,9 @@ permalink: /changelog/
 ### 0.3.3 alpha
 
 + Bug fix
+
+## BQAT-GUI
+
+### 0.1.2 alpha
+
++ Introduce Web GUI

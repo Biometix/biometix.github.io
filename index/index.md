@@ -97,7 +97,13 @@ BQAT is available in multiple form factors:
 
 + __GUI__
 
-    BQAT as desktop application. _Coming soon._
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-gui">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-gui">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-gui">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
+    <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-gui">
+
+    Simple Web GUI for BQAT API. A easy to use user interface to the services.
 
 ---
 
