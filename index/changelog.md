@@ -20,6 +20,10 @@ permalink: /changelog/
 
 + Introduce speech assessment feature.
 
+### 1.2.2
+
++ Refactor and bug fix for speech mode
+
 ## BQAT-CLI
 
 ### 1.2.1
@@ -33,6 +37,10 @@ permalink: /changelog/
 ### 1.2.3
 
 + Update quality report module.
+
+### 1.2.4
+
++ Fix speech mode recursive glob issue
 
 ## BQAT-Stateless
 
