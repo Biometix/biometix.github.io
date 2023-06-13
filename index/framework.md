@@ -90,7 +90,7 @@ title: BQAT GUI
 ---
 graph LR
     upload(Upload) --> gui{Web}
-    gui{Web GUI} --> api(Backend)
+    gui{Web GUI} --> api(BQAT-API)
     api(Backend) --> db[(Database)]
     db[(Database)] --> report(Quality Report)
     db[(Database)] --> output(Raw CSV)

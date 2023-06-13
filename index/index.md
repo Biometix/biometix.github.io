@@ -94,7 +94,7 @@ BQAT is available in multiple form factors:
 
     Stateless version of BQAT API. No data will be stored on the server, similar to a serverless function.
 
-+ __GUI__
++ __[GUI](https://github.com/Biometix/bqat-gui)__
 
     <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-gui">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-gui">
