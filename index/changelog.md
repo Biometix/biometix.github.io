@@ -24,6 +24,12 @@ permalink: /changelog/
 
 + Refactor and bug fix for speech mode
 
+## BQAT-API
+
+### 1.1.0
+
++ Inroduce speech assessment feature.
+
 ## BQAT-CLI
 
 ### 1.2.1
@@ -69,3 +75,7 @@ permalink: /changelog/
 ### 0.1.2 alpha
 
 + Introduce Web GUI
+
+### 0.1.3 alpha
+
++ Fix temporary export file issue
