@@ -34,6 +34,8 @@ permalink: /changelog/
 
 + Update face quality scoring with ISO/IEC 29794-1 standard scale (1-100).
 
++ Add glasses detection for face modality.
+
 ## BQAT-API
 
 ### 1.1.0

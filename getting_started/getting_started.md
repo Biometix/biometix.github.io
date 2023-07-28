@@ -74,6 +74,7 @@ __Face__:
 | roll pose        | Roll in terms of direction |
 | roll degree      | Roll in terms of degree |
 | smile            | Smile detected or not |
+| glasses          | Glasses detected or not |
 | width            | Width of the input in pixels |
 | height           | Height of the input in pixels |
 | tag              | The unique id assigned to this image |
@@ -92,23 +93,35 @@ __Iris__:
 | percent_visible_iris | Percentage of visible iris area |
 | iris_pupil_gs | Raw measure quantifying how distinguishable the boundary is between the pupil and the iris |
 | iris_sclera_gs | Raw measure quantifying how distinguishable the boundary is between the iris and the sclera |
+| iso_overall_quality | The overall ISO quality score based on the product of normalized individual iso metrics |
+| iso_greyscale_utilization | The spread of intensity values regarding the pixel values within the iris portion of the image, recommended value: 6 or greater |
+| iso_iris_pupil_concentricity | The degree to which the pupil centre and the iris centre are in the same location, recommended value: 90 or greater |
+| iso_iris_pupil_contrast | The image characteristics at the boundary between the iris region and the pupil, recommended value: 30 or greater |
+| iso_iris_pupil_ratio | The degree to which the pupil is dilated or constricted, recommended value: between 20 and 70 |
+| iso_iris_sclera_contrast | The image characteristics at the boundary between the iris region and the sclera, recommended value: greater than 5 |
+| iso_margin_adequacy | The degree to which the iris portion of the image is centred relative to the edges of the entire image, recommended value: greater than 80 |
+| iso_pupil_boundary_circularity | The circularity of the iris-pupil boundary |
+| iso_sharpness | The degree of focus present in the image |
+| iso_usable_iris_area | The fraction of the iris portion of the image that is not occluded by eyelids, eyelashes, or specular reflections |
 | width            | Width of the input in pixels |
 | height           | Height of the input in pixels |
 | tag              | The unique id assigned to this image |
 | log              | Log info from backend if any |
 
+> [Iris Engine](https://github.com/mitre/biqt-iris/blob/master/README.md)
+
 ***
 
 __Speech__:
 
-| Column | Description |
-| ------ | ----------- |
-| Naturalness | Estimation of the naturalness of synthetic speech generated |
-| Quality | Overall quality estimation of speech that sent through a communication system |
-| Noisiness | Quality dimension of speech that leads to quality degradation |
+| Column        | Description |
+| ------------- | ----------- |
+| Naturalness   | Estimation of the naturalness of synthetic speech generated |
+| Quality       | Overall quality estimation of speech that sent through a communication system |
+| Noisiness     | Quality dimension of speech that leads to quality degradation |
 | Discontinuity | Quality dimension of speech that leads to quality degradation |
-| Coloration | Quality dimension of speech that leads to quality degradation |
-| Loudness | Quality dimension of speech that leads to quality degradation |
+| Coloration    | Quality dimension of speech that leads to quality degradation |
+| Loudness      | Quality dimension of speech that leads to quality degradation |
 
 > [NISQA Model](https://www.isca-speech.org/archive/pdfs/interspeech_2021/mittag21_interspeech.pdf)
 
