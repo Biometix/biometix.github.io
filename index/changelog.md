@@ -42,6 +42,14 @@ permalink: /changelog/
 
 + Inroduce speech assessment feature.
 
+### 1.2.0
+
++ Rebuild container with updated iris engine.
+
++ Fix Python dependency issues.
+
++ Fix endpoint path issues.
+
 ## BQAT-CLI
 
 ### 1.2.1
@@ -87,6 +95,10 @@ permalink: /changelog/
 ### 0.1.2 alpha
 
 + Introduce Web GUI
+
+### 0.1.6 alpha
+
++ Cleanup CSV output
 
 ### 0.1.3 alpha
 
