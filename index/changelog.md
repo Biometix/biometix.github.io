@@ -22,7 +22,17 @@ permalink: /changelog/
 
 ### 1.2.2
 
-+ Refactor and bug fix for speech mode
++ Refactor and bug fix for speech mode.
+
+### 1.3.0
+
++ Update iris module with new metrics.
+
++ Modify certain iris assessment thresholds to handle wider target samples.
+
++ Update resize logic for iris samples.
+
++ Update face quality scoring with ISO/IEC 29794-1 standard scale (1-100).
 
 ## BQAT-API
 
