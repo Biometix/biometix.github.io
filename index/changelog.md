@@ -36,6 +36,10 @@ permalink: /changelog/
 
 + Add glasses detection for face modality.
 
+## 1.3.1
+
++ Update readme.
+
 ## BQAT-API
 
 ### 1.1.0
@@ -68,25 +72,29 @@ permalink: /changelog/
 
 + Fix speech mode recursive glob issue
 
+### 1.3.0
+
++ Rebuild with bqat-core v1.3.1
+
 ## BQAT-Stateless
 
-### 0.2.0 alpha
+### 0.2.0
 
 + Introduce speech assessment feature.
 
-### 0.3.0 alpha
+### 0.3.0
 
 + Support base64.
 
-### 0.3.1 alpha
+### 0.3.1
 
 + Support base64url.
 
-### 0.3.2 alpha
+### 0.3.2
 
 + Include testing coverage reports.
 
-### 0.3.3 alpha
+### 0.3.3
 
 + Bug fix
 
@@ -96,10 +104,12 @@ permalink: /changelog/
 
 + Introduce Web GUI
 
+### 0.1.3 alpha
+
++ Fix temporary export file issue
+
 ### 0.1.6 alpha
 
 + Cleanup CSV output
 
-### 0.1.3 alpha
-
-+ Fix temporary export file issue
++ Update compose configuration
