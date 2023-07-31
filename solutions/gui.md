@@ -7,4 +7,4 @@ nav_order: 4
 
 ## Web GUI
 
-![Screenshot](../assets/images/screenshot_bqat-gui.png)
+![Screenshot](../assets/images/screenshot_web.png)
