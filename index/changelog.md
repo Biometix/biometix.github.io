@@ -98,6 +98,10 @@ permalink: /changelog/
 
 + Bug fix
 
+### 0.4.0
+
++ Rebuilt with latest BQAT-core
+
 ## BQAT-GUI
 
 ### 0.1.2 alpha
