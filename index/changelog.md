@@ -121,3 +121,7 @@ permalink: /changelog/
 ### 0.1.8 alpha
 
 + Remove user data after output retrieval.
+
+### 0.1.9 alpha
+
++ Update "Clear" button to clear the page as well as user data.
