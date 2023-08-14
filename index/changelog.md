@@ -70,11 +70,11 @@ permalink: /changelog/
 
 ### 1.2.4
 
-+ Fix speech mode recursive glob issue
++ Fix speech mode recursive glob issue.
 
 ### 1.3.0
 
-+ Rebuild with bqat-core v1.3.1
++ Rebuild with bqat-core v1.3.1.
 
 ## BQAT-Stateless
 
@@ -96,24 +96,28 @@ permalink: /changelog/
 
 ### 0.3.3
 
-+ Bug fix
++ Bug fix.
 
 ### 0.4.0
 
-+ Rebuilt with latest BQAT-core
++ Rebuilt with latest BQAT-core.
 
 ## BQAT-GUI
 
 ### 0.1.2 alpha
 
-+ Introduce Web GUI
++ Introduce Web GUI.
 
 ### 0.1.3 alpha
 
-+ Fix temporary export file issue
++ Fix temporary export file issue.
 
 ### 0.1.6 alpha
 
-+ Cleanup CSV output
++ Cleanup CSV output.
 
-+ Update compose configuration
++ Update compose configuration.
+
+### 0.1.8 alpha
+
++ Remove user data after output retrieval.
