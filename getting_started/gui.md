@@ -13,7 +13,7 @@ This project is run as a docker stack which provides a simple web GUI for BQAT-A
 
 ### Get the Compose file
 
-[Download](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml){: .btn }
+> [Download](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml){: .btn }
 
 ## Usage
 

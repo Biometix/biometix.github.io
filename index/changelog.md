@@ -36,7 +36,7 @@ permalink: /changelog/
 
 + Add glasses detection for face modality.
 
-## 1.3.1
+### 1.3.1
 
 + Update readme.
 
