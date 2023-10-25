@@ -102,6 +102,10 @@ permalink: /changelog/
 
 + Rebuilt with latest BQAT-core.
 
+### 0.4.1
+
++ Update compose file.
+
 ## BQAT-GUI
 
 ### 0.1.2 alpha
