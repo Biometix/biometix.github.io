@@ -47,3 +47,4 @@ docker compose down
 The documentation of the API endpoints lives in:
 
 * `localhost:8848/docs`
+* [Docs](https://biometix.github.io/solutions/api.html)
