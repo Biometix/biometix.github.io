@@ -11,13 +11,17 @@ nav_order: 1
 
 This tool is designed to be run as Docker container. You can simply pull the Docker image and start it with the script provided.
 
-### Get Docker image
-
-> [Container Image](https://github.com/Biometix/bqat-cli/pkgs/container/bqat-cli){: .btn }
-
 ### Get run script
 
-> [Run Script](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
+> [Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
+
+> [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
+
+### Docker image
+
+You can download the image from the registry.
+
+> [Container Image](https://github.com/Biometix/bqat-cli/pkgs/container/bqat-cli){: .btn }
 
 ## Usage
 
@@ -31,12 +35,28 @@ Put the run script above under the working directory, then just run the script p
 
 ### Quick start
 
+For bash (Linux, macOS, Windows):
+
 ``` sh
 # Process samples in /input under /data with iris mode
 ./run.sh --input data/input/ --mode iris
+```
 
+``` sh
 # Process all samples in /data with face mode
 ./run.sh --input data --mode face
+```
+
+For powershell (Winodws, Linux):
+
+``` sh
+# Process samples in /input under /data with iris mode
+.\run.ps1 --input data/input/ --mode iris
+```
+
+``` sh
+# Process all samples in /data with face mode
+.\run.ps1 --input data --mode face
 ```
 
 > [More](https://biometix.github.io/solutions/cli.html) about optional flags.
