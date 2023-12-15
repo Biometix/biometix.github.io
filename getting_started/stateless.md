@@ -13,7 +13,7 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 
 ### Get the Compose file
 
-> [Download](https://raw.githubusercontent.com/Biometix/bqat-stateless/main/docker-compose.yml){: .btn }
+> [Download](https://raw.githubusercontent.com/Biometix/bqat-stateless/main/compose.yaml){: .btn }
 
 ### Pull the Docker Image from Registry
 
@@ -35,10 +35,10 @@ docker compose build
 ## Usage
 
 ``` sh
-# Start container stack locally
+# Start container stack
 docker compose up -d
 
-# Stop the services (ctrl + C)
+# Stop the service
 docker compose down
 ```
 

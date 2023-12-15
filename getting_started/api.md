@@ -13,7 +13,7 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 
 ### Get the Compose file
 
-> [Download](https://raw.githubusercontent.com/Biometix/bqat-api/main/docker-compose.yml){: .btn }
+> [Download](https://raw.githubusercontent.com/Biometix/bqat-api/main/compose.yaml){: .btn }
 
 ### Pull the Docker Image from Registry
 
@@ -34,11 +34,15 @@ docker compose build
 
 ## Usage
 
++ Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-api/main/compose.yaml) into your working directory.
++ Create a `data/` folder within your working directory.
++ Start the BQAT API service:
+
 ``` sh
-# Start container stack locally
+# Start container stack
 docker compose up -d
 
-# Stop the services (ctrl + C)
+# Stop the service
 docker compose down
 ```
 

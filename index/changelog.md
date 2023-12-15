@@ -40,6 +40,10 @@ permalink: /changelog/
 
 + Update readme.
 
+### 1.3.2
+
++ Update for refactor of image building configuration.
+
 ## BQAT-API
 
 ### 1.1.0
@@ -53,6 +57,12 @@ permalink: /changelog/
 + Fix Python dependency issues.
 
 + Fix endpoint path issues.
+
+### 1.3.0
+
++ Refactor build configuration.
+
++ Resolve test script issue.
 
 ## BQAT-CLI
 
@@ -105,6 +115,10 @@ permalink: /changelog/
 ### 0.4.1
 
 + Update compose file.
+
++ Refactor build configuration.
+
++ Resolve temp file conflict issue.
 
 ## BQAT-GUI
 
