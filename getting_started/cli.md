@@ -17,21 +17,13 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 
 > [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
 
-### Docker image
-
-You can download the image from the registry.
-
-> [Container Image](https://github.com/Biometix/bqat-cli/pkgs/container/bqat-cli){: .btn }
-
 ## Usage
 
 Create a folder named `data` under your working directory and put your input images in this folder.
 
-> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted on the container. Read and write permission is required for this folder.
+> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.
 
 Put the run script above under the working directory, then just run the script provided (You might need to give it execution permission).
-
-> Note: You may need to modify the path format of mounted volumns in the `run.sh` for specific shell.
 
 ### Quick start
 
@@ -46,6 +38,8 @@ For bash (Linux, macOS, Windows):
 # Process all samples in /data with face mode
 ./run.sh --input data --mode face
 ```
+
+> Note: You may need to modify the path format of mounted volumns in the `run.sh` for specific shell (e.g. Windows, or you can use the powershell script).
 
 For powershell (Winodws, Linux):
 
