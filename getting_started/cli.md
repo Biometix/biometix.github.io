@@ -25,7 +25,7 @@ Create a folder named `data` under your working directory and put your input ima
 
 Put the run script above under the working directory, then just run the script provided (You might need to give it execution permission).
 
-### Quick start
+### Quick start!
 
 For bash (Linux, macOS, Windows):
 
