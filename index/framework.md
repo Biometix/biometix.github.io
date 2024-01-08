@@ -56,10 +56,11 @@ graph LR
     cli{Command Line} --> output(CSV)
     cli{Command Line} --> log(Log)
 ```
+
 {: .highlight }
 > Todo: explanation
-***
 
+***
 
 ``` mermaid
 ---
@@ -73,8 +74,10 @@ graph LR
     db[(Database)] --> output(JSON)
     db[(Database)] --> log(Log)
 ```
+
 {: .highlight }
 > Todo: explanation
+
 ***
 
 ``` mermaid
@@ -85,6 +88,7 @@ graph LR
     upload(HTTP) --> api{Endpoints}
     api{Endpoints} --> output(JSON Response)
 ```
+
 {: .highlight }
 > Todo: explanation
 

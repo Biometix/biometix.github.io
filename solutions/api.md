@@ -77,4 +77,4 @@ The codebase in this repo did not include proper configuration for production en
 ## Output
 
 {: .highlight }
-> Todo: text explanation and screenshots
+> Todo: report explanation and screenshots

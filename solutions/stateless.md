@@ -53,4 +53,4 @@ nav_order: 3
 
 ## Output
 {: .highlight }
-> Todo: text explanation and screenshots
+> Todo: report explanation and screenshots

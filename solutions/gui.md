@@ -26,5 +26,7 @@ nav_order: 4
 ![Screenshot](../assets/images/screenshot_web.png)
 
 ## Output
-{: .highlight }
-> Todo: text explanation and screenshots
+
+{: .highlight_color }
+> yellow
+> Todo: report explanation and screenshots
