@@ -11,9 +11,16 @@ nav_order: 2
 
 This project is run as a server which provides BQAT functionalities as RESTful API. You can simply pull the Docker image and start it with the Docker Compose file provided.
 
-### Get the Docker compose file
+### Get the Docker Compose file
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-api/main/compose.yaml){: .btn }
+
+### Pull the Docker Image from Registry
+
+``` sh
+# Pull the image
+docker pull ghcr.io/biometix/bqat-api:latest
+```
 
 ## Usage
 

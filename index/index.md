@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Introduction
 nav_order: 1
 permalink: /
 ---
@@ -31,7 +31,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
     The speech assessment module provides various quality metrics, including naturalness, coloration, noisiness, etc.
 
-### Examples of biometric data quality variation
+<!-- ### Examples of biometric data quality variation
 
 #### _Fingerprint_
 
@@ -43,7 +43,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 #### _Face_
 
-![face_example](../assets/images/face_example.png)
+![face_example](../assets/images/face_example.png) -->
 
 ### Key features of the project
 
@@ -57,7 +57,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 + [NFIQ2](https://github.com/usnistgov/NFIQ2)
 + [BIQT](https://github.com/mitre/biqt)
-+ [MediaPipe](https://github.com/google/mediapipe)
+<!-- + [MediaPipe](https://github.com/google/mediapipe) -->
 + [NISQA](https://github.com/gabrielmittag/NISQA)
 
 ## Variation of the Toolbox

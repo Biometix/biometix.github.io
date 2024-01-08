@@ -11,7 +11,7 @@ nav_order: 3
 
 This project is run as a server which provides BQAT functionalities as RESTful API. You can simply pull the Docker image and start it with the Docker Compose file provided. In stead of store the results in database, this stateless server will not store any information locally, the output will be returned directly.
 
-### Get the Compose file
+### Get the Docker Compose file
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-stateless/main/compose.yaml){: .btn }
 
@@ -22,7 +22,7 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 docker pull ghcr.io/biometix/bqat-stateless:latest
 ```
 
-### _Or_ Build the Image Locally
+<!-- ### _Or_ Build the Image Locally
 
 ``` sh
 # Clone the repo
@@ -30,9 +30,12 @@ git clone https://github.com/Biometix/bqat-stateless.git
 
 # Build the image
 docker compose build
-```
+``` -->
 
 ## Usage
+
++ Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-stateless/main/compose.yaml) into your working directory.
++ Start the BQAT Stateless API service:
 
 ``` sh
 # Start container stack

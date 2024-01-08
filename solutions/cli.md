@@ -3,7 +3,24 @@ layout: default
 title: Commmand Line Tool
 parent: Solutions
 nav_order: 1
+
 ---
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
+## Workflow
+
+{: .highlight }
+Todo: text explanation and diagrams
 
 ## Use Cases
 
@@ -56,6 +73,11 @@ Short | Long            | Description
 `-R`  | `--sort`  | (OPTIONAL)  Specify attributes (columns) to sort by
 `-W`  | `--cwd`  | (OPTIONAL)  Specify current working directory for url in the report
 
+
+## Output
+{: .highlight }
+Todo: text explanation and screenshots
+
 ## Log
 
 The log file will keep record of information on the analysis process, including errors, warnings, and other metadata of the job.
@@ -74,9 +96,12 @@ The tool has a benchmark module to profile the host machine. It will go through 
 ``` sh
 # Enter interactive CLI
 ./run.sh --interactive
-```
 
-## Build the image locally
+```
+{: .highlight }
+Todo: explain the interface with screenshots
+
+<!-- ## Build the image locally
 
 ``` sh
 # Clone the repo
@@ -86,4 +111,4 @@ git clone https://github.com/Biometix/bqat-cli.git
 docker compose build
 ```
 
-> Note: For powershell (windows) replace volumn mounted in the script as: `-v ${PWD}/data:/app/data`
+> Note: For powershell (windows) replace volumn mounted in the script as: `-v ${PWD}/data:/app/data` -->

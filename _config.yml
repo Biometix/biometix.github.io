@@ -12,11 +12,11 @@ aux_links:
   "Biometix on Github":
     - "//github.com/Biometix"
 aux_links_new_tab: true
-nav_external_links:
-  - title: Biometix on Github
-    url: https://github.com/Biometix
-  - title: Biometix Pty Ltd
-    url: https://biometix.com/
+# nav_external_links:
+#   - title: Biometix on Github
+#     url: https://github.com/Biometix
+#   - title: Biometix Pty Ltd
+#     url: https://biometix.com/
 mermaid:
   version: "9.3.0"
 
