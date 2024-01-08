@@ -14,8 +14,9 @@ The iris sample assessment module provides various quality attributes, features,
 ![iris_example](../assets/images/iris_example.png)
 
 ## Input
+
 {: .highlight }
-Todo: modify the description
+> Todo: modify the description
 
 For fingerprints the tool works with image formats WSQ and PNG. For both of these formats the image will be run directly through NFIQ2. Image formats excluding WSQ and PNG are first converted into a compatible format before being run through NFIQ2.
 

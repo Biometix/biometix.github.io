@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Framework
-nav_order: 4
+nav_order: 5
 permalink: /framework/
 ---
 
@@ -57,7 +57,7 @@ graph LR
     cli{Command Line} --> log(Log)
 ```
 {: .highlight }
-Todo: explanation
+> Todo: explanation
 ***
 
 
@@ -74,7 +74,7 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 {: .highlight }
-Todo: explanation
+> Todo: explanation
 ***
 
 ``` mermaid
@@ -86,7 +86,7 @@ graph LR
     api{Endpoints} --> output(JSON Response)
 ```
 {: .highlight }
-Todo: explanation
+> Todo: explanation
 
 ***
 
@@ -104,4 +104,4 @@ graph LR
 ```
 
 {: .highlight }
-Todo: explanation
+> Todo: explanation

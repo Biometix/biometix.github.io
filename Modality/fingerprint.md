@@ -7,8 +7,7 @@ nav_order: 1
 ---
 
 ## Overview
-
-    The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
+The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
 
 ## Examples of Fingerprint quality variation
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+nav_order: 7
 permalink: /about/
 ---
 
@@ -12,7 +13,7 @@ Biometix offers a range of vendor-independent services and customised vendor-ind
 
 
 Please feel free to contact us, if you got any concerns:
-Email Address:<info@biometix.com>
-Linkin: <https://www.linkedin.com/company/biometix/>
-[Biometix on Github](https://github.com/Biometix).
-[Biometix Pty Ltd](https://biometix.com/)
+- Email Address:<info@biometix.com>
+- Linkin: <https://www.linkedin.com/company/biometix/>
+- [Biometix on Github](https://github.com/Biometix).
+- [Biometix Pty Ltd](https://biometix.com/)
