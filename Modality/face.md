@@ -16,6 +16,7 @@ The face image assessment module provides metrics includes head pose, smile dete
 
 {: .highlight }
 > Todo: modify the description
+<!-- TODO: modify the description-->
 
 For fingerprints the tool works with image formats WSQ and PNG. For both of these formats the image will be run directly through NFIQ2. Image formats excluding WSQ and PNG are first converted into a compatible format before being run through NFIQ2.
 
@@ -63,3 +64,4 @@ __Face__:
 
 {: .highlight }
 > Todo: add refered source file
+<!-- TODO: add references-->

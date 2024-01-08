@@ -12,7 +12,8 @@ Biometix is globally recognized as an innovative, biometric and data analytics i
 Biometix offers a range of vendor-independent services and customised vendor-independent analysis and quality tools, helping organisations enhance their biometric and identity management solutions.
 
 
-Please feel free to contact us, if you got any concerns:
+If you got any concern, please feel free to contact us:
+
 - Email Address:<info@biometix.com>
 - Linkin: <https://www.linkedin.com/company/biometix/>
 - [Biometix on Github](https://github.com/Biometix).

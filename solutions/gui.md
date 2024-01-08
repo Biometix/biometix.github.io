@@ -20,6 +20,7 @@ nav_order: 4
 
 {: .highlight }
 > Todo: text explanation and diagrams
+<!-- TODO: workflow diagram-->
 
 ## Web GUI
 
@@ -27,6 +28,6 @@ nav_order: 4
 
 ## Output
 
-{: .highlight_color }
-> yellow
+{: .highlight }
 > Todo: report explanation and screenshots
+<!-- TODO: report explanation-->

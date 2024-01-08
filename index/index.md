@@ -108,3 +108,4 @@ BQAT is available in multiple form factors:
 
 {: .highlight }
 > Please contact us at info@biometix.com if you'd like more information.
+

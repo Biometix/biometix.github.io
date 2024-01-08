@@ -14,6 +14,9 @@ __Prerequisites__:
 
 ## Quick Start
 
+<!-- TODO: explanation-->
+> more explanation based on scenarios
+
 ### Simply use with UI
 + [Web GUI](https://biometix.github.io/solutions/gui.html)
 

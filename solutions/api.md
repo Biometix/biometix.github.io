@@ -19,6 +19,7 @@ nav_order: 2
 
 {: .highlight }
 > Todo: text explanation and diagrams
+<!-- TODO: workflow diagram-->
 
 ## Endpoints
 {: .no_toc }
@@ -78,3 +79,4 @@ The codebase in this repo did not include proper configuration for production en
 
 {: .highlight }
 > Todo: report explanation and screenshots
+<!-- TODO: report explanation-->

@@ -21,6 +21,7 @@ nav_order: 1
 
 {: .highlight }
 > Todo: text explanation and diagrams
+<!-- TODO: workflow diagram-->
 
 ## Use Cases
 
@@ -101,6 +102,7 @@ The tool has a benchmark module to profile the host machine. It will go through 
 ```
 {: .highlight }
 > Todo: explain the interface with screenshots
+<!-- TODO: output explanation-->
 
 <!-- ## Build the image locally
 
