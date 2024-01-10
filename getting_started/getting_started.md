@@ -20,19 +20,30 @@ __Prerequisites__:
 ### Simply use with UI
 + [Web GUI](https://biometix.github.io/getting_started/gui.html)
     + [Set Up](https://biometix.github.io/getting_started/gui.html#setup)
+    + [Usage](https://biometix.github.io/getting_started/gui.html#usage)
+    + [Output](https://biometix.github.io/getting_started/gui.html#output)
 
 
 ### Locally running in terminal
 + [Command Line Tool](https://biometix.github.io/getting_started/cli.html)
+    + [Set Up](https://biometix.github.io/getting_started/cli.html#setup)
+    + [Usage](https://biometix.github.io/getting_started/cli.html#usage)
+    + [Output](https://biometix.github.io/getting_started/cli.html#output)
 
 
 ### Integrated to existing project
 
 #### Save and analyse in database
 + [RESTful API](https://biometix.github.io/getting_started/api.html)
+    + [Set Up](https://biometix.github.io/getting_started/api.html#setup)
+    + [Usage](https://biometix.github.io/getting_started/api.html#usage)
+    + [Api](https://biometix.github.io/getting_started/api.html#api)
 
 #### Stateless visit
 + [Stateless API](https://biometix.github.io/getting_started/stateless.html)
+    + [Set Up](https://biometix.github.io/getting_started/stateless.html#setup)
+    + [Usage](https://biometix.github.io/getting_started/stateless.html#usage)
+    + [Api](https://biometix.github.io/getting_started/stateless.html#api)
 
 
 

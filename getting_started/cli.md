@@ -18,6 +18,7 @@ nav_order: 1
 
 # BQAT CLI
 
+<a name="setup">
 ## Setup
 
 This tool is designed to be run as Docker container. You can simply pull the Docker image and start it with the script provided.
@@ -28,6 +29,7 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 
 > [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
 
+<a name="usage">
 ## Usage
 
 + Download the run script into your working directory.
@@ -60,6 +62,8 @@ For powershell (Winodws, Linux):
 > Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.
 > [More](https://biometix.github.io/solutions/cli.html) about optional flags.
 
+
+<a name="output">
 ## Output
 
 The default output location is: `data/output/`.

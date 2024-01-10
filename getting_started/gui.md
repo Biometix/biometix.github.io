@@ -5,6 +5,9 @@ parent: Getting Started
 nav_order: 4
 ---
 
+# BQAT GUI
+
+---
 <details open markdown="block">
   <summary>
     Table of contents
@@ -16,8 +19,6 @@ nav_order: 4
 
 ---
 
-# BQAT GUI
-
 <a name="setup">
 ## Setup
 
@@ -27,6 +28,7 @@ This project is run as a docker stack which provides a simple web GUI for BQAT-A
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml){: .btn }
 
+<a name="usage">
 ## Usage
 
 + Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml) into your working directory.
@@ -40,8 +42,8 @@ docker compose up -d
 # Stop the services (ctrl + C)
 docker compose down
 ```
-
-## Web GUI
+<a name="output">
+## Output
 
 Find the page at:
 
