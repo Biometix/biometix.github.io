@@ -18,20 +18,21 @@ __Prerequisites__:
 > more explanation based on scenarios
 
 ### Simply use with UI
-+ [Web GUI](https://biometix.github.io/solutions/gui.html)
++ [Web GUI](https://biometix.github.io/getting_started/gui.html)
+    + [Set Up](https://biometix.github.io/getting_started/gui.html#setup)
 
 
 ### Locally running in terminal
-+ [Command Line Tool](https://biometix.github.io/solutions/cli.html)
++ [Command Line Tool](https://biometix.github.io/getting_started/cli.html)
 
 
 ### Integrated to existing project
 
 #### Save and analyse in database
-+ [RESTful API](https://biometix.github.io/solutions/api.html)
++ [RESTful API](https://biometix.github.io/getting_started/api.html)
 
 #### Stateless visit
-+ [Stateless API](https://biometix.github.io/solutions/stateless.html)
++ [Stateless API](https://biometix.github.io/getting_started/stateless.html)
 
 
 

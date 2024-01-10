@@ -5,6 +5,17 @@ parent: Getting Started
 nav_order: 3
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # BQAT Stateless
 
 ## Setup
@@ -50,3 +61,7 @@ docker compose down
 The documentation of the API endpoints lives in:
 
 * `localhost:8848/docs`
+
+
+## Detailed Info
++ [Stateless API Solution](https://biometix.github.io/solutions/stateless.html)

@@ -5,6 +5,17 @@ parent: Getting Started
 nav_order: 1
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # BQAT CLI
 
 ## Setup
@@ -52,3 +63,7 @@ For powershell (Winodws, Linux):
 ## Output
 
 The default output location is: `data/output/`.
+
+
+## Detailed Info
++ [CLI Solution](https://biometix.github.io/solutions/cli.html)

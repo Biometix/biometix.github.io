@@ -5,6 +5,17 @@ parent: Getting Started
 nav_order: 2
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # BQAT API
 
 ## Setup
@@ -45,3 +56,6 @@ The documentation of the API endpoints lives in:
 * `localhost:8848/docs`
 
 > [MORE](https://biometix.github.io/solutions/api.html) about endpoints.
+
+## Detailed Info
++ [API Solution](https://biometix.github.io/solutions/api.html)

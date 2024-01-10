@@ -5,8 +5,20 @@ parent: Getting Started
 nav_order: 4
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # BQAT GUI
 
+<a name="setup">
 ## Setup
 
 This project is run as a docker stack which provides a simple web GUI for BQAT-API access. You can simply start it with the Docker Compose file provided.
@@ -34,3 +46,6 @@ docker compose down
 Find the page at:
 
 * `localhost:7860`
+
+## Detailed Info
++ [GUI Solution](https://biometix.github.io/solutions/gui.html)

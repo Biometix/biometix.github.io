@@ -5,6 +5,17 @@ parent: Modality
 nav_order: 4
 
 ---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 ## Overview
 The speech assessment module provides various quality metrics, including naturalness, coloration, noisiness, etc.
 

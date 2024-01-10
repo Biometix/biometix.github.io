@@ -5,6 +5,17 @@ parent: Modality
 nav_order: 3
 
 ---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 ## Overview
 
 The iris sample assessment module provides various quality attributes, features, and ISO metrics.
