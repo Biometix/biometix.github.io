@@ -5,6 +5,9 @@ parent: Getting Started
 nav_order: 1
 ---
 
+# BQAT CLI
+
+---
 <details open markdown="block">
   <summary>
     Table of contents
@@ -16,7 +19,6 @@ nav_order: 1
 
 ---
 
-# BQAT CLI
 
 <a name="setup">
 ## Setup

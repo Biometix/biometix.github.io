@@ -5,6 +5,9 @@ parent: Getting Started
 nav_order: 3
 ---
 
+# BQAT Stateless
+
+---
 <details open markdown="block">
   <summary>
     Table of contents
@@ -15,8 +18,6 @@ nav_order: 3
 </details>
 
 ---
-
-# BQAT Stateless
 
 <a name="setup">
 ## Setup

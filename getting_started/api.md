@@ -4,7 +4,9 @@ title: BQAT API
 parent: Getting Started
 nav_order: 2
 ---
+# BQAT API
 
+---
 <details open markdown="block">
   <summary>
     Table of contents
@@ -16,7 +18,6 @@ nav_order: 2
 
 ---
 
-# BQAT API
 
 <a name="setup">
 ## Setup
