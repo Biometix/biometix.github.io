@@ -19,8 +19,7 @@ nav_order: 1
 
 ## Workflow
 
-{: .highlight }
-> Todo: text explanation and diagrams
+
 <!-- TODO: workflow diagram-->
 
 ## Use Cases
@@ -77,8 +76,8 @@ Short | Long            | Description
 
 ## Output
 
-{: .highlight }
-> Todo: text explanation and screenshots
+Report
+<!-- Report screenshots -->
 
 ## Log
 
@@ -100,9 +99,7 @@ The tool has a benchmark module to profile the host machine. It will go through 
 ./run.sh --interactive
 
 ```
-{: .highlight }
-> Todo: explain the interface with screenshots
-<!-- TODO: output explanation-->
+<!-- TODO: output screenshot-->
 
 <!-- ## Build the image locally
 

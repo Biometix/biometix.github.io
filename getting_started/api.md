@@ -4,6 +4,7 @@ title: BQAT API
 parent: Getting Started
 nav_order: 2
 ---
+
 # BQAT API
 
 ---
@@ -28,12 +29,6 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-api/main/compose.yaml){: .btn }
 
-### Pull the Docker Image from Registry
-
-``` sh
-# Pull the image
-docker pull ghcr.io/biometix/bqat-api:latest
-```
 
 <a name="usage">
 ## Usage
@@ -61,5 +56,5 @@ The documentation of the API endpoints lives in:
 
 > [MORE](https://biometix.github.io/solutions/api.html) about endpoints.
 
-## Detailed Info
+## More Details
 + [API Solution](https://biometix.github.io/solutions/api.html)

@@ -15,7 +15,6 @@ __Prerequisites__:
 ## Quick Start
 
 <!-- TODO: explanation-->
-> more explanation based on scenarios
 
 ### Simply use with UI
 + [Web GUI](https://biometix.github.io/getting_started/gui.html)
@@ -24,7 +23,7 @@ __Prerequisites__:
     + [Output](https://biometix.github.io/getting_started/gui.html#output)
 
 
-### Locally running in terminal
+### Running locally in terminal
 + [Command Line Tool](https://biometix.github.io/getting_started/cli.html)
     + [Set Up](https://biometix.github.io/getting_started/cli.html#setup)
     + [Usage](https://biometix.github.io/getting_started/cli.html#usage)

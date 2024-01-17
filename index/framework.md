@@ -57,8 +57,6 @@ graph LR
     cli{Command Line} --> log(Log)
 ```
 
-{: .highlight }
-> Todo: explanation
 <!-- TODO: explanation-->
 
 ***
@@ -76,8 +74,7 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 
-{: .highlight }
-> Todo: explanation
+
 <!-- TODO: explanation-->
 
 ***
@@ -91,8 +88,7 @@ graph LR
     api{Endpoints} --> output(JSON Response)
 ```
 
-{: .highlight }
-> Todo: explanation
+
 <!-- TODO: explanation-->
 
 ***
@@ -110,6 +106,5 @@ graph LR
     db[(Database)] --> outlier(Outlier Report)
 ```
 
-{: .highlight }
-> Todo: explanation
+
 <!-- TODO: explanation-->

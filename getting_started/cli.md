@@ -19,7 +19,6 @@ nav_order: 1
 
 ---
 
-
 <a name="setup">
 ## Setup
 
@@ -36,6 +35,7 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 
 + Download the run script into your working directory.
 + Create a folder named `data` under your working directory and put your input images in this folder.
++ Create a folder named `input` under `data` folder just created, and put your iris images in this folder.
 + Run the command provided (You might need to give it execution permission).
 
 
@@ -71,5 +71,5 @@ For powershell (Winodws, Linux):
 The default output location is: `data/output/`.
 
 
-## Detailed Info
+## More Details
 + [CLI Solution](https://biometix.github.io/solutions/cli.html)

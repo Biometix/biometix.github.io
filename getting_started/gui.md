@@ -49,5 +49,5 @@ Find the page at:
 
 * `localhost:7860`
 
-## Detailed Info
+## More Details
 + [GUI Solution](https://biometix.github.io/solutions/gui.html)

@@ -17,8 +17,6 @@ nav_order: 3
 ---
 ## Workflow
 
-{: .highlight }
-> Todo: text explanation and diagrams
 <!-- TODO: workflow diagram-->
 
 ## Endpoints
@@ -54,6 +52,4 @@ nav_order: 3
 
 ## Output
 
-{: .highlight }
-> Todo: report explanation and screenshots
-<!-- TODO: report explanation-->
+<!-- TODO: report screenshots-->

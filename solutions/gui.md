@@ -18,8 +18,6 @@ nav_order: 4
 
 ## Workflow
 
-{: .highlight }
-> Todo: text explanation and diagrams
 <!-- TODO: workflow diagram-->
 
 ## Web GUI
@@ -28,6 +26,4 @@ nav_order: 4
 
 ## Output
 
-{: .highlight }
-> Todo: report explanation and screenshots
-<!-- TODO: report explanation-->
+<!-- TODO: report screenshots-->

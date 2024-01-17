@@ -17,8 +17,6 @@ nav_order: 2
 ---
 ## Workflow
 
-{: .highlight }
-> Todo: text explanation and diagrams
 <!-- TODO: workflow diagram-->
 
 ## Endpoints
@@ -77,6 +75,5 @@ The codebase in this repo did not include proper configuration for production en
 
 ## Output
 
-{: .highlight }
-> Todo: report explanation and screenshots
-<!-- TODO: report explanation-->
+Report
+<!-- TODO: report screen-->

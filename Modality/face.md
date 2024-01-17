@@ -25,15 +25,8 @@ The face image assessment module provides metrics includes head pose, smile dete
 
 ## Input
 
-{: .highlight }
-> Todo: modify the description
 <!-- TODO: modify the description-->
-
-For fingerprints the tool works with image formats WSQ and PNG. For both of these formats the image will be run directly through NFIQ2. Image formats excluding WSQ and PNG are first converted into a compatible format before being run through NFIQ2.
-
-_Any biometric sample which was had preprocessing or conversion applied to it during the quality assessment process will be noted within the output log._
-
-NFIQ2 expects images to have a resolution of at least 500 PPI. The tool will force NFIQ2 to run on images of lower resolution but the result may be inaccurate.
+Create a folder named data under your working directory and put your face images in this folder.
 
 ## Output
 
@@ -73,6 +66,4 @@ __Face__:
 
 ***
 
-{: .highlight }
-> Todo: add refered source file
 <!-- TODO: add references-->
