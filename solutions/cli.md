@@ -20,17 +20,32 @@ nav_order: 1
 ## Workflow
 
 
-``` {mermaid}
-%%| label: fig-1
-%%| fig-cap: BQAT CLI
-%%| fig-align: center
-graph TD
+``` mermaid
+
+---
+title: BQAT CLI
+format: html 
+keep-md: true
+---
+
+:::{.cell layout-align="center"}
+
+:::{.cell-output-display}
+
+:::{}
+
+:::{}
+
+<pre class="mermaid mermaid-js">graph TD
     download([Download the script]) --> data(Creat data/path to your data/ folder)
     data(Creat data/path to your data/ folder) --> run((Run the command))
     run((Run the command)) --> output[[Get your output]]
     output[[Get your output]] --> csv[Raw CSV Data]
     output[[Get your output]] --> report[Report html]
     output[[Get your output]] --> log[Log file]
+</pre>
+:::
+
 
 ```
 
