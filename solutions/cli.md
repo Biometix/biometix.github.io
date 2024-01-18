@@ -23,7 +23,7 @@ nav_order: 1
 ``` mermaid
 
 ---
-title: BQAT CLI
+title:   BQAT CLI
 ---
 
 graph TD

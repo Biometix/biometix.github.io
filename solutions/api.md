@@ -21,7 +21,7 @@ nav_order: 2
 ``` mermaid
 
 ---
-title:   BQAT API
+title:     BQAT API
 ---
 
 graph TD

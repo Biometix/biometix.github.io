@@ -19,8 +19,9 @@ nav_order: 4
 ## Workflow
 
 ``` mermaid
+
 ---
-title:BQAT GUI
+title: BQAT GUI
 ---
 
 graph TD
