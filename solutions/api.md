@@ -27,9 +27,9 @@ graph TD
     data(Creat data/path to your data/ folder) --> run((Run the docker))
     run((Run the docker)) --> endpoints{Call the endpoints}
     endpoints{Call the endpoints} --> output[[Get your output]]
-    output[[Get your output]] --> json{{Raw JSON Data}}
-    output[[Get your output]] --> report{{Report html}}
-    output[[Get your output]] --> log{{Log file}}
+    output[[Get your output]] --> json[Raw JSON Data]
+    output[[Get your output]] --> report[Report html]
+    output[[Get your output]] --> log[Log file]
 
 ```
 

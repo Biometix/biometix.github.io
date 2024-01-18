@@ -28,9 +28,9 @@ graph TD
     data(Creat data/path to your data/ folder) --> run((Run the docker))
     run((Run the docker)) --> web{Visit localhost:7860}
     web{Visit localhost:7860} --> output[[Get yout output]]
-    output[[Get yout output]] --> csv{{Raw CSV Data}}
-    output[[Get yout output]] --> report{{Quality Report html}}
-    output[[Get yout output]] --> outlier{{Outlier Report html}}
+    output[[Get yout output]] --> csv[Raw CSV Data]
+    output[[Get yout output]] --> report[Quality Report html]
+    output[[Get yout output]] --> outlier[Outlier Report html]
 
 ```
 

@@ -19,6 +19,9 @@ nav_order: 1
 
 ## Workflow
 
+
+<p align="center">
+
 ``` mermaid
 ---
 title: BQAT CLI
@@ -27,11 +30,13 @@ graph TD
     download([Download the script]) --> data(Creat data/path to your data/ folder)
     data(Creat data/path to your data/ folder) --> run((Run the command))
     run((Run the command)) --> output[[Get your output]]
-    output[[Get your output]] --> csv{{Raw CSV Data}}
-    output[[Get your output]] --> report{{Report html}}
-    output[[Get your output]] --> log{{Log file}}
+    output[[Get your output]] --> csv[Raw CSV Data]
+    output[[Get your output]] --> report[Report html]
+    output[[Get your output]] --> log[Log file]
 
 ```
+</p>
+
 
 <!-- TODO: workflow diagram-->
 
