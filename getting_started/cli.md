@@ -35,7 +35,6 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 
 + Download the run script into your working directory.
 + Create a folder named `data` under your working directory and put your input images in this folder.
-+ Create a folder named `input` under `data` folder just created, and put your iris images in this folder.
 + Run the command provided (You might need to give it execution permission).
 
 
@@ -43,10 +42,10 @@ For bash (Linux, macOS, Windows):
 
 ``` sh
 # Process samples in /input under /data with iris mode
-./run.sh --input data/input/ --mode iris
+./run.sh --input data/path to your iris folder/ --mode iris
 
 # Process all samples in /data with face mode
-./run.sh --input data --mode face
+./run.sh --input data/path to your face folder/ --mode face
 ```
 
 > Note: You may need to modify the path format of mounted volumns in the `run.sh` for specific shell (e.g. Windows, or you can use the powershell script).
@@ -55,10 +54,10 @@ For powershell (Winodws, Linux):
 
 ``` sh
 # Process samples in /input under /data with iris mode
-.\run.ps1 --input data/input/ --mode iris
+.\run.ps1 --input data/path to your iris folder/ --mode iris
 
 # Process all samples in /data with face mode
-.\run.ps1 --input data --mode face
+.\run.ps1 --input data/path to your face folder/ --mode face
 ```
 
 > Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.

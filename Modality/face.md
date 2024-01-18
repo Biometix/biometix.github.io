@@ -25,8 +25,7 @@ The face image assessment module provides metrics includes head pose, smile dete
 
 ## Input
 
-<!-- TODO: modify the description-->
-Create a folder named data under your working directory and put your face images in this folder.
+Create a folder named `data` under your working directory and put your face images in this folder.
 
 ## Output
 

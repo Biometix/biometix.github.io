@@ -34,7 +34,7 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 ## Usage
 
 + Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-api/main/compose.yaml) into your working directory.
-+ Create a `data/` folder within your working directory and put your input images in this folder.
++ Create a `data` folder within your working directory and put your input images in this folder.
 + Start the BQAT API service:
 
 ``` sh

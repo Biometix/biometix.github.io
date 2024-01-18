@@ -26,8 +26,7 @@ The iris sample assessment module provides various quality attributes, features,
 
 ## Input
 
-Create a folder named data and a subfolder input under your working directory, and put your iris images in data/input.
-<!-- TODO: modify the description-->
+Create a folder named `data` under your working directory, and put your iris images in this folder .
 
 
 ## Output
