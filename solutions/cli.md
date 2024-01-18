@@ -20,11 +20,10 @@ nav_order: 1
 ## Workflow
 
 
-``` mermaid
+``` {mermaid}
+%%| label: fig-1
+%%| fig-cap: BQAT CLI
 %%| fig-align: center
----
-title: BQAT CLI
----
 graph TD
     download([Download the script]) --> data(Creat data/path to your data/ folder)
     data(Creat data/path to your data/ folder) --> run((Run the command))
