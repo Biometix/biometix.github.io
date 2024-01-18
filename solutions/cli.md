@@ -21,7 +21,7 @@ nav_order: 1
 
 
 ``` mermaid
-
+%%| fig-align: center
 ---
 title: BQAT CLI
 ---
