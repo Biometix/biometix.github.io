@@ -17,12 +17,11 @@ nav_order: 2
 ---
 ## Workflow
 
+---
+BQAT API
 
 ``` mermaid
 
----
-title:     BQAT API
----
 
 graph TD
     download([Download the docker image]) --> data(Creat data/path to your data/ folder)

@@ -18,11 +18,10 @@ nav_order: 4
 
 ## Workflow
 
-``` mermaid
+---
+BQAT GUI
 
----
-title: BQAT GUI
----
+``` mermaid
 
 graph TD
     download([Download the docker image]) --> data(Creat data/path to your data/ folder)
@@ -41,4 +40,5 @@ graph TD
 
 ## Output
 
-<!-- TODO: report screenshots-->
+Ouput Sample:
+![Screenshot](../assets/images/GUI-output.png)

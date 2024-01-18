@@ -19,12 +19,10 @@ nav_order: 1
 
 ## Workflow
 
+---
+BQAT CLI
 
 ``` mermaid
-
----
-title:   BQAT CLI
----
 
 graph TD
     download([Download the script]) --> data(Creat data/path to your data/ folder)
