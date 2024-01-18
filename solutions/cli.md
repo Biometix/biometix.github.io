@@ -20,9 +20,8 @@ nav_order: 1
 ## Workflow
 
 
-<p align="center">
-
 ``` mermaid
+
 ---
 title: BQAT CLI
 ---
@@ -35,7 +34,7 @@ graph TD
     output[[Get your output]] --> log[Log file]
 
 ```
-</p>
+
 
 
 <!-- TODO: workflow diagram-->
