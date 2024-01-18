@@ -18,6 +18,20 @@ nav_order: 2
 ## Workflow
 
 <!-- TODO: workflow diagram-->
+``` mermaid
+---
+title: BQAT API
+---
+graph TD
+    download([Download the docker image]) --> data(Creat data/path to your data/ folder)
+    data(Creat data/path to your data/ folder) --> run((Run the docker))
+    run((Run the docker)) --> endpoints{Call the endpoints}
+    endpoints{Call the endpoints} --> output[[Get your output]]
+    output[[Get your output]] --> json{{Raw JSON Data}}
+    output[[Get your output]] --> report{{Report html}}
+    output[[Get your output]] --> log{{Log file}}
+
+```
 
 ## Endpoints
 {: .no_toc }
