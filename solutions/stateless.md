@@ -28,8 +28,6 @@ graph TD
     run((Run the docker)) --> endpoints{Call the endpoints}
     endpoints{Call the endpoints} --> output[[Get your output]]
     output[[Get your output]] --> json[Raw JSON Data]
-
-
 ```
 
 ## Endpoints

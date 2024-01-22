@@ -90,5 +90,9 @@ The codebase in this repo did not include proper configuration for production en
 
 ## Output
 
-Report
-<!-- TODO: report screen-->
+Ouput Sample:
+![Screenshot](../assets/images/face-overview.png)
+![Screenshot](../assets/images/face-ipd.png)
+![Screenshot](../assets/images/face-eyeclosed.png)
+![Screenshot](../assets/images/face-interaction.png)
+![Screenshot](../assets/images/face-missingvalue.png)

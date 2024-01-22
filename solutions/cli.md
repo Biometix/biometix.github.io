@@ -91,8 +91,11 @@ Short | Long            | Description
 
 ## Output
 
-Report
-<!-- Report screenshots -->
+Ouput Sample:
+![Screenshot](../assets/images/cli-terminal.png)
+![Screenshot](../assets/images/iris-overview.png)
+![Screenshot](../assets/images/iris-quality.png)
+![Screenshot](../assets/images/iris-interaction.png)
 
 ## Log
 
