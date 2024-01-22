@@ -63,4 +63,6 @@ graph TD
 
 ## Output
 
+Ouput Sample:
+![Screenshot](../assets/images/statelessapi.png)
 <!-- TODO: report screenshots-->
