@@ -46,6 +46,8 @@ Follow these steps to obtain results using the Web GUI interface:
 If you encounter permission issues, try the following:
 
 - Prefix the command with `sudo` to run it with elevated privileges. For example:
-  ```bash
+
+  ```sh
   sudo your_bqat_command_here
+  ```
 
