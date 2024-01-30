@@ -40,19 +40,29 @@ graph TD
 ## Use Cases
 
 ``` sh
-# Run samples in /input with iris mode
+# Scenario 1: Analyzing Iris Images
+# If all your iris images are neatly organized under the 'data/input' folder,
+# you can run the script in iris mode with the following command:
 ./run.sh --input data/input/ --mode iris
 
-# Search the file with name pattern in the input folder
+# Scenario 2: Searching and Analyzing Fingerprint Images
+# Suppose your fingerprint files follow a naming convention containing the text 'finger',
+# such as finger_1.jpg or X_finger.png, you can seamlessly locate and analyze them using:
 ./run.sh --input data/input/ --mode iris --filename "*FINGER*"
 
-# Search the file with specific format in the input folder
+# Scenario 3: Searching for Specific File Formats
+# If your input folder contains various image files and you want to focus on specific formats,
+# you can effortlessly identifies and processes the files with this command:
 ./run.sh --input data/input/ --mode iris --search "jp2 pgm bmp"
 
-# Convert the files with specific formats before scanning
+# Scenario 4: Pre-processing Files Before Fingerprint Scanning
+# Before initiating the fingerprint scanning process, you may need to convert certain files to target format like png.
+# Use the following command to convert files with formats like jp2 and jpeg before scanning:
 ./run.sh --input data/input/ --mode fingerprint --convert "jp2 jpeg"
 
-# Specify the file format to convert to
+# Scenario 5: Specifying the Target File Format for Conversion
+# If you have specific requirements for the output file format after conversion during fingerprint scanning,
+# you can use the following command to specify the target format, for example, wsq:
 ./run.sh --input data/input/ --mode fingerprint --target wsq
 
 # Run samples in /input with face mode, limit to 100k scan
@@ -96,6 +106,10 @@ Ouput Sample:
 ![Screenshot](../assets/images/iris-overview.png)
 ![Screenshot](../assets/images/iris-quality.png)
 ![Screenshot](../assets/images/iris-interaction.png)
+
+Outlier detect Sample:
+![Screenshot](../assets/images/outlier-detect.png)
+![Screenshot](../assets/images/outlier-table.png)
 
 ## Log
 
