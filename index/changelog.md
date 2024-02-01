@@ -44,6 +44,10 @@ permalink: /changelog/
 
 + Update for refactor of image building configuration.
 
+### 1.3.3
+
++ Lower input conversion threshold to improve engine robustness. 
+
 ## BQAT-API
 
 ### 1.1.0
