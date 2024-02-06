@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fingerprint Modal
+title: Fingerprint
 parent: Modality
 nav_order: 1
 

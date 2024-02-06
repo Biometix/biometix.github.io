@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Face Modal
+title: Face
 parent: Modality
 nav_order: 2
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Speech modal
+title: Speech
 parent: Modality
 nav_order: 4
 

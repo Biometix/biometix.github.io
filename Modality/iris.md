@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Iris modal
+title: Iris
 parent: Modality
 nav_order: 3
 
