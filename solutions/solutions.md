@@ -12,30 +12,29 @@ The BQAT biometric analysis suite offers comprehensive tools for assessing the q
 The BQAT Web-based Graphical User Interface (GUI) provides an intuitive platform for users to easily upload and analyze biometric samples. It offers a user-friendly way to interact with analysis modules, providing immediate visual feedback and results.
 
 ### Features:
-Real-time quality assessments
-Comprehensive metrics for each biometric modality
-Outlier identification with visual cues
+* Real-time quality assessments
+* Comprehensive metrics for each biometric modality
+* Outlier identification with visual cues
 
 ## Command Line Tool
 For users preferring a scriptable interface, our Command Line Interface (CLI) tool offers full access to all functionalities. It is ideal for integrating biometric analysis into automated workflows or for users who prefer terminal-based operations.
 
 ### Features:
-Full access to fingerprint, face, iris, and speech analysis modules
-Batch processing capabilities
-Simple integration into existing scripts or workflows
+* Full access to fingerprint, face, iris, and speech analysis modules
+* Batch processing capabilities
+* Simple integration into existing scripts or workflows
 
 ## Integrated into Existing Projects
 Our solutions can be seamlessly integrated into existing projects through our RESTful API, offering a stateless interface for easy incorporation into web services, applications, and other systems.
 
 #### RESTful API Features:
-
-Easy integration with existing systems
-Stateless operations ensuring scalability and performance
-Support for all analysis modules via HTTP requests
+* Easy integration with existing systems
+* Stateless operations ensuring scalability and performance
+* Support for all analysis modules via HTTP requests
 
 #### Stateless API:
-Designed for high-volume, scalable applications
-Ensures consistent performance without server-side session management
+* Designed for high-volume, scalable applications
+* Ensures consistent performance without server-side session management
 
 ## Requirements
 
