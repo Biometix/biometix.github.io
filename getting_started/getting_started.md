@@ -6,7 +6,7 @@ nav_order: 2
 has_toc: false
 ---
 
-## Environment
+## Environments
 
 __Prerequisites__:
 
