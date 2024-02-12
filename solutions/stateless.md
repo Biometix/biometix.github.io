@@ -23,9 +23,8 @@ BQAT Stateless API
 ``` mermaid
 
 graph TD
-    download([Download the docker image]) --> data(Creat data/path to your data/ folder)
-    data(Creat data/path to your data/ folder) --> run((Run the docker))
-    run((Run the docker)) --> endpoints{Call the endpoints}
+    download([Download the docker image]) --> run((Run the docker container))
+    run((Run the docker container)) --> endpoints{Call the endpoints}
     endpoints{Call the endpoints} --> output[[Get your output]]
     output[[Get your output]] --> json[Raw JSON Data]
 ```
