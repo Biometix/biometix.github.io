@@ -22,9 +22,9 @@ nav_order: 1
 <a name="setup">
 ## Setup
 
-This tool is designed to be run as Docker container. You can simply pull the Docker image and start it with the script provided.
+This tool is designed to be run as Docker container via command line interface (terminal). For ease of use, convenience script is provided to help you.
 
-### Get run script
+### Get the script
 
 > [Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
 
@@ -33,42 +33,48 @@ This tool is designed to be run as Docker container. You can simply pull the Doc
 <a name="usage">
 ## Usage
 
-+ Download the run script into your working directory.
-+ Create a folder named `data` under your working directory and put your input images in this folder.
-+ Run the command provided (You might need to give it execution permission).
++ Download the script above into your working directory.
++ Create a folder named `data` under your working directory and put your input files in this folder.
 
+After you finish the aforementioned steps, you should have a folder like this:
 
-For bash (Linux, macOS, Windows):
+![Screenshot](../assets/images/working-directory.png)
 
-``` sh
-# Process samples in /input under /data with iris mode
-./run.sh --input data/path to your iris folder/ --mode iris
++ Open your CLI and navigate to this directory.
++ Enter the command below to run BQAT.
 
-# Process all samples in /data with face mode
-./run.sh --input data/path to your face folder/ --mode face
-```
-
-> Note: You may need to modify the path format of mounted volumns in the `run.sh` for specific shell (e.g. Windows, or you can use the powershell script).
-
-For powershell (Winodws, Linux):
+For Bash (Linux, macOS, Windows):
 
 ``` sh
-# Process samples in /input under /data with iris mode
-.\run.ps1 --input data/path to your iris folder/ --mode iris
+# Grant execution permission to the script (only for Linux shell script)
+sudo chmod +x *.sh
 
-# Process all samples in /data with face mode
-.\run.ps1 --input data/path to your face folder/ --mode face
+# For example:
+# Process all face images in data/ folder
+./run.sh --input data/ --mode face
+
+# Process iris images in data/iris/ folder
+./run.sh --input data/iris/ --mode iris
 ```
 
-> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.
-> [More](https://biometix.github.io/solutions/cli.html) about optional flags.
+> Note: You may need to modify the path format of mounted volumns in the `run.sh` for specific shell (e.g. under Windows. Or you can use the powershell script as follows).
 
+For PowerShell (Winodws, Linux):
+
+``` sh
+# Process all face images in data/ folder
+.\run.ps1 --input data/ --mode face
+
+# Process iris images in data/iris/ folder
+.\run.ps1 --input data/iris/ --mode iris
+```
 
 <a name="output">
 ## Output
 
-The default output location is: `data/output/`.
+The outputs will be saved at: `data/output/`.
 
+## Further info about the command and other option flags
++ [BQAT command line solution](https://biometix.github.io/solutions/cli.html)
 
-## More Details
-+ [CLI Solution](https://biometix.github.io/solutions/cli.html)
+> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.
