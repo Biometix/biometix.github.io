@@ -28,17 +28,6 @@ This project is run as a server which provides BQAT functionalities as RESTful A
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-stateless/main/compose.yaml){: .btn }
 
-
-<!-- ### _Or_ Build the Image Locally
-
-``` sh
-# Clone the repo
-git clone https://github.com/Biometix/bqat-stateless.git
-
-# Build the image
-docker compose build
-``` -->
-
 <a name="usage">
 ## Usage
 
@@ -52,6 +41,7 @@ docker compose up -d
 # Stop the service
 docker compose down
 ```
+
 <a name="api">
 ## API
 
@@ -60,5 +50,5 @@ The documentation of the API endpoints lives in:
 * `localhost:8848/docs`
 
 
-## More Details
-+ [Stateless API Solution](https://biometix.github.io/solutions/stateless.html)
+## Further Details
++ [Stateless API Playbook](https://biometix.github.io/playbook/stateless.html)

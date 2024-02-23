@@ -54,7 +54,5 @@ The documentation of the API endpoints lives in:
 
 * `localhost:8848/docs`
 
-> [MORE](https://biometix.github.io/solutions/api.html) about endpoints.
-
-## More Details
-+ [API Solution](https://biometix.github.io/solutions/api.html)
+## Further Details
++ [API Playbook](https://biometix.github.io/playbook/api.html)

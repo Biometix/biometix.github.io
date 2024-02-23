@@ -42,6 +42,7 @@ docker compose up -d
 # Stop the services (ctrl + C)
 docker compose down
 ```
+
 <a name="output">
 ## Output
 
@@ -49,5 +50,5 @@ Find the page at:
 
 * `localhost:7860`
 
-## More Details
-+ [GUI Solution](https://biometix.github.io/solutions/gui.html)
+## Further Details
++ [Web GUI Playbook](https://biometix.github.io/playbook/gui.html)

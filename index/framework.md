@@ -7,7 +7,7 @@ permalink: /framework/
 
 # BQAT Framework
 
- BQAT (Biometric Quality Assessment Tool) consist of a [core](https://github.com/Biometix/bqat-core) algorthm component and a wapper user interface which can be a [command line UI](https://github.com/Biometix/bqat-cli), [graphic UI](https://github.com/Biometix/bqat-gui) or [web API](https://github.com/Biometix/bqat-api).
+ BQAT (Biometric Quality Assessment Tool) framework consist of the [core](https://github.com/Biometix/bqat-core) algorthm component, a [command line user interface](https://github.com/Biometix/bqat-cli), [convenience web page for the API](https://github.com/Biometix/bqat-gui) and [web API](https://github.com/Biometix/bqat-api).
 
 ``` mermaid
 ---
@@ -26,7 +26,7 @@ graph TD
 
 Core component of BQAT that implemented as a Python package which links vendor algorithms togather, including Face, Fingerprint, Iris modules.
 
-It will process the input image according to the mode selected and spit out the assessment metrics as Python dict.
+It will process the input biometric samples using corresponding modality engine selected and spit out the quality assessment metrics as Python dict.
 
 ``` mermaid
 ---
@@ -57,7 +57,7 @@ graph LR
     cli{Command Line} --> log(Log)
 ```
 
-<!-- TODO: explanation-->
+> BQAT CLI takes a folder in your file system as input and spit out the raw output in CSV along with a brief statistic report.
 
 ***
 
@@ -74,8 +74,7 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 
-
-<!-- TODO: explanation-->
+> BQAT API adds task management and storage on top of basic BQAT functionalities. It handles inputs in bulk as separate tasks, and save the output into backend database which can be accessed via restful API. I was designed to work as a backend container.
 
 ***
 
@@ -88,8 +87,7 @@ graph LR
     api{Endpoints} --> output(JSON Response)
 ```
 
-
-<!-- TODO: explanation-->
+> BQAT Stateless is a simplify version of BQAT API. Getting rid of the task management and storage, it will return the raw output as standard JSON response. It handles biometric samples one by one, either in raw file or base64 string.
 
 ***
 
@@ -106,5 +104,4 @@ graph LR
     db[(Database)] --> outlier(Outlier Report)
 ```
 
-
-<!-- TODO: explanation-->
+> BQAT GUI is a simple frontend for BQAT API as a example project.

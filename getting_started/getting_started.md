@@ -10,40 +10,40 @@ has_toc: false
 
 __Prerequisites__:
 
-+ [Docker runtime](https://www.docker.com/)
++ [Docker container runtime](https://www.docker.com/)
++ Linux, macOS, Windows are all supported
 
 ## Quick Start
 
-<!-- TODO: explanation-->
+### Running locally in your terminal
 
-### Simply use with UI
-+ [Web GUI](https://biometix.github.io/getting_started/gui.html)
-    + [Set Up](https://biometix.github.io/getting_started/gui.html#setup)
-    + [Usage](https://biometix.github.io/getting_started/gui.html#usage)
-    + [Output](https://biometix.github.io/getting_started/gui.html#output)
-
-
-### Running locally in terminal
 + [Command Line Tool](https://biometix.github.io/getting_started/cli.html)
     + [Set Up](https://biometix.github.io/getting_started/cli.html#setup)
     + [Usage](https://biometix.github.io/getting_started/cli.html#usage)
     + [Output](https://biometix.github.io/getting_started/cli.html#output)
 
-
 ### Integrated to existing project
 
-#### Save and analyse in database
+#### Self-contained backend service
+
 + [RESTful API](https://biometix.github.io/getting_started/api.html)
     + [Set Up](https://biometix.github.io/getting_started/api.html#setup)
     + [Usage](https://biometix.github.io/getting_started/api.html#usage)
     + [Api](https://biometix.github.io/getting_started/api.html#api)
 
-#### Stateless visit
+#### Expose the service as simple stateless endpoints
+
 + [Stateless API](https://biometix.github.io/getting_started/stateless.html)
     + [Set Up](https://biometix.github.io/getting_started/stateless.html#setup)
     + [Usage](https://biometix.github.io/getting_started/stateless.html#usage)
     + [Api](https://biometix.github.io/getting_started/stateless.html#api)
 
+### Access the services via Web
+
++ [Web GUI](https://biometix.github.io/getting_started/gui.html)
+    + [Set Up](https://biometix.github.io/getting_started/gui.html#setup)
+    + [Usage](https://biometix.github.io/getting_started/gui.html#usage)
+    + [Output](https://biometix.github.io/getting_started/gui.html#output)
 
 
 
@@ -160,4 +160,4 @@ __Speech__:
 
 ## Report
 
-The BQAT will produce a overview statistical report on the resulting assessment scores.
+In addition to raw output, BQAT will produce a simple statistical report on those assessment metrics.

@@ -15,19 +15,19 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 ## Modality
 
-+ __Fingerprint__
++ [__Fingerprint__](https://biometix.github.io/Modality/fingerprint.html)
 
     The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
 
-+ __Face__
++ [__Face__](https://biometix.github.io/Modality/face.html)
 
     The face image assessment module provides metrics includes head pose, smile detection, inter-eye-distance, closed eyes, etc.
 
-+ __Iris__
++ [__Iris__](https://biometix.github.io/Modality/iris.html)
 
     The iris sample assessment module provides various quality attributes, features, and ISO metrics.
 
-+ __Speech__
++ [__Speech__](https://biometix.github.io/Modality/speech.html)
 
     The speech assessment module provides various quality metrics, including naturalness, coloration, noisiness, etc.
 
@@ -47,9 +47,9 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 ### Key features of the project
 
-+ A variety of different methods of access including via CLI, GUI and as a server
++ A variety of different methods of access including via CLI, web page and or web API
 + Simple installation via docker
-+ Outlier identification
++ Quality report
 + Built by an experienced (>15 years) biometric consulting team
 + An active open source community
 
@@ -57,7 +57,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 + [NFIQ2](https://github.com/usnistgov/NFIQ2)
 + [BIQT](https://github.com/mitre/biqt)
-<!-- + [MediaPipe](https://github.com/google/mediapipe) -->
++ [MediaPipe](https://github.com/google/mediapipe)
 + [NISQA](https://github.com/gabrielmittag/NISQA)
 
 ## Variation of the Toolbox
