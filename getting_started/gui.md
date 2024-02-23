@@ -51,4 +51,5 @@ Find the page at:
 * `localhost:7860`
 
 ## Further Details
+{: .no_toc }
 + [Web GUI Playbook](https://biometix.github.io/playbook/gui.html)

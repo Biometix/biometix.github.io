@@ -63,6 +63,7 @@ Upload a biometric file (base64) for quality assessment:
 ---
 
 > Note: Refer to `localhost:8848/docs` for full list of endpoints.
+
 <!-- 
 
 ## Response

@@ -55,4 +55,5 @@ The documentation of the API endpoints lives in:
 * `localhost:8848/docs`
 
 ## Further Details
+{: .no_toc }
 + [API Playbook](https://biometix.github.io/playbook/api.html)

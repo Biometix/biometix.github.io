@@ -29,14 +29,14 @@ __Prerequisites__:
 + [RESTful API](https://biometix.github.io/getting_started/api.html)
     + [Set Up](https://biometix.github.io/getting_started/api.html#setup)
     + [Usage](https://biometix.github.io/getting_started/api.html#usage)
-    + [Api](https://biometix.github.io/getting_started/api.html#api)
+    + [API](https://biometix.github.io/getting_started/api.html#api)
 
 #### Expose the service as simple stateless endpoints
 
 + [Stateless API](https://biometix.github.io/getting_started/stateless.html)
     + [Set Up](https://biometix.github.io/getting_started/stateless.html#setup)
     + [Usage](https://biometix.github.io/getting_started/stateless.html#usage)
-    + [Api](https://biometix.github.io/getting_started/stateless.html#api)
+    + [API](https://biometix.github.io/getting_started/stateless.html#api)
 
 ### Access the services via Web
 
@@ -160,4 +160,4 @@ __Speech__:
 
 ## Report
 
-In addition to raw output, BQAT will produce a simple statistical report on those assessment metrics.
+In addition to raw output, BQAT will produce a simple statistical [report](https://biometix.github.io/playbook/cli.html#quality-report) on those assessment metrics.

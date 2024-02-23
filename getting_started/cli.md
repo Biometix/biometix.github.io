@@ -75,6 +75,7 @@ For PowerShell (Winodws, Linux):
 The outputs will be saved at: `data/output/`.
 
 ## Further details about the command and other option flags
+{: .no_toc }
 + [Command Line Interface Playbook](https://biometix.github.io/playbook/cli.html)
 
 > Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. Read and write permission is required for this folder. You should be fine as long as you created the folder before spinning up the server. Otherwise you need to change the ownership of the folder.
