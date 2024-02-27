@@ -15,15 +15,17 @@ nav_order: 3
 </details>
 
 ---
-## Set up
+## Setting Up
 
 ``` mermaid
 
 graph TD
   download[Download the docker compose file] --> run(Spin up the container)
-  run --> doc{Visit localhost:8848/docs for documentation}
+  run --> doc{localhost:8848/docs}
 
 ```
+
+---
 
 ## Workflow
 
@@ -34,8 +36,9 @@ graph LR
   B --> C{BQAT Stateless API}
   C --> |Outputs| A
 
-
 ```
+
+---
 
 ## Endpoints
 

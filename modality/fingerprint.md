@@ -23,13 +23,17 @@ The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The qua
 
 ![finger_example](../assets/images/finger_example.png)
 
+***
+
 ## Input
 
 For fingerprints the tool works with image formats WSQ and PNG. For both of these formats the image will be run directly through NFIQ2. Image formats excluding WSQ and PNG are first converted into a compatible format before being run through NFIQ2.
 
-_Any biometric sample which was had preprocessing or conversion applied to it during the quality assessment process will be noted within the output log._
+<!-- _Any biometric sample which was had preprocessing or conversion applied to it during the quality assessment process will be noted within the output log._ -->
 
 NFIQ2 expects images to have a resolution of at least 500 PPI. The tool will force NFIQ2 to run on images of lower resolution but the result may be inaccurate.
+
+***
 
 ## Output
 
@@ -57,4 +61,3 @@ __Fingerprint__:
 
 > [NIST Interagency Report](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8382.pdf)
 
-***

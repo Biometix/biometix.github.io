@@ -25,4 +25,4 @@ The size/resolution of the iris image will be resized if it is higher than 640 b
 + Iris: 20 it/s
 + Fingerprint: 10 it/s
 
-The performance can be affected by other peocesses in the system.
+The performance can be affected by other processes in the system.

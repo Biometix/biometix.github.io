@@ -24,7 +24,8 @@ nav_order: 1
 
 This tool is designed to be run as Docker container via command line interface (terminal). For ease of use, convenience script is provided to help you.
 
-### Get the script
+### Download the script
+{: .no_toc }
 
 > [Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
 

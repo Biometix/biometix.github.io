@@ -23,9 +23,13 @@ The face image assessment module provides metrics includes head pose, smile dete
 
 ![face_example](../assets/images/face_example.png)
 
+***
+
 ## Input
 
 Create a folder named `data` under your working directory and put your face images in this folder.
+
+***
 
 ## Output
 
@@ -62,7 +66,5 @@ __Face__:
 | height           | Height of the input in pixels |
 | tag              | The unique id assigned to this image |
 | log              | Log info from backend if any |
-
-***
 
 <!-- TODO: add references-->

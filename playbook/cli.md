@@ -34,9 +34,13 @@ graph TD
 
 ```
 
+---
+
 > Before execute the command, you working directory should look like this
 
 ![Screenshot](../assets/images/working-directory.png)
+
+---
 
 > You might need to grant execute permission to the script
 

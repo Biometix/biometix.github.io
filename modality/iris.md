@@ -24,10 +24,13 @@ The iris sample assessment module provides various quality attributes, features,
 
 ![iris_example](../assets/images/iris_example.png)
 
+***
+
 ## Input
 
 Create a folder named `data` under your working directory, and put your iris images in this folder .
 
+***
 
 ## Output
 
@@ -62,5 +65,3 @@ __Iris__:
 | log              | Log info from backend if any |
 
 > [Iris Engine](https://github.com/mitre/biqt-iris/blob/master/README.md)
-
-***

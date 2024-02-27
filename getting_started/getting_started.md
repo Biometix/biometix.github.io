@@ -11,7 +11,7 @@ has_toc: false
 __Prerequisites__:
 
 + [Docker container runtime](https://www.docker.com/)
-+ Linux, macOS, Windows are all supported
++ Linux, macOS, Windows are all supported, as long as the container runtime is able to start the docker image
 
 ## Quick Start
 

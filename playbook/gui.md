@@ -16,7 +16,7 @@ nav_order: 4
 
 ---
 
-## Set up
+## Setting Up
 
 ``` mermaid
 
@@ -27,15 +27,15 @@ graph TD
 
 ```
 
+---
+
 ## Workflow
 
 ``` mermaid
 
 graph LR
-    input[Biometrics] --> upload(Uploader)
+    input[Biometrics] --> submit(Submit task)
     subgraph BQAT Web GUI
-    upload --> mod(Select modality)
-    mod --> submit(Submit task)
     submit --> check[Check task status]
     check --> retrieve(Retrieve raw output when finished)
     end
@@ -46,6 +46,8 @@ graph LR
 ## Web GUI
 
 ![Screenshot](../assets/images/screenshot_web.png)
+
+---
 
 ## Output
 

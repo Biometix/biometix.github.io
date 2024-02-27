@@ -17,7 +17,7 @@ nav_order: 2
 ---
 
 
-## Set up
+## Setting Up
 
 ``` mermaid
 
@@ -51,6 +51,8 @@ flowchart LR
   I --> D
 
 ```
+
+---
 
 1. Create a scan task with your input dataset (__POST /scan/__), the dataset could come from local `data/` folder or upload via the HTTP request.
 2. Note down the task id (`tid`) from the response, and check the status of this task (__GET /task/{task id}/__).
@@ -88,7 +90,7 @@ Retrieve all scan results of this dataset (task).
 
 Try to detect outliers of this dataset (task).
 
---- -->
+---
 
 ### GET /scan/{dataset_id}/report
 
@@ -130,10 +132,28 @@ JSON:
 }
 ```
 
+---
+
 Quality Report:
 
 ![Screenshot](../assets/images/face-overview.png)
+
+---
+
 ![Screenshot](../assets/images/face-ipd.png)
+
+---
+
 ![Screenshot](../assets/images/face-eyeclosed.png)
+
+---
+
 ![Screenshot](../assets/images/face-interaction.png)
+
+---
+
 ![Screenshot](../assets/images/face-missingvalue.png)
+
+---
+
+---

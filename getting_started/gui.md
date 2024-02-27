@@ -24,7 +24,8 @@ nav_order: 4
 
 This project is run as a docker stack which provides a simple web GUI for BQAT-API access. You can simply start it with the Docker Compose file provided.
 
-### Get the Docker Compose file
+### Download the Docker Compose file
+{: .no_toc }
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml){: .btn }
 
