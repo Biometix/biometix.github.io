@@ -15,19 +15,19 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 ## Modality
 
-+ [__Fingerprint__](https://biometix.github.io/Modality/fingerprint.html)
++ [__Fingerprint__](https://biometix.github.io/modality/fingerprint.html)
 
     The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
 
-+ [__Face__](https://biometix.github.io/Modality/face.html)
++ [__Face__](https://biometix.github.io/modality/face.html)
 
     The face image assessment module provides metrics includes head pose, smile detection, inter-eye-distance, closed eyes, etc.
 
-+ [__Iris__](https://biometix.github.io/Modality/iris.html)
++ [__Iris__](https://biometix.github.io/modality/iris.html)
 
     The iris sample assessment module provides various quality attributes, features, and ISO metrics.
 
-+ [__Speech__](https://biometix.github.io/Modality/speech.html)
++ [__Speech__](https://biometix.github.io/modality/speech.html)
 
     The speech assessment module provides various quality metrics, including naturalness, coloration, noisiness, etc.
 
