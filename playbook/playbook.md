@@ -6,11 +6,11 @@ nav_order: 4
 has_toc: false
 ---
 
-The BQAT biometric analysis suite offers comprehensive tools for assessing the quality and performance of biometric data across multiple modalities, including fingerprints, facial recognition, iris recognition, and speech analysis. Developed by a team with over 15 years of experience in biometric consulting, our tools are designed for flexibility, ease of use, and integration into existing projects.
+The BQAT biometric analysis suite offers comprehensive tools for assessing the quality and performance of biometric data across multiple modalities, including fingerprints, face, iris, and speech. Developed by our experienced team, our tools are designed for flexibility, ease of use, and integration into existing projects. 
 
 ## Web GUI
 
-The BQAT Web-based Graphical User Interface (GUI) provides an intuitive platform for users to easily upload and analyze biometric samples. It offers a user-friendly way to interact with analysis modules, providing immediate visual feedback and results.
+The BQAT web-based Graphical User Interface (GUI) provides an intuitive platform for users to easily upload and analyse biometric samples. It offers a user-friendly way of interacting with analysis modules by providing immediate visual feedback and results. 
 
 ### Features:
 
@@ -20,7 +20,7 @@ The BQAT Web-based Graphical User Interface (GUI) provides an intuitive platform
 
 ## Command Line Tool
 
-For users preferring a scriptable interface, our Command Line Interface (CLI) tool offers full access to all functionalities. It is ideal for integrating biometric analysis into automated workflows or for users who prefer terminal-based operations.
+For users preferring a scriptable interface, our Command Line Interface (CLI) tool offers full access to all functionalities. It is ideal for integrating biometric analysis into automated workflows or for users who prefer terminal-based operations. 
 
 ### Features:
 
@@ -30,7 +30,7 @@ For users preferring a scriptable interface, our Command Line Interface (CLI) to
 
 ## Integrated into Existing Projects
 
-Our solutions can be seamlessly integrated into existing projects through our RESTful API, offering a stateless interface for easy incorporation into web services, applications, and other systems.
+Our solutions can be seamlessly integrated into existing projects through our RESTful API, offering a stateless interface for easy incorporation into web services, applications, and other systems. 
 
 #### RESTful API Features:
 
@@ -45,7 +45,7 @@ Our solutions can be seamlessly integrated into existing projects through our RE
 
 ## Requirements
 
-Please note that only the following file extensions (formats) are supported:
+Please note that only the following file extensions (formats) are supported: 
 
 * `.jpeg`
 * `.jpg`

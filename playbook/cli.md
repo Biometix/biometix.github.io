@@ -36,13 +36,13 @@ graph TD
 
 ---
 
-> Before execute the command, you working directory should look like this
+> Before executing the command, the working directory should look like this: 
 
 ![Screenshot](../assets/images/working-directory.png)
 
 ---
 
-> You might need to grant execute permission to the script
+> The script might need to be granted execute permission 
 
 ``` sh
 chmod +x *.sh
@@ -52,7 +52,7 @@ chmod +x *.sh
 
 ### Validate Installation or Benchmarking
 
-If you want to validate your setup or want to benchmark your deployment machine:
+If you want to validate your setup or benchmark your deployment machine: 
 
 ``` sh
 ./run.sh --benchmarking # you can specify mode (face, iris, finger) just like other command as well.
@@ -60,8 +60,7 @@ If you want to validate your setup or want to benchmark your deployment machine:
 
 ### Analyze Iris Images
 
-If all your iris images are neatly organized under the 'data/input' folder,
-you can run the tool in iris mode with the following command:
+If all the iris images are organised under the ‘data/input’ folder, the tool can be run in iris mode with the following command: 
 
 ``` sh
 ./run.sh --input data/input/ --mode iris
@@ -69,8 +68,7 @@ you can run the tool in iris mode with the following command:
 
 ### Match Certain Naming Pattern
 
-Suppose your fingerprint files follow a naming convention containing the text 'finger',
-such as finger_1.jpg or X_finger.png, you can seamlessly locate and analyze them using:
+Should the fingerprint files follow a naming convention containing the text ‘finger’, such as finger_1.jpg or X_finger.png, they can be located and analysed using: 
 
 ``` sh
 ./run.sh --input data/input/ --mode iris --filename "*FINGER*"
@@ -78,8 +76,7 @@ such as finger_1.jpg or X_finger.png, you can seamlessly locate and analyze them
 
 ### Match Specific File Formats
 
-If your input folder contains files in various formats and you want to focus on specific formats,
-you can effortlessly identifies and processes the files with this command:
+If the input folder contains files in various formats and you want to focus on specific formats, the files can be identified and processed with this command: 
 
 ``` sh
 ./run.sh --input data/input/ --mode iris --search "jp2 pgm bmp"
@@ -87,18 +84,14 @@ you can effortlessly identifies and processes the files with this command:
 
 ### Pre-processing before Analyzing
 
-Before initiating the fingerprint scanning process, you may need to convert file format.
-Use the following command to convert files of `JP2` and `JPEG` to `PNG` (the default target format):
+Before initiating the fingerprint scanning process, the file format may need to be converted. Use the following command to convert files of `JP2` and `JPEG` to `PNG` (the default target format):
 
 ``` sh
 ./run.sh --input data/input/ --mode fingerprint --convert "jp2 jpeg"
 ```
+If there is specific requirement for the file format, the following command can be used to specify the target format, for example, `WSQ`:
 
-If there is specific requirement for the file format,
-you can use the following command to specify the target format, for example, 
-`WSQ`:
-
-> All the pre-processing are temporary only for following analysis task, it will not modify the input file, and won't be kept after the analysis.
+> All the pre-processing processes are temporary only for the following analysis task, it will not modify the input file, and won’t be kept after the analysis. 
 
 ``` sh
 ./run.sh --input data/input/ --mode fingerprint --target wsq
@@ -106,7 +99,7 @@ you can use the following command to specify the target format, for example,
 
 ### Find Outliers using Filter
 
-When filter is applied, there is going to be 2 extra outputs, a quality report on the outliers filtered, and a page for you to view these samples.
+When a filter is applied, there is going to be 2 extra outputs, a quality report on the outliers filtered and a page for you to view these samples. 
 
 Get output of finderprint samples with `NFIQ2` score larger than 60:
 
@@ -187,7 +180,7 @@ You can click on it to view the origin file (need to be open in the working dire
 
 ## Log
 
-The log file will keep record of information during the analysis process, including errors, warnings, and other metadata of the task.
+The log file will keep a record of information during the analysis process, including errors, warnings, and other metadata of the task. 
 
 ``` json
 {

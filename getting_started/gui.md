@@ -22,7 +22,7 @@ nav_order: 4
 <a name="setup">
 ## Setup
 
-This project is run as a docker stack which provides a simple web GUI for BQAT-API access. You can simply start it with the Docker Compose file provided.
+This project is run as a Docker stack which provides a simple web GUI for BQAT-API access. To begin, simply start it with the Docker compose file provided. 
 
 ### Download the Docker Compose file
 {: .no_toc }

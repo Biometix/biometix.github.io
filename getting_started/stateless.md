@@ -22,7 +22,7 @@ nav_order: 3
 <a name="setup">
 ## Setup
 
-This project is run as a server which provides BQAT functionalities as RESTful API. You can simply pull the Docker image and start it with the Docker Compose file provided. In stead of store the results in database, this stateless server will not store any information locally, the output will be returned directly.
+This project is run as a server which provides BQAT functionalities as RESTful API. To start, simply pull the Docker image and start it with the Docker compose file provided. Instead of storing the results in a database, this stateless server will not store any information locally and the output will be returned directly. 
 
 ### Download the Docker Compose file
 {: .no_toc }

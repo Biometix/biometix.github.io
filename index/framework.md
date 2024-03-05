@@ -7,7 +7,7 @@ permalink: /framework/
 
 # BQAT Framework
 
- BQAT (Biometric Quality Assessment Tool) framework consist of the [core](https://github.com/Biometix/bqat-core) algorthm component, a [command line user interface](https://github.com/Biometix/bqat-cli), [convenience web page for the API](https://github.com/Biometix/bqat-gui) and [web API](https://github.com/Biometix/bqat-api).
+ The BQAT (Biometric Quality Assessment Tool) framework consists of the [core](https://github.com/Biometix/bqat-core) algorithm component, a [command line user interface](https://github.com/Biometix/bqat-cli), [convenience web page for the API](https://github.com/Biometix/bqat-gui) and [web API](https://github.com/Biometix/bqat-api).
 
 ``` mermaid
 ---
@@ -24,9 +24,9 @@ graph TD
 
 ## BQAT Core
 
-Core component of BQAT that implemented as a Python package which links vendor algorithms togather, including Face, Fingerprint, Iris modules.
+The core component of BQAT is implemented as a Python package, which links vendor algorithms together, including face, fingerprint, and iris modules. 
 
-It will process the input biometric samples using corresponding modality engine selected and spit out the quality assessment metrics as Python dict.
+It will process the input biometric samples using the corresponding modality engine selected and will produce the quality assessment metrics as Python dict. 
 
 ``` mermaid
 ---
@@ -42,7 +42,7 @@ graph LR
 
 ## Interfaces
 
-The different interface wrappers take care of the image loadings and then send them to the core component for processing. When the task is done, load the raw outputs and save them in respective formats.
+The different interface wrappers take care of the image loadings and then send them to the core component for processing. When the task is done, load the raw outputs and save them in their respective formats. 
 
 ***
 
@@ -57,7 +57,7 @@ graph LR
     cli{Command Line} --> log(Log)
 ```
 
-> BQAT CLI takes a folder in your file system as input and spit out the raw output in CSV along with a brief statistic report.
+> BQAT CLI takes a folder in your file system as input and produces the raw output in CSV along with a brief statistic report. 
 
 ***
 
@@ -74,7 +74,7 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 
-> BQAT API adds task management and storage on top of basic BQAT functionalities. It handles inputs in bulk as separate tasks, and save the output into backend database which can be accessed via restful API. I was designed to work as a backend container.
+> BQAT API adds task management and storage on top of basic BQAT functionalities. It handles inputs in bulk as separate tasks, and saves the output into a backend database which can be accessed via RESTful API. It was designed to work as a backend container. 
 
 ***
 
@@ -87,7 +87,7 @@ graph LR
     api{Endpoints} --> output(JSON Response)
 ```
 
-> BQAT Stateless is a simplify version of BQAT API. Getting rid of the task management and storage, it will return the raw output as standard JSON response. It handles biometric samples one by one, either in raw file or base64 string.
+> BQAT Stateless is a simplified version of BQAT API. Removing the task management and storage, it will return the raw output as standard JSON responses. It handles biometric samples one by one, either in raw file or base64 string. 
 
 ***
 
@@ -104,4 +104,4 @@ graph LR
     db[(Database)] --> outlier(Outlier Report)
 ```
 
-> BQAT GUI is a simple frontend for BQAT API as a example project.
+> BQAT GUI is a simple frontend version of BQAT API as an example project. 

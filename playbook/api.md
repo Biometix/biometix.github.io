@@ -29,9 +29,9 @@ graph TD
 
 ## Integration
 
-BQAT API is designed to be a self-contained backend service for biometrics analysis. Just call the endpoint from your frontend.
+BQAT API is designed to be a self-contained backend service for biometrics analysis. It could be considered the endpoint from the front-end product. 
 
-> The codebase in this repo did not include proper configuration for production environment, you may want to set up your proxy server, domain, web server workers, etc.
+> The codebase in this repository does not include proper configuration for production environment, so you may want to set up your proxy server, domain, web server workers, etc. 
 
 ## Workflow
 
@@ -55,8 +55,8 @@ flowchart LR
 ---
 
 1. Create a scan task with your input dataset (__POST /scan/__), the dataset could come from local `data/` folder or upload via the HTTP request.
-2. Note down the task id (`tid`) from the response, and check the status of this task (__GET /task/{task id}/__).
-3. Retrieve the results using dataset id (`collection` id from response above) from the server (__GET /scan/{dataset id}/profiles__).
+2. Note down the task ID (`tid`) from the response, and check the status of this task (__GET /task/{task id}/__).
+3. Retrieve the results using dataset ID (`collection` ID from response above) from the server (__GET /scan/{dataset id}/profiles__).
 
 ## Endpoints
 
@@ -70,7 +70,7 @@ Create scan task from images in `data/` folder mounted to the container.
 
 ### POST /scan/uploaded
 
-Create scan task from images uploaded via the endpoint.
+Create scan task from images uploaded via the endpoint. 
 
 ---
 
@@ -82,7 +82,7 @@ Check task status.
 
 ### GET /scan/{dataset_id}/profiles
 
-Retrieve all scan results of this dataset (task).
+Create scan task from images uploaded via the endpoint. 
 
 ---
 

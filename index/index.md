@@ -9,19 +9,19 @@ permalink: /
 
 ## Overview
 
-BQAT is a biometric quality assessment tool for generating and analysing given biometric samples’ quality to international standards as well as to customized metrics. The BQAT tool functions by taking an input directory of biometric data and will produce both the raw quality information as well as an analysis report.
+BQAT is a biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report. 
 
-The quality of biometric samples is a key aspect of the performance and usefulness of a biometric systems. Whilst there are a variety of tools per modality, this project is aimed to provide an open source framework to support all common modalities and allow for expansion as new methods are developed.
+The quality of biometric samples is a key aspect of the performance and efficacy of a biometric system. Whilst there are a variety of tools suitable for each modality, this project is aimed to provide an open-source framework to support all common modalities and allow for expansion as new methods are developed. 
 
 ## Modality
 
 + [__Fingerprint__](https://biometix.github.io/modality/fingerprint.html)
 
-    The analysis of fingerprint engine based on NIST/NFIQ2 quality features. The quality score links image quality of optical and ink 500 PPI fingerprints to operational recognition performance.
+    The engine for the analysis of fingerprints is based on NIST/NFIQ2 quality features. The quality score links the image quality of optical and ink 500 PPI fingerprints to operational recognition performance. 
 
 + [__Face__](https://biometix.github.io/modality/face.html)
 
-    The face image assessment module provides metrics includes head pose, smile detection, inter-eye-distance, closed eyes, etc.
+    The face image assessment module provides metrics including head pose, smile detection, inter-eye distance, closed eyes, etc. 
 
 + [__Iris__](https://biometix.github.io/modality/iris.html)
 
@@ -29,7 +29,7 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 + [__Speech__](https://biometix.github.io/modality/speech.html)
 
-    The speech assessment module provides various quality metrics, including naturalness, coloration, noisiness, etc.
+    The speech assessment module provides various quality metrics, including naturalness, colouration, noisiness, etc. 
 
 <!-- ### Examples of biometric data quality variation
 
@@ -47,11 +47,11 @@ The quality of biometric samples is a key aspect of the performance and usefulne
 
 ### Key features of the project
 
-+ A variety of different methods of access including via CLI, web page and or web API
-+ Simple installation via docker
++ A variety of different methods of access, including via CLI, web page and/or web API 
++ Simple installation via Docker 
 + Quality report
-+ Built by an experienced (>15 years) biometric consulting team
-+ An active open source community
++ Built by an experienced biometric consulting team
++ An active open-source community
 
 ### Supporting libraries include
 
@@ -102,7 +102,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-gui">
 
-    Simple Web GUI for BQAT API. A easy to use user interface to the services.
+    Simple Web GUI for BQAT API. An easy to use user interface to the services.
 
 ---
 

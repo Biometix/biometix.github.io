@@ -7,12 +7,11 @@ permalink: /about/
 
 # About Us
 
-Biometix is globally recognized as an innovative, biometric and data analytics industry leader, providing specialized biometric and IT consulting services through expert and tailored advice across all phases of the biometrics lifecycle.
+Biometix is widely recognised as an innovative biometrics and data analytics industry leader, providing specialised biometric and IT consulting services through expert tailored advice across all phases of the biometrics lifecycle. 
 
-Biometix offers a range of vendor-independent services and customised vendor-independent analysis and quality tools, helping organisations enhance their biometric and identity management solutions.
+Biometix offers a range of vendor-independent services and customised vendor-independent analysis and quality tools, helping organisations enhance their biometric and identity management solutions. 
 
-
-If you got any concern, please feel free to contact us:
+If you have any concern, please feel free to contact us: 
 
 - Email: <info@biometix.com>
 - [Biometix on Linkin](https://www.linkedin.com/company/biometix/)
