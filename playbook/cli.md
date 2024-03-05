@@ -177,7 +177,7 @@ Short | Long            | Description
 
 ### Filter for Outliers
 
-![Screenshot](../assets/images/outlier-detect.png)
+![Screenshot](../assets/images/outlier-detect.gif)
 
 ### Tabulation of Outliers
 
