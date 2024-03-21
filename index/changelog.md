@@ -90,6 +90,12 @@ permalink: /changelog/
 
 + Rebuild with bqat-core v1.3.1.
 
+### 1.4.1
+
++ Build configuration refactor.
+
++ `report` mode added
+
 ## BQAT-Stateless
 
 ### 0.2.0

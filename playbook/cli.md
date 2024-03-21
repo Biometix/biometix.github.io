@@ -110,16 +110,22 @@ Get output of finderprint samples with `NFIQ2` score larger than 60:
 Provide output CSV from previous run and apply filter: 
 
 ``` sh
-./run.sh --mode filter --output data/output.csv --query "NFIQ2<40"
+./run.sh --mode filter --input data/output.csv --query "NFIQ2<40"
 ```
 
 Keep only the specified columns (attributes) in the outlier outputs:
 
 ``` sh
-./run.sh --mode filter --output data/output.csv --attributes NFIQ2 --query "NFIQ2<40"
+./run.sh --mode filter --input data/output.csv --attributes NFIQ2 --query "NFIQ2<40"
 ```
 
 ### Miscellaneous
+
+Generate EDA report from CSV:
+
+``` sh
+./run.sh --input data/results.csv --mode report
+```
 
 Process samples in /input, but limit to first 100k files:
 
@@ -141,7 +147,6 @@ Short | Long            | Description
 `-C`  | `--convert`     | (OPTIONAL)  Specify file types to convert before processing
 `-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
-`-X`  | `--interactive` | (OPTIONAL)  Enter terminal interactive UI
 `-D`  | `--attributes`  | (OPTIONAL)  Specify attributes (columns) to investigate
 `-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
 `-R`  | `--sort`        | (OPTIONAL)  Specify attributes (columns) to sort by
