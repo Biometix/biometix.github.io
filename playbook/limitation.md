@@ -9,13 +9,13 @@ nav_order: 5
 
 Some dependencies of BQAT might not be fully compatible with Macintosh machines with Apple chips (M1, M2, M2 Pro, etc.) yet. It might work in certain cases, so it merits trying.  
 
-### Memory
+### Memory leakage
 
-For a large dataset on Linux, in the runtime, when the memory is exhausted, the kernel will try to reclaim some memory; this could freeze the system if the critical system process was killed. This may not affect the final output because the Docker runtime are still alive. This will not happen on MacOS or Windows. Try to limit the memory or CPU available to Docker runtime or increase physical memory. Modify `--cpus` or `--memory` flags in `run.sh` or in the vanilla Docker command.
+When processing a large dataset on Linux, when the memory is exhausted, the kernel will try to reclaim some memory; this could freeze the system if the critical system process was killed. This may not affect the final output because the Docker runtime are still alive. This won't happen on macOS or Windows. You could try to limit the memory or CPU available to Docker runtime or increase physical memory. Modify `--cpus` or `--memory` flags in `run.sh` or in the vanilla Docker command.
 
 ### Iris Sample Resizing
 
-The size/resolution of the iris image will be resized if it is higher than 640 by 480. 
+The size/resolution of the iris image will be rescaled for processing if out of range. When resized, the quality score might deviate from original input. For certain edge cases, the processing engine may fail to generate output. [BIQT-Iris](https://github.com/mitre/biqt-iris)
 
 ### Throughput
 
@@ -25,4 +25,10 @@ The size/resolution of the iris image will be resized if it is higher than 640 b
 + Iris: 20 it/s
 + Fingerprint: 10 it/s
 
-The performance can be affected by other processes in the system.
+### NISQA (Speech)
+
+This implementation is in alpha stage, progress bar is not functioning properly.
+
+### OFIQ (Face)
+
+This implementation is in alpha stage, progress bar is not functioning properly.

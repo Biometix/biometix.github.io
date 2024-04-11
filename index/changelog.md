@@ -42,17 +42,37 @@ permalink: /changelog/
 
 ### 1.3.2
 
-+ Update for refactor of image building configuration.
++ Update for refactoring image building configuration.
 
 ### 1.3.3
 
-+ Lower input conversion threshold to improve engine robustness. 
++ Lower input resize upper limit to improve iris engine robustness.
+
+### 1.3.4
+
++ Fix fingerprint file format conversion issue.
+
+### 1.3.5
+
++ Fix fingerprint modality metrics naming issue.
+
+### 1.3.6
+
++ Update iris engine resizing range to improve iris engine robustness.
+
+### 1.4.0
+
++ Introduce OFIQ engine for face modality (alpha).
+
+
+---
+
 
 ## BQAT-API
 
 ### 1.1.0
 
-+ Inroduce speech assessment feature.
++ Introduce speech assessment feature.
 
 ### 1.2.0
 
@@ -67,6 +87,10 @@ permalink: /changelog/
 + Refactor build configuration.
 
 + Resolve test script issue.
+
+
+---
+
 
 ## BQAT-CLI
 
@@ -94,7 +118,23 @@ permalink: /changelog/
 
 + Build configuration refactor.
 
-+ `report` mode added
++ `report` mode added.
+
+### 1.5.0
+
++ Add optional flag for alternate face modality engine.
+
++ Support OFIQ engine for face modality (alpha).
+
+### 1.5.1
+
++ Fix broken benchmarking module.
+
++ Add update command in the run script to pull latest container.
+
++ Add report flag to let the user disable reporting feature.
+
+---
 
 ## BQAT-Stateless
 
@@ -129,6 +169,8 @@ permalink: /changelog/
 + Refactor build configuration.
 
 + Resolve temp file conflict issue.
+
+---
 
 ## BQAT-GUI
 

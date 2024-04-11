@@ -66,7 +66,7 @@ If all the iris images are organised under the ‘data/input’ folder, the tool
 ./run.sh --input data/input/ --mode iris
 ```
 
-### Match Certain Naming Pattern
+### Match Filename Pattern
 
 Should the fingerprint files follow a naming convention containing the text ‘finger’, such as finger_1.jpg or X_finger.png, they can be located and analysed using: 
 
@@ -119,12 +119,22 @@ Keep only the specified columns (attributes) in the outlier outputs:
 ./run.sh --mode filter --input data/output.csv --attributes NFIQ2 --query "NFIQ2<40"
 ```
 
-### Miscellaneous
+### Select Alternative Face Analysis Engine
 
-Generate EDA report from CSV:
+Currently, BQAT support 3 analysis engines for face modality
 
 ``` sh
-./run.sh --input data/results.csv --mode report
+./run.sh -M face -I data/face_test -R false -E ofiq
+```
+
+## Miscellaneous
+
+### Disable reporting feature
+
+If you may just want to get the raw output:
+
+``` sh
+./run.sh --input data/input/ --mode iris --report false
 ```
 
 Process samples in /input, but limit to first 100k files:
@@ -133,13 +143,20 @@ Process samples in /input, but limit to first 100k files:
 ./run.sh --input data/input/ --mode face --limit 100000
 ```
 
+Generate EDA report directly from existing CSV:
+
+``` sh
+./run.sh --input data/results.csv --mode report
+```
+
 ## Option Flags
 
 Short | Long            | Description
 ----- | --------------- | -----------
-`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, speech, filter)
+`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, speech, filter, report)
 `-I`  | `--input`       | (REQUIRED)  Specify input directory
 `-O`  | `--output`      | (OPTIONAL)  Specify output csv file or directory
+`-R`  | `--reporting`   | (OPTIONAL)  Generate EDA report on the results
 `-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis
 `-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to scan
 `-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder
@@ -149,7 +166,6 @@ Short | Long            | Description
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
 `-D`  | `--attributes`  | (OPTIONAL)  Specify attributes (columns) to investigate
 `-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
-`-R`  | `--sort`        | (OPTIONAL)  Specify attributes (columns) to sort by
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
 
 
