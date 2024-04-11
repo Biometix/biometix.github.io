@@ -131,11 +131,9 @@ Currently, BQAT support 3 analysis engines for face modality:
 ./run.sh --mode face --input data/input/ --engine ofiq
 ```
 
-## Miscellaneous
+### Miscellaneous
 
-### Disable reporting feature
-
-If you may just want to get the raw output:
+If you just want to get the raw CSV output, you may disable reporting feature:
 
 ``` sh
 ./run.sh --input data/input/ --mode iris --report false
@@ -153,6 +151,12 @@ Generate EDA report directly from existing CSV:
 ./run.sh --input data/results.csv --mode report
 ```
 
+Update BQAT-CLI (pull the latest container):
+
+``` sh
+./run.sh --update
+```
+
 ## Option Flags
 
 Short | Long            | Description
@@ -160,7 +164,8 @@ Short | Long            | Description
 `-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, speech, filter, report)
 `-I`  | `--input`       | (REQUIRED)  Specify input directory
 `-O`  | `--output`      | (OPTIONAL)  Specify output csv file or directory
-`-R`  | `--reporting`   | (OPTIONAL)  Generate EDA report on the results
+`-R`  | `--report`      | (OPTIONAL)  Switch on/off EDA report generation (true, false)
+`-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt)
 `-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis
 `-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to scan
 `-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder
