@@ -121,10 +121,14 @@ Keep only the specified columns (attributes) in the outlier outputs:
 
 ### Select Alternative Face Analysis Engine
 
-Currently, BQAT support 3 analysis engines for face modality
+Currently, BQAT support 3 analysis engines for face modality:
+
++ BQAT by Biometix (default)
++ OFIQ from BSI
++ BIQT from MITRE
 
 ``` sh
-./run.sh -M face -I data/face_test -R false -E ofiq
+./run.sh --mode face --input data/input/ --engine ofiq
 ```
 
 ## Miscellaneous
