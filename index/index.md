@@ -56,6 +56,7 @@ The quality of biometric samples is a key aspect of the performance and efficacy
 ### Supporting libraries include
 
 + [NFIQ2](https://github.com/usnistgov/NFIQ2)
++ [OFIQ](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)
 + [BIQT](https://github.com/mitre/biqt)
 + [MediaPipe](https://github.com/google/mediapipe)
 + [NISQA](https://github.com/gabrielmittag/NISQA)
