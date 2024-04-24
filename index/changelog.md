@@ -18,7 +18,7 @@ permalink: /changelog/
 
 ### 1.1.0
 
-+ Introduce speech assessment feature.
++ Introduce speech assessment feature (alpha).
 
 ### 1.2.2
 
@@ -63,6 +63,10 @@ permalink: /changelog/
 ### 1.4.0
 
 + Introduce OFIQ engine for face modality (alpha).
+
+### 1.4.1
+
++ Fix speech modality logging issue.
 
 
 ---
@@ -133,6 +137,20 @@ permalink: /changelog/
 + Add update command in the run script to pull latest container.
 
 + Add report flag to let the user disable reporting feature.
+
+### 1.6.0
+
++ Fix iris benchmarking sample file conflict issue.
+
++ Support engine flag for face benchmarking.
+
++ Fix speech modality logging issue.
+
++ Update convenience script with dynamic shared memory allocation feature.
+
++ Improve logging readablity.
+
++ Introduce preprocessing mode (image conversion, resizing)
 
 ---
 

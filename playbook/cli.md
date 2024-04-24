@@ -79,7 +79,7 @@ Should the fingerprint files follow a naming convention containing the text ‘f
 If the input folder contains files in various formats and you want to focus on specific formats, the files can be identified and processed with this command: 
 
 ``` sh
-./run.sh --input data/input/ --mode iris --search "jp2 pgm bmp"
+./run.sh --input data/input/ --mode iris --type "jp2,bmp"
 ```
 
 ### Pre-processing before Analyzing
@@ -87,7 +87,7 @@ If the input folder contains files in various formats and you want to focus on s
 Before initiating the fingerprint scanning process, the file format may need to be converted. Use the following command to convert files of `JP2` and `JPEG` to `PNG` (the default target format):
 
 ``` sh
-./run.sh --input data/input/ --mode fingerprint --convert "jp2 jpeg"
+./run.sh --input data/input/ --mode fingerprint --convert "jp2,jpeg"
 ```
 If there is specific requirement for the file format, the following command can be used to specify the target format, for example, `WSQ`:
 
@@ -116,7 +116,7 @@ Provide output CSV from previous run and apply filter:
 Keep only the specified columns (attributes) in the outlier outputs:
 
 ``` sh
-./run.sh --mode filter --input data/output.csv --attributes NFIQ2 --query "NFIQ2<40"
+./run.sh --mode filter --input data/output.csv --attributes "NFIQ2,edge_std" --query "NFIQ2<40"
 ```
 
 ### Select Alternative Face Analysis Engine
@@ -124,11 +124,24 @@ Keep only the specified columns (attributes) in the outlier outputs:
 Currently, BQAT support 3 analysis engines for face modality:
 
 + BQAT by Biometix (default)
-+ OFIQ from BSI
++ OFIQ from BSI (beta)
 + BIQT from MITRE
 
 ``` sh
 ./run.sh --mode face --input data/input/ --engine ofiq
+```
+
+### Preprocessing Mode
+
+You can feed a dataset to BQAT and preprocess the images for later analysis.
+
+The following example shows how you can send the folder `data/input/` in, and:
++ Convert the images to PNG format
++ Convert color mode to RGB
++ Resize the images by percentage (30% in this case)
+
+``` sh
+./run.sh -M preprocess -I data/input/ --configuration png,0.3,rgb
 ```
 
 ### Miscellaneous
@@ -136,7 +149,7 @@ Currently, BQAT support 3 analysis engines for face modality:
 If you just want to get the raw CSV output, you may disable reporting feature:
 
 ``` sh
-./run.sh --input data/input/ --mode iris --report false
+./run.sh --input data/input/ --mode iris --reporting false
 ```
 
 Process samples in /input, but limit to first 100k files:
@@ -161,21 +174,22 @@ Update BQAT-CLI (pull the latest container):
 
 Short | Long            | Description
 ----- | --------------- | -----------
-`-M`  | `--mode`        | (REQUIRED)  Specify analysis mode (fingerprint, face, iris, speech, filter, report)
-`-I`  | `--input`       | (REQUIRED)  Specify input directory
-`-O`  | `--output`      | (OPTIONAL)  Specify output csv file or directory
-`-R`  | `--report`      | (OPTIONAL)  Switch on/off EDA report generation (true, false)
-`-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt)
-`-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis
-`-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to scan
-`-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder
-`-S`  | `--search`      | (OPTIONAL)  Specify file types to search within the input folder
-`-C`  | `--convert`     | (OPTIONAL)  Specify file types to convert before processing
-`-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to
+`-M`  | `--mode`        | (REQUIRED)  Specify BQAT running mode (fingerprint, face, iris, speech, filter, report, preprocessing).
+`-I`  | `--input`       | (REQUIRED)  Specify input directory or CSV file for analysis.
+`-O`  | `--output`      | (OPTIONAL)  Specify output directory.
+`-R`  | `--reporting`   | (OPTIONAL)  Switch on/off EDA report generation (true, false).
+`-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt).
+`-B`  | `--benchmarking`| (OPTIONAL)  Run system benchmarking analysis.
+`-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to process.
+`-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder.
+NA    | `--type`        | (OPTIONAL)  Specify file types to process in the input folder.
+`-C`  | `--convert`     | (OPTIONAL)  Specify file types to convert before processing.
+`-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to.
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
 `-D`  | `--attributes`  | (OPTIONAL)  Specify attributes (columns) to investigate
 `-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
+NA    | `--config`      | (OPTIONAL)  Configure preprocessing task ([target format],[target width],[color mode (grayscale, rgb)]").
 
 
 ## Output Example
