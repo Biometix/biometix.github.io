@@ -68,6 +68,10 @@ permalink: /changelog/
 
 + Fix speech modality logging issue.
 
+### 1.4.2
+
++ Fix reporting filepath label issue.
+
 
 ---
 
@@ -151,6 +155,16 @@ permalink: /changelog/
 + Improve logging readablity.
 
 + Introduce preprocessing mode (image conversion, resizing)
+
+### 1.6.1
+
++ Fix conversion type issue.
+
++ Fix resizing width issue.
+
++ Fix BMP format issue.
+
++ Fix reporting column label issue.
 
 ---
 

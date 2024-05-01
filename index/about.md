@@ -13,7 +13,8 @@ Biometix offers a range of vendor-independent services and customised vendor-ind
 
 If you have any concern, please feel free to contact us: 
 
-- Email: <info@biometix.com>
 - [Biometix on Linkin](https://www.linkedin.com/company/biometix/)
 - [Biometix on Github](https://github.com/Biometix).
-- [Biometix Pty Ltd](https://biometix.com/)
+- [Biometix Pty Ltd](https://www.biometix.com/)
+
+> Email: <info@biometix.com>

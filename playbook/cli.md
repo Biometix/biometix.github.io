@@ -55,7 +55,7 @@ chmod +x *.sh
 If you want to validate your setup or benchmark your deployment machine: 
 
 ``` sh
-./run.sh --benchmarking # you can specify mode (face, iris, finger) just like other command as well.
+./run.sh --benchmarking # you can specify modality (face, iris, finger) just like regular run too.
 ```
 
 ### Analyze Iris Images
@@ -141,8 +141,23 @@ The following example shows how you can send the folder `data/input/` in, and:
 + Resize the images by percentage (30% in this case)
 
 ``` sh
-./run.sh -M preprocess -I data/input/ --configuration png,0.3,rgb
+./run.sh -M preprocess -I data/input/ --config png,0.3,rgb
 ```
+
+And of course you could configured it to do single preprocess at a time.
+
+``` sh
+# convert images to BMP
+./run.sh -M preprocess -I data/input/ --config bmp
+
+# convert images to grayscale
+./run.sh -M preprocess -I data/input/ --config grayscale
+
+# resize images by width (300px in this case, height will be inferred accordingly, aspect ratio maintained)
+./run.sh -M preprocess -I data/input/ --config 300
+```
+
+> In terms of resizing configuration, number smaller than 10 will be treated as percentage/magnification, for instance, 3.7 will be 370%, while 128, which is greater than 10, will be 128 in width.
 
 ### Miscellaneous
 
@@ -186,7 +201,7 @@ NA    | `--type`        | (OPTIONAL)  Specify file types to process in the input
 `-C`  | `--convert`     | (OPTIONAL)  Specify file types to convert before processing.
 `-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to.
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
-`-D`  | `--attributes`  | (OPTIONAL)  Specify attributes (columns) to investigate
+NA    | `--columns`     | (OPTIONAL)  Select columns to investigate
 `-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
 NA    | `--config`      | (OPTIONAL)  Configure preprocessing task ([target format],[target width],[color mode (grayscale, rgb)]").

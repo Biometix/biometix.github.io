@@ -18,7 +18,7 @@ aux_links_new_tab: true
 #   - title: Biometix Pty Ltd
 #     url: https://biometix.com/
 mermaid:
-  version: "9.3.0"
+  version: "10.9.0"
 
 back_to_top: true
 back_to_top_text: "Back to top"
