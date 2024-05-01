@@ -113,10 +113,10 @@ Provide output CSV from previous run and apply filter:
 ./run.sh --mode filter --input data/output.csv --query "NFIQ2<40"
 ```
 
-Keep only the specified columns (attributes) in the outlier outputs:
+Selected columns and apply filter query to them:
 
 ``` sh
-./run.sh --mode filter --input data/output.csv --attributes "NFIQ2,edge_std" --query "NFIQ2<40"
+./run.sh --mode filter --input data/output.csv --columns "NFIQ2,edge_std" --query "NFIQ2<40"
 ```
 
 ### Select Alternative Face Analysis Engine
@@ -164,7 +164,7 @@ And of course you could configured it to do single preprocess at a time.
 If you just want to get the raw CSV output, you may disable reporting feature:
 
 ``` sh
-./run.sh --input data/input/ --mode iris --reporting false
+./run.sh --input data/input/ --mode iris --reporting no
 ```
 
 Process samples in /input, but limit to first 100k files:
@@ -202,7 +202,7 @@ NA    | `--type`        | (OPTIONAL)  Specify file types to process in the input
 `-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to.
 `-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
 NA    | `--columns`     | (OPTIONAL)  Select columns to investigate
-`-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the attributes
+`-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the columns
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
 NA    | `--config`      | (OPTIONAL)  Configure preprocessing task ([target format],[target width],[color mode (grayscale, rgb)]").
 
