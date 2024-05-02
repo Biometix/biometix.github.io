@@ -59,9 +59,7 @@ __Iris__:
 | iso_pupil_boundary_circularity | The circularity of the iris-pupil boundary |
 | iso_sharpness | The degree of focus present in the image |
 | iso_usable_iris_area | The fraction of the iris portion of the image that is not occluded by eyelids, eyelashes, or specular reflections |
-| width            | Width of the input in pixels |
-| height           | Height of the input in pixels |
-| tag              | The unique id assigned to this image |
-| log              | Log info from backend if any |
+| image_width            | Width of the input in pixels |
+| image_height           | Height of the input in pixels |
 
 > [Iris Engine](https://github.com/mitre/biqt-iris/blob/master/README.md)

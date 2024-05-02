@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Playbook
+title: Playbooks
 has_children: true
 nav_order: 4
 has_toc: false

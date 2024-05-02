@@ -19,6 +19,9 @@ nav_order: 1
 
 ---
 
+{: .important }
+> New version of `run.sh` is published, please download the [latest](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh) and replace the old one.
+
 <a name="setup">
 ## Setup
 
@@ -41,16 +44,17 @@ After the aforementioned steps, you should have a folder like this:
 
 ![Screenshot](../assets/images/working-directory.png)
 
+``` sh
+# Grant execution permission to the script (for Linux shell script)
+sudo chmod +x run.sh
+```
+
 + Open your CLI and navigate to this directory.
 + Enter the command below to run BQAT.
 
 For Bash (Linux, macOS, Windows):
 
 ``` sh
-# Grant execution permission to the script (only for Linux shell script)
-sudo chmod +x *.sh
-
-# For example:
 # Process all face images in data/ folder
 ./run.sh --input data/ --mode face
 
@@ -62,12 +66,24 @@ sudo chmod +x *.sh
 
 For PowerShell (Winodws, Linux):
 
-``` sh
+``` ps
 # Process all face images in data/ folder
 .\run.ps1 --input data/ --mode face
 
 # Process iris images in data/iris/ folder
 .\run.ps1 --input data/iris/ --mode iris
+```
+
+Get BQAT-CLI Update if available:
+
+``` sh
+# Linux
+./run.sh --update
+```
+
+``` ps
+# Windows
+.\run.ps1 --update
 ```
 
 <a name="output">

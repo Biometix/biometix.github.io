@@ -47,7 +47,7 @@ __Fingerprint__:
 | Column                          | Description|
 |---------------------------------| -----------|
 | file                            | Filename of the sample, including the directory path |
-| QualityScore (NFIQ2)            | NFIQ2 quality score |
+| NFIQ2            | NFIQ2 quality score |
 | Quantized                       | Input quantized or not |
 | Resampled                       | Input resampled or not |
 | UniformImage                    | Standard deviation of gray levels in image indicates uniformity ([NFIQ2](https://pages.nist.gov/NFIQ2/docs/v2.1.0/namespace_n_f_i_q2_1_1_identifiers_1_1_actionable_quality_feedback.html)) |
@@ -55,10 +55,8 @@ __Fingerprint__:
 | FingerprintImageWithMinutiae    | Number of minutia in image ([NFIQ2](https://pages.nist.gov/NFIQ2/docs/v2.1.0/namespace_n_f_i_q2_1_1_identifiers_1_1_actionable_quality_feedback.html)) |
 | SufficientFingerprintForeground | Number of pixels in the computed foreground ([NFIQ2](https://pages.nist.gov/NFIQ2/docs/v2.1.0/namespace_n_f_i_q2_1_1_identifiers_1_1_actionable_quality_feedback.html)) |
 | EdgeStd                         | Metric to identify malformed images |
-| Width                           | Width of the input in pixels |
-| Height                          | Height of the input in pixels |
-| tag                             | The unique id assigned to this image |
-| log                             | Log info from backend if any |
+| ImageWidth                           | Width of the input in pixels |
+| ImageHeight                          | Height of the input in pixels |
 
 > [NIST Interagency Report](https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8382.pdf)
 

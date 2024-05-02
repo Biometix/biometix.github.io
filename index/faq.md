@@ -8,14 +8,23 @@ permalink: /faq/
 
 # Frequently Asked Questions (FAQ)
 
-## 1. How do I install Docker?
+## How do I specify input folder that has spaces in the name?
+
+For BQAT-CLI, if your input folder name has spaces, you need to add a escape character ("\" in Linux), and enclose the path with quotation marks:
+
+``` sh
+# Example: data/input folder/
+./run.sh -M face -I "data/input\ folder/"
+```
+
+## How do I install Docker?
 
 To install Docker, follow these steps:
 
 - Download [Docker Desktop](https://www.docker.com/) for an easy-to-use graphical interface or [Docker Engine](https://docs.docker.com/engine/install/) for command-line installation.
 - Follow the instructions provided on the official website. Note: You may need to sign up to get full access to Docker Desktop.
 
-## 2. How do I start the Terminal to run scripts or Docker?
+## How do I start the Terminal to run scripts or Docker?
 
 - **For Windows users:**
   - Press `Win + R` to open the Run dialog.
@@ -31,7 +40,7 @@ To install Docker, follow these steps:
     - Use a shortcut specific to your desktop environment.
     - Search for "Terminal" in the application menu.
 
-## 3. How can I retrieve results when using the Web GUI interface?
+## How can I retrieve results when using the Web GUI interface?
 
 Follow these steps to obtain results using the Web GUI interface:
 
@@ -41,7 +50,7 @@ Follow these steps to obtain results using the Web GUI interface:
 4. Check the status of the task by clicking "Get Output." Wait until the task is marked as finished.
 5. Press "Get Output" again, and export the data from the bottom of the page.
 
-## 4. I encountered permission issues when running BQAT in the terminal. What should I do?
+## I encountered permission issues when running BQAT in the terminal. What should I do?
 
 If you encounter permission issues, try the following:
 
@@ -51,3 +60,5 @@ If you encounter permission issues, try the following:
   sudo your_bqat_command_here
   ```
 
+{: .highlight }
+Let us know if you have any question on [GitHub](https://github.com/Biometix)!

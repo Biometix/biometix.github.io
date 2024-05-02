@@ -5,15 +5,40 @@ nav_order: 1
 permalink: /
 ---
 
+![logo_bqat](../assets/images/logo_bqat.png)
+
 # __Biometric Quality Assessment Tool (BQAT)__
+
+{: .highlight }
+Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+
+``` mermaid
+mindmap
+  root((**BQAT**))
+    BQAT-CLI
+      EDA Report
+      ::icon(fa fa-chart-area)
+      CSV
+      ::icon(fa fa-file-csv)
+    BQAT-API
+      Cloud
+      ::icon(fa fa-cloud)
+      Self-Hosted
+      ::icon(fa fa-server)
+    BQAT-GUI
+      Web
+      ::icon(fa fa-file-code)
+      UX
+      ::icon(fa fa-user-friends)
+```
 
 ## Overview
 
-BQAT is a biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report. 
+[BQAT](https://github.com/Biometix) is a open-source biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report.
 
 The quality of biometric samples is a key aspect of the performance and efficacy of a biometric system. Whilst there are a variety of tools suitable for each modality, this project is aimed to provide an open-source framework to support all common modalities and allow for expansion as new methods are developed. 
 
-## Modality
+## Modalities
 
 + [__Fingerprint__](https://biometix.github.io/modality/fingerprint.html)
 
@@ -31,29 +56,16 @@ The quality of biometric samples is a key aspect of the performance and efficacy
 
     The speech assessment module provides various quality metrics, including naturalness, colouration, noisiness, etc. 
 
-<!-- ### Examples of biometric data quality variation
-
-#### _Fingerprint_
-
-![finger_example](../assets/images/finger_example.png)
-
-#### _Iris_
-
-![iris_example](../assets/images/iris_example.png)
-
-#### _Face_
-
-![face_example](../assets/images/face_example.png) -->
-
 ### Key features of the project
 
++ Biometrics quality assessment platform for different modalities and processing engines
 + A variety of different methods of access, including via CLI, web page and/or web API 
 + Simple installation via Docker 
 + Quality report
 + Built by an experienced biometric consulting team
 + An active open-source community
 
-### Supporting libraries include
+### Supporting libraries
 
 + [NFIQ2](https://github.com/usnistgov/NFIQ2)
 + [OFIQ](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)
@@ -105,8 +117,27 @@ BQAT is available in multiple form factors:
 
     Simple Web GUI for BQAT API. An easy to use user interface to the services.
 
+{: .highlight }
+Let us know if you have any question on [GitHub](https://github.com/Biometix)!
+
+## Roadmap
+
+- [x] Face image analysis module
+- [x] Fingerprint image analysis module
+- [x] Iris image analysis module
+- [x] Speech audio file analysis module
+- [x] Result EDA reporting feature
+- [x] Image formating feature as preprocess
+- [x] Image resizing feature as preprocess
+- [x] [OFIQ](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html) processing engine for face modality
+- [ ] Duplicates detection feature for output
+- [ ] Identitity removel feature as preprocess
+- [ ] Document image quality check for face modality
+- [ ] Contact lens detection feature for face modality
+- [ ] Face liveness detection feature for face modality
+- More to come! 🚀
+
 ---
 
 {: .highlight }
-> Please contact us at info@biometix.com if you'd like more information.
-
+Please contact us at info@biometix.com if you'd like more information.
