@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Commmand Line Tool
-parent: Playbook
+parent: Playbooks
 nav_order: 1
 
 ---

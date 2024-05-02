@@ -1,7 +1,7 @@
 ---
 layout: default
 title: RESTful API
-parent: Playbook
+parent: Playbooks
 nav_order: 2
 ---
 

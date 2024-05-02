@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Web GUI
-parent: Playbook
+parent: Playbooks
 nav_order: 4
 ---
 

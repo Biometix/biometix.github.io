@@ -10,10 +10,10 @@ permalink: /faq/
 
 ## How do I specify input folder that has spaces in the name?
 
-For BQAT-CLI, if your input folder name has spaces, you need to add a escape character ("\" in Linux), and enclose the path with quotation marks:
+For BQAT-CLI, if your input folder name has spaces, you need to add a escape character ("\\" in Linux), and enclose the path with quotation marks:
 
 ``` sh
-# Example: data/input folder/
+# For example if the path to the folder is [data/input folder/]:
 ./run.sh -M face -I "data/input\ folder/"
 ```
 
@@ -26,15 +26,15 @@ To install Docker, follow these steps:
 
 ## How do I start the Terminal to run scripts or Docker?
 
-- **For Windows users:**
+**For Windows users:**
   - Press `Win + R` to open the Run dialog.
   - Type `cmd` or `powershell` and press Enter.
 
-- **For Mac users:**
+**For Mac users:**
   - Press `Cmd + Space` to open Spotlight Search.
   - Type `Terminal` and press Enter.
 
-- **For Linux users:**
+**For Linux users:**
   - Depending on the Linux distribution:
     - Press `Ctrl + Alt + T`.
     - Use a shortcut specific to your desktop environment.
@@ -61,4 +61,4 @@ If you encounter permission issues, try the following:
   ```
 
 {: .highlight }
-Let us know if you have any question on [GitHub](https://github.com/Biometix)!
+> Let us know if you have any question on [GitHub](https://github.com/Biometix)!

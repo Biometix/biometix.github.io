@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Face
-parent: Modality
+parent: Modalities
 nav_order: 2
 
 ---
@@ -121,7 +121,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 | no_head_coverings | Probability of no head coverings |
 
 {: .highlight }
-[OFIQ Project](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)
+> [OFIQ Project](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)
 
 ---
 
@@ -179,4 +179,4 @@ __BIQT__:
 | opencv_nose_y | Nose y coordinate in pixels |
 
 {: .note }
-Not all the columns are included in the table above for simplicity, for instance, there are normalized or scalar value of the same metrics.
+> Not all the columns are included in the table above for simplicity, for instance, there are normalized or scalar value of the same metrics.

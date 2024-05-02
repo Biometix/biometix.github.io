@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stateless API
-parent: Playbook
+parent: Playbooks
 nav_order: 3
 ---
 

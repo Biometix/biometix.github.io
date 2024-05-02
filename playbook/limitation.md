@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Limitations
-parent: Playbook
+parent: Playbooks
 nav_order: 5
 ---
 

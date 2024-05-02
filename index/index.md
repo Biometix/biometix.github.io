@@ -5,31 +5,31 @@ nav_order: 1
 permalink: /
 ---
 
-![logo_bqat](../assets/images/logo_bqat.png)
+![logo_bqat](../assets/images/logo-bqat.png)
 
 # __Biometric Quality Assessment Tool (BQAT)__
 
 {: .highlight }
-Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
 
 ``` mermaid
 mindmap
   root((**BQAT**))
     BQAT-CLI
       EDA Report
-      ::icon(fa fa-chart-area)
+      <!-- ::icon(fa fa-chart-area) -->
       CSV
-      ::icon(fa fa-file-csv)
+      <!-- ::icon(fa fa-file-csv) -->
     BQAT-API
       Cloud
-      ::icon(fa fa-cloud)
+      <!-- ::icon(fa fa-cloud) -->
       Self-Hosted
-      ::icon(fa fa-server)
+      <!-- ::icon(fa fa-server) -->
     BQAT-GUI
       Web
-      ::icon(fa fa-file-code)
+      <!-- ::icon(fa fa-file-code) -->
       UX
-      ::icon(fa fa-user-friends)
+      <!-- ::icon(fa fa-user-friends) -->
 ```
 
 ## Overview
@@ -118,7 +118,7 @@ BQAT is available in multiple form factors:
     Simple Web GUI for BQAT API. An easy to use user interface to the services.
 
 {: .highlight }
-Let us know if you have any question on [GitHub](https://github.com/Biometix)!
+> Let us know if you have any question on [GitHub](https://github.com/Biometix)!
 
 ## Roadmap
 
@@ -135,9 +135,10 @@ Let us know if you have any question on [GitHub](https://github.com/Biometix)!
 - [ ] Document image quality check for face modality
 - [ ] Contact lens detection feature for face modality
 - [ ] Face liveness detection feature for face modality
-- More to come! 🚀
+
+More to come! 🚀
 
 ---
 
 {: .highlight }
-Please contact us at info@biometix.com if you'd like more information.
+> Please contact us at info@biometix.com if you'd like more information.

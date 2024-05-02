@@ -30,9 +30,13 @@ This tool is designed to be run as a Docker container via command line interface
 ### Download the script
 {: .no_toc }
 
-> [Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
+#### Linux
 
-> [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
+[Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
+
+#### Windows
+
+[Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
 
 <a name="usage">
 ## Usage

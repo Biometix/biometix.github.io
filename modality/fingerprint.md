@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fingerprint
-parent: Modality
+parent: Modalities
 nav_order: 1
 
 ---

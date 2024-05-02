@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Speech
-parent: Modality
+parent: Modalities
 nav_order: 4
 
 ---
