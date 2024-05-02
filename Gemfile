@@ -32,6 +32,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
 
-gem "just-the-docs", "~> 0.8.1"
+gem "just-the-docs", "~> 0.4.0"
 
 gem "jekyll-github-metadata"
