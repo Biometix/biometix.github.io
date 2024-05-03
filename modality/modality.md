@@ -10,20 +10,16 @@ has_toc: false
 
 + [__Fingerprint__](https://biometix.github.io/modality/fingerprint.html)
 
-{: .highlight }
-> The engine for the analysis of fingerprints is based on NIST/NFIQ2 quality features. The quality score links the image quality of optical and ink 500 PPI fingerprints to operational recognition performance. 
+The engine for the analysis of fingerprints is based on NIST/NFIQ2 quality features. The quality score links the image quality of optical and ink 500 PPI fingerprints to operational recognition performance. 
 
 + [__Face__](https://biometix.github.io/modality/face.html)
 
-{: .highlight }
-> The face image assessment module provides metrics including head pose, smile detection, inter-eye distance, closed eyes, etc. 
+The face image assessment module provides metrics including head pose, smile detection, inter-eye distance, closed eyes, etc. 
 
 + [__Iris__](https://biometix.github.io/modality/iris.html)
 
-{: .highlight }
-> The iris sample assessment module provides various quality attributes, features, and ISO metrics. 
+The iris sample assessment module provides various quality attributes, features, and ISO metrics. 
 
 + [__Speech__](https://biometix.github.io/modality/speech.html)
 
-{: .highlight }
-> The speech assessment module provides various quality metrics, including naturalness, colouration, noisiness, etc. 
+The speech assessment module provides various quality metrics, including naturalness, colouration, noisiness, etc. 

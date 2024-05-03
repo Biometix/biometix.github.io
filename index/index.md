@@ -8,13 +8,16 @@ permalink: /
 {: .highlight }
 > Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
 
+{: .highlight }
+>  Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions/1)!
+
 ---
 
 ![logo_bqat](../assets/images/logo-bqat.png)
 
 <!-- # __Biometric Quality Assessment Tool (BQAT)__ -->
 
-``` mermaid
+<!-- ``` mermaid
 mindmap
   root((**BQAT**))
     BQAT-CLI
@@ -26,6 +29,40 @@ mindmap
     BQAT-GUI
       Web
       Lightweight
+``` -->
+
+``` mermaid
+    graph LR
+        subgraph title ["`**BQAT**`"]
+            core[BQAT-Core] --> face("`__Face__`")
+            core --> finger("`__Fingerprint__`")
+            core --> iris("`__Iris__`")
+            core --> speech("`__Speech__`")
+            finger --> nfiq([NFIQ2])
+            iris --> biqt-iris([BIQT])
+            face --> bqat([Biometix])
+            face --> ofiq([OFIQ])
+            face --> biqt-face([BIQT])
+            speech --> nisqa([NISQA])
+        end
+            title --> cli(BQAT-CLI)
+            title --> api(BQAT-API)
+            title --> gui(BQAT-GUI)
+            title --> stateless(BQAT-Stateless)
+        click finger "https://biometix.github.io/modality/fingerprint.html" _blank
+        click face "https://biometix.github.io/modality/face.html" _blank
+        click iris "https://biometix.github.io/modality/iris.html" _blank
+        click speech "https://biometix.github.io/modality/speech.html" _blank
+        click cli "https://github.com/Biometix/bqat-cli" _blank
+        click api "https://github.com/Biometix/bqat-api" _blank
+        click gui "https://github.com/Biometix/bqat-gui" _blank
+        click stateless "https://github.com/Biometix/bqat-stateless" _blank
+        click nfiq "https://github.com/usnistgov/NFIQ2" _blank
+        click biqt-face "https://github.com/mitre/biqt-face" _blank
+        click biqt-iris "https://github.com/mitre/biqt-iris" _blank
+        click biometix "https://github.com/Biometix" _blank
+        click ofiq "https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html" _blank
+        click nisqa "https://github.com/gabrielmittag/NISQA" _blank
 ```
 
 ## Overview
