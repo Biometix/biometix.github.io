@@ -15,6 +15,8 @@ permalink: /
 
 ![logo_bqat](../assets/images/logo-bqat.png)
 
+by Biometix
+
 <!-- # __Biometric Quality Assessment Tool (BQAT)__ -->
 
 <!-- ``` mermaid
@@ -31,9 +33,19 @@ mindmap
       Lightweight
 ``` -->
 
+---
+
+## Overview
+
+[BQAT](https://github.com/Biometix) (Biometric Quality Assessment Tool) is a open-source biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report.
+
+The quality of biometric samples is a key aspect of the performance and efficacy of a biometric system. Whilst there are a variety of tools suitable for each modality, this project is aimed to provide an open-source framework to support all common modalities and allow for expansion as new methods are developed. 
+
+---
+
 ``` mermaid
     graph LR
-        subgraph title ["`**BQAT**`"]
+        subgraph title [ ]
             core[BQAT-Core] --> face("`__Face__`")
             core --> finger("`__Fingerprint__`")
             core --> iris("`__Iris__`")
@@ -60,16 +72,12 @@ mindmap
         click nfiq "https://github.com/usnistgov/NFIQ2" _blank
         click biqt-face "https://github.com/mitre/biqt-face" _blank
         click biqt-iris "https://github.com/mitre/biqt-iris" _blank
-        click biometix "https://github.com/Biometix" _blank
+        click bqat "https://github.com/Biometix" _blank
         click ofiq "https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html" _blank
         click nisqa "https://github.com/gabrielmittag/NISQA" _blank
 ```
 
-## Overview
-
-[BQAT](https://github.com/Biometix) (Biometric Quality Assessment Tool) is a open-source biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report.
-
-The quality of biometric samples is a key aspect of the performance and efficacy of a biometric system. Whilst there are a variety of tools suitable for each modality, this project is aimed to provide an open-source framework to support all common modalities and allow for expansion as new methods are developed. 
+---
 
 ## Modalities
 
