@@ -8,22 +8,24 @@ permalink: /
 {: .highlight }
 > Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
 
-<!-- ![logo_bqat](../assets/images/logo-bqat.png) -->
+---
+
+![logo_bqat](../assets/images/logo-bqat.png)
 
 # __Biometric Quality Assessment Tool (BQAT)__
 
 ``` mermaid
 mindmap
-  root((**BQAT**))
-    BQAT-CLI
+  root(([**BQAT**](https://biometix.github.io/getting_started/getting_started.html)))
+    [BQAT-CLI](https://biometix.github.io/playbook/cli.html)
       EDA Report
       CSV
-    BQAT-API
+    [BQAT-API](https://biometix.github.io/playbook/api.html)
       Cloud
       Self-Hosted
-    BQAT-GUI
+    [BQAT-GUI](https://biometix.github.io/playbook/gui.html)
       Web
-      UX
+      Lightweight
 ```
 
 ## Overview
@@ -112,7 +114,7 @@ BQAT is available in multiple form factors:
     Simple Web GUI for BQAT API. An easy to use user interface to the services.
 
 {: .highlight }
-> Let us know if you have any question on [GitHub](https://github.com/Biometix)!
+> Let us know if you have any question on [GitHub Discussions](https://github.com/Biometix/bqat-cli/discussions)!
 
 ## Roadmap
 

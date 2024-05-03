@@ -61,4 +61,4 @@ If you encounter permission issues, try the following:
   ```
 
 {: .highlight }
-> Let us know if you have any question on [GitHub](https://github.com/Biometix)!
+> Let us know if you have any question on [GitHub Discussions](https://github.com/Biometix/bqat-cli/discussions)!
