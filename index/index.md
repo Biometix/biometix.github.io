@@ -5,17 +5,19 @@ nav_order: 1
 permalink: /
 ---
 
-{: .highlight }
-> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine! [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+_Latest News_
 
 {: .highlight }
->  Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions/1)!
+> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine (BQAT-CLI)🎉 [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+
+{: .highlight }
+>  BQAT-CLI [v1.6.1](https://github.com/Biometix/bqat-cli/releases/tag/v1.6.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions/1) 🎉
 
 ---
 
 ![logo_bqat](../assets/images/logo-bqat.png)
 
-by Biometix
+by [Biometix](https://www.biometix.com/)
 
 <!-- # __Biometric Quality Assessment Tool (BQAT)__ -->
 

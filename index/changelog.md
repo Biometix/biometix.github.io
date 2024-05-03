@@ -152,7 +152,7 @@ permalink: /changelog/
 
 + Update convenience script with dynamic shared memory allocation feature.
 
-+ Improve logging readablity.
++ Improve logging readability.
 
 + Introduce preprocessing mode (image conversion, resizing)
 
