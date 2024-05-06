@@ -8,7 +8,7 @@ permalink: /
 _Latest News_
 
 {: .highlight }
-> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine (BQAT-CLI)🎉 [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine (BQAT-CLI) 🚀 [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
 
 {: .highlight }
 >  BQAT-CLI [v1.6.1](https://github.com/Biometix/bqat-cli/releases/tag/v1.6.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions/1) 🎉
@@ -173,8 +173,8 @@ BQAT is available in multiple form factors:
 - [x] Image formating feature as preprocess
 - [x] Image resizing feature as preprocess
 - [x] [OFIQ](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html) processing engine for face modality
-- [ ] Duplicates detection feature for output
-- [ ] Identitity removel feature as preprocess
+- [ ] Duplicates removal feature for output
+- [ ] Identity removal feature as preprocess
 - [ ] Document image quality check for face modality
 - [ ] Contact lens detection feature for face modality
 - [ ] Face liveness detection feature for face modality
