@@ -78,23 +78,50 @@ permalink: /changelog/
 
 ## BQAT-API
 
-### 1.1.0
+<a name="v1.3.0"></a>
 
-+ Introduce speech assessment feature.
+### v1.3.0 (2023-12-15)
 
-### 1.2.0
+#### 🛠 Fixes
+- Resolve test script issue
 
-+ Rebuild container with updated iris engine.
+#### ⚙️ Miscellaneous Tasks
+- Rework docker image [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/9)
 
-+ Fix Python dependency issues.
+- Rework dockerfile [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/9)
 
-+ Fix endpoint path issues.
+<a name="v1.2.0"></a>
 
-### 1.3.0
+### v1.2.0 (2023-07-28)
 
-+ Refactor build configuration.
+#### 🚀 Features
 
-+ Resolve test script issue.
+- Update iris engine
+
+#### 🛠 Fixes
+
+- Fix Python dependency issues
+- Fix endpoint path issues
+
+<a name="v1.1.0"></a>
+
+### v1.1.0 (2023-06-14)
+#### 🚀 Features
+
+- implement speech module [#1](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/1)
+
+
+<a name="v1.0.0"></a>
+
+### v1.0.0 (2023-02-17)
+
+#### 🚧 Refactor
+
+- Update report title
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update cicd config
 
 
 ---
