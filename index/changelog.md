@@ -100,71 +100,163 @@ permalink: /changelog/
 ---
 
 
-## BQAT-CLI
+# BQAT-CLI
 
-### 1.2.1
+<a name="v1.6.1"></a>
+## v1.6.1 (2024-05-01)
 
-+ Introduce speech assessment feature.
+#### 🛠 Fixes
 
-### 1.2.2
+- Fix conversion type issue.
+- Fix resizing width issue.
+- Fix BMP format issue.
+- Fix reporting column label issue.
 
-+ Bud fixes.
 
-### 1.2.3
+<a name="v1.6.0"></a>
+## v1.6.0 (2024-04-24)
 
-+ Update quality report module.
+#### 🚀 Features
 
-### 1.2.4
+- Support Engine Flag for Benchmarking [#29](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/29)
 
-+ Fix speech mode recursive glob issue.
+- Introduce preprocessing mode (image conversion, resizing) [#30](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/30)
 
-### 1.3.0
+- Update convenience script with dynamic shared memory allocation feature.
 
-+ Rebuild with bqat-core v1.3.1.
+#### 🛠 Fixes
 
-### 1.4.1
+- Fix iris benchmarking sample file conflict issue. [#28](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/28)
 
-+ Build configuration refactor.
+- Fix speech modality logging issue.
 
-+ `report` mode added.
 
-### 1.5.0
+#### ⚙️ Miscellaneous Tasks
 
-+ Add optional flag for alternate face modality engine.
+- Improve logging readability.
 
-+ Support OFIQ engine for face modality (alpha).
+<a name="v1.5.1"></a>
+## v1.5.1 (2024-04-11)
 
-### 1.5.1
+#### 🚀 Features
 
-+ Fix broken benchmarking module.
+- Add update command in the run script to pull latest container.
 
-+ Add update command in the run script to pull latest container.
+- Add report flag to let the user disable reporting feature. [#15](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/15)
 
-+ Add report flag to let the user disable reporting feature.
+#### 🛠 Fixes
+- Fix broken benchmarking module.
 
-### 1.6.0
+#### ⚙️ Miscellaneous Tasks
 
-+ Fix iris benchmarking sample file conflict issue.
+- Revert opencv in nfiq2
 
-+ Support engine flag for face benchmarking.
+<a name="v1.5.0"></a>
+## v1.5.0 (2024-04-09)
 
-+ Fix speech modality logging issue.
+#### 🚀 Features
 
-+ Update convenience script with dynamic shared memory allocation feature.
+- Add optional flag for alternate face modality engine.
 
-+ Improve logging readability.
+- Support OFIQ engine for face modality (alpha). [#25](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/25)
 
-+ Introduce preprocessing mode (image conversion, resizing)
 
-### 1.6.1
 
-+ Fix conversion type issue.
+<a name="v1.4.1"></a>
+## v1.4.1 (2024-03-13)
 
-+ Fix resizing width issue.
+#### 🚀 Features
 
-+ Fix BMP format issue.
+- Add `report` mode
 
-+ Fix reporting column label issue.
+#### ⚙️ Miscellaneous Tasks
+
+- Update readme
+
+- Build configuration refactor.
+
+
+<a name="v1.3.0"></a>
+## v1.3.0 (2023-07-28)
+
+#### ⚙️ Miscellaneous Tasks
+
+- Rebuild with bqat-core v1.3.1.
+- Update image dependencies
+
+
+<a name="v1.2.4"></a>
+## v1.2.4 (2023-06-09)
+
+#### 🛠 Fixes
+
+- Fix speech mode recursive glob issue.
+
+
+<a name="v1.2.3"></a>
+## v1.2.3 (2023-05-23)
+
+#### 🚀 Features
+
+- Update quality report module. [#12](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/12)
+
+
+<a name="v1.2.2"></a>
+## v1.2.2 (2023-04-13)
+
+#### 🛠 Fixes
+
+- Bug Fixes
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update Dockerfile
+
+
+<a name="v1.2.1"></a>
+## v1.2.1 (2023-04-12)
+
+#### 🚀 Features
+
+- Introduce speech assessment feature. [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/9)
+
+
+- Add test cases [#11](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/11)
+
+
+- Generate test reports [#5](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/5)
+
+
+<a name="v1.1.2"></a>
+## v1.1.2 (2023-02-24)
+
+#### 🚀 Features
+
+- Add filter flag [#2](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/2)
+
+#### 🛠 Fixes
+
+- Fix OOM issue
+- Resolve "Output issue with small dataset" [#6](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/6)
+- Resolve "One incomplete input no output" [#7](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/7)
+
+#### 🚧 Refactor
+
+- Redo csv output function
+
+#### ⚙️ Miscellaneous Tasks
+
+- Initial commit
+
+- Update readm
+
+- Add basic test cases
+
+- Update gitlab-ci.yml
+
+- Update scripts
+
+- Update submodules
 
 ---
 
