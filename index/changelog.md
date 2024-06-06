@@ -16,62 +16,167 @@ permalink: /changelog/
 
 ## BQAT-Core
 
-### 1.1.0
+<a name="v1.4.2"></a>
 
-+ Introduce speech assessment feature (alpha).
+### v1.4.2 (2024-05-01)
 
-### 1.2.2
 
-+ Refactor and bug fix for speech mode.
+#### 🛠 Fixes
 
-### 1.3.0
+- Fix reporting filepath label issue
 
-+ Update iris module with new metrics.
+<a name="v1.4.1"></a>
 
-+ Modify certain iris assessment thresholds to handle wider target samples.
+### v1.4.1 (2024-04-22)
 
-+ Update resize logic for iris samples.
+#### 🛠 Fixes
 
-+ Update face quality scoring with ISO/IEC 29794-1 standard scale (1-100).
+- Fix speech modality logging issue
 
-+ Add glasses detection for face modality.
 
-### 1.3.1
+<a name="v1.4.0"></a>
 
-+ Update readme.
+### v1.4.0 (2024-04-10)
 
-### 1.3.2
+#### 🚀 Features
+- Introduce OFIQ engine for face modality (alpha) [#15](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/15)
 
-+ Update for refactoring image building configuration.
 
-### 1.3.3
+#### 🛠 Fixes
 
-+ Lower input resize upper limit to improve iris engine robustness.
+- Iris resize and convert issue
 
-### 1.3.4
+<a name="v1.3.6"></a>
 
-+ Fix fingerprint file format conversion issue.
+### v1.3.6 (2024-04-04)
 
-### 1.3.5
+#### 🛠 Fixes
 
-+ Fix fingerprint modality metrics naming issue.
+- Update iris engine resizing range to improve iris engine robustness
 
-### 1.3.6
 
-+ Update iris engine resizing range to improve iris engine robustness.
+<a name="v1.3.5"></a>
 
-### 1.4.0
+### v1.3.5 (2024-03-13)
 
-+ Introduce OFIQ engine for face modality (alpha).
+#### 🛠 Fixes
 
-### 1.4.1
+- Fix fingerprint modality metrics naming issue [#20](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/20)
 
-+ Fix speech modality logging issue.
 
-### 1.4.2
+<a name="v1.3.4"></a>
 
-+ Fix reporting filepath label issue.
+### v1.3.4 (2024-03-13)
 
+#### 🛠 Fixes
+
+- Fix fingerprint file format conversion issue [#19](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/19)
+
+
+<a name="v1.3.3"></a>
+
+### v1.3.3 (2024-02-26)
+
+#### 🛠 Fixes
+
+
+- Lower resolution to improve engine robustness [#17](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/17)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- Add alternate conda env file for speech
+
+
+<a name="v1.3.2"></a>
+
+### v1.3.2 (2023-12-14)
+
+#### ⚙️ Miscellaneous Tasks
+
+
+- Update for refactoring image building configuration
+
+
+<a name="v1.3.1"></a>
+
+### v1.3.1 (2023-07-28)
+
+#### ⚙️ Miscellaneous Tasks
+
+
+- Cleanup cli log
+
+
+<a name="v1.3.0"></a>
+
+### v1.3.0 (2023-07-28)
+
+#### 🚀 Features
+
+- Update iris module with new metrics
+- Modify certain iris assessment thresholds to handle wider target samples
+- Update face quality scoring with ISO/IEC 29794-1 standard scale (1-100) [#11](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/11)
+- Add glasses detection for face modality
+
+#### 🛠 Fixes
+
+- Fix iris score issue with low sclera related values [#10](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/10)
+
+
+<a name="v1.2.2"></a>
+
+### v1.2.2 (2023-06-09)
+
+#### 🛠 Fixes
+
+- Speech mode recursive glob
+
+
+<a name="v1.2.1"></a>
+
+### v1.2.1 (2023-05-17)
+
+####  🚀 Features
+
+- Handle negtive corrdinates [#6](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/6)
+
+<a name="v1.2.0"></a>
+
+### v1.2.0 (2023-04-18)
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update Dockerfile and test cases for speech module
+
+
+<a name="v1.1.0"></a>
+
+### v1.1.0 (2023-04-11)
+
+#### 🚀 Features
+
+- Add fingerprint module
+- Add iris module
+- Add test module
+- Disable df and bk
+- Add speech model [#3](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/3)
+
+#### 🛠 Fixes
+
+ - Bug fixes
+
+#### 📚 Documentation
+
+- Update readme
+
+#### ⚙️ Miscellaneous Tasks
+
+- Initial commit
+
+- Update gitignore
+
+- Update lock file
 
 ---
 
