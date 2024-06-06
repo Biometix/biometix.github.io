@@ -174,11 +174,13 @@ permalink: /changelog/
 
 ### v0.4.1 (2023-12-15)
 
+#### 🛠 Fixes
+
+- Resolve temp file conflict issue.
+
 #### ⚙️ Miscellaneous Tasks
 
-
 - Update compose file.
-- Resolve temp file conflict issue.
 - Refactor build configuration [#5](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/5)
 
 
@@ -202,7 +204,6 @@ permalink: /changelog/
 
 - Iris quality score
 - Fix base64 padding
-
 
 #### ⚙️ Miscellaneous Tasks
 
@@ -238,7 +239,6 @@ permalink: /changelog/
 
 #### 🚀 Features
 
-
 - Update endpoints to support base64 format [#2](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/2)
 
 
@@ -262,7 +262,6 @@ permalink: /changelog/
 - Add LICENSE
 
 - Update .gitlab-ci.yml file
-
 
 ---
 
