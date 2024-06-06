@@ -100,10 +100,11 @@ permalink: /changelog/
 ---
 
 
-# BQAT-CLI
+## BQAT-CLI
 
 <a name="v1.6.1"></a>
-## v1.6.1 (2024-05-01)
+ 
+### v1.6.1 (2024-05-01)
 
 #### 🛠 Fixes
 
@@ -114,7 +115,8 @@ permalink: /changelog/
 
 
 <a name="v1.6.0"></a>
-## v1.6.0 (2024-04-24)
+ 
+### v1.6.0 (2024-04-24)
 
 #### 🚀 Features
 
@@ -136,7 +138,8 @@ permalink: /changelog/
 - Improve logging readability.
 
 <a name="v1.5.1"></a>
-## v1.5.1 (2024-04-11)
+ 
+### v1.5.1 (2024-04-11)
 
 #### 🚀 Features
 
@@ -152,22 +155,22 @@ permalink: /changelog/
 - Revert opencv in nfiq2
 
 <a name="v1.5.0"></a>
-## v1.5.0 (2024-04-09)
+ 
+### v1.5.0 (2024-04-09)
 
 #### 🚀 Features
-
-- Add optional flag for alternate face modality engine.
 
 - Support OFIQ engine for face modality (alpha). [#25](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/25)
 
-
+- Add optional flag for alternate face modality engine.
 
 <a name="v1.4.1"></a>
-## v1.4.1 (2024-03-13)
+ 
+### v1.4.1 (2024-03-13)
 
 #### 🚀 Features
 
-- Add `report` mode
+- Add reporting mode
 
 #### ⚙️ Miscellaneous Tasks
 
@@ -177,7 +180,8 @@ permalink: /changelog/
 
 
 <a name="v1.3.0"></a>
-## v1.3.0 (2023-07-28)
+ 
+### v1.3.0 (2023-07-28)
 
 #### ⚙️ Miscellaneous Tasks
 
@@ -186,7 +190,8 @@ permalink: /changelog/
 
 
 <a name="v1.2.4"></a>
-## v1.2.4 (2023-06-09)
+ 
+### v1.2.4 (2023-06-09)
 
 #### 🛠 Fixes
 
@@ -194,7 +199,8 @@ permalink: /changelog/
 
 
 <a name="v1.2.3"></a>
-## v1.2.3 (2023-05-23)
+ 
+### v1.2.3 (2023-05-23)
 
 #### 🚀 Features
 
@@ -202,7 +208,8 @@ permalink: /changelog/
 
 
 <a name="v1.2.2"></a>
-## v1.2.2 (2023-04-13)
+ 
+### v1.2.2 (2023-04-13)
 
 #### 🛠 Fixes
 
@@ -214,7 +221,8 @@ permalink: /changelog/
 
 
 <a name="v1.2.1"></a>
-## v1.2.1 (2023-04-12)
+ 
+### v1.2.1 (2023-04-12)
 
 #### 🚀 Features
 
@@ -228,7 +236,8 @@ permalink: /changelog/
 
 
 <a name="v1.1.2"></a>
-## v1.1.2 (2023-02-24)
+ 
+### v1.1.2 (2023-02-24)
 
 #### 🚀 Features
 
