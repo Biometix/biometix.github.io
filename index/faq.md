@@ -60,5 +60,14 @@ If you encounter permission issues, try the following:
   sudo your_bqat_command_here
   ```
 
+## If you see this error `Error: Got unexpected extra argument`, it means there is space in the filepath.
+
+Wrap it with double quotes and escape the space. Refer to the example below:
+
+e.g. input folder is `data/iris folder/`
+```sh
+./run.sh --input "data/iris\ folder/" --mode iris
+```
+
 {: .highlight }
 > Let us know if you have any question on [GitHub Discussions](https://github.com/Biometix/bqat-cli/discussions)!

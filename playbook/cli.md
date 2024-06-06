@@ -49,6 +49,11 @@ chmod +x *.sh
 ```
 
 ## Use Cases
+> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
+e.g. input folder is `data/iris folder/`
+```sh
+./run.sh --input "data/iris\ folder/" --mode iris
+```
 
 ### Validate Installation or Benchmarking
 
