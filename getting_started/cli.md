@@ -65,6 +65,8 @@ For Bash (Linux, macOS, Windows):
 # Process iris images in data/iris/ folder
 ./run.sh --input data/iris/ --mode iris
 ```
+{: .highlight }
+> Note: Please make sure the name of your files or folders do not contain space.
 
 > Note: The path format of the mounted volumes in the run.sh may need modification for the specific shell (e.g. under Windows. Or you can use the powershell script as follows). 
 
