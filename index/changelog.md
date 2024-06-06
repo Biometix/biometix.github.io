@@ -170,37 +170,99 @@ permalink: /changelog/
 
 ## BQAT-Stateless
 
-### 0.2.0
+<a name="v0.4.1"></a>
 
-+ Introduce speech assessment feature.
+### v0.4.1 (2023-12-15)
 
-### 0.3.0
+#### ⚙️ Miscellaneous Tasks
 
-+ Support base64.
 
-### 0.3.1
+- Update compose file.
+- Resolve temp file conflict issue.
+- Refactor build configuration [#5](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/5)
 
-+ Support base64url.
 
-### 0.3.2
+<a name="v0.4.0"></a>
 
-+ Include testing coverage reports.
+### v0.4.0 (2023-07-28)
 
-### 0.3.3
+#### ⚙️ Miscellaneous Tasks
 
-+ Bug fix.
+- Rebuilt with latest BQAT-core.
 
-### 0.4.0
+<a name="v0.3.3"></a>
 
-+ Rebuilt with latest BQAT-core.
+### v0.3.3 (2023-07-28)
 
-### 0.4.1
+#### 🚀 Features
 
-+ Update compose file.
+- Update iris module
 
-+ Refactor build configuration.
+#### 🛠 Fixes
 
-+ Resolve temp file conflict issue.
+- Iris quality score
+- Fix base64 padding
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update test cases for new metrics
+
+<a name="v0.3.2"></a>
+
+### v0.3.2 (2023-04-26)
+
+#### 🚀 Features
+
+- Add testing samples [#3](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/3)
+
+- Update coverage report
+
+
+<a name="v0.3.1"></a>
+
+### v0.3.1 (2023-04-25)
+
+#### 🚀 Features
+
+- Support base64url format
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update metadata
+
+
+<a name="v0.3.0"></a>
+
+### v0.3.0 (2023-04-24)
+
+#### 🚀 Features
+
+
+- Update endpoints to support base64 format [#2](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/2)
+
+
+<a name="v0.2.0"></a>
+
+### v0.2.0 (2023-04-24)
+
+#### 🚀 Features
+
+- Introduce speech assessment feature. [#1](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/1)
+
+
+<a name="v0.1.0"></a>
+
+### v0.1.0 (2023-03-22)
+
+#### ⚙️ Miscellaneous Tasks
+
+- Initial commit
+
+- Add LICENSE
+
+- Update .gitlab-ci.yml file
+
 
 ---
 
