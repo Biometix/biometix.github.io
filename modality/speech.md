@@ -28,6 +28,8 @@ Suported file formats:
 
 + `wav`
 
+> Due to algorithm limitation, sub-folder might not work as expected. If your folder with audio files is in `data/speech/`, files in `data/speech/audio/` won't be processed.
+
 ***
 
 ## Output
