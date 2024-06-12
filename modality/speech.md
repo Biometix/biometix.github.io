@@ -22,7 +22,11 @@ The speech assessment module provides various quality metrics, including natural
 
 ## Input
 
-Create a folder named `data` under your working directory and put your wav files in this folder.
+Create a folder named `data` under your working directory and put your audio files in this folder.
+
+Suported file formats:
+
++ `wav`
 
 ***
 
