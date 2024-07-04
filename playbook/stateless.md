@@ -104,3 +104,71 @@ JSON:
   "glasses": true
 }
 ```
+
+## Scalability
+
+Due to BQAT's compute-intensive nature, the server’s throughput is primarily limited by the CPU of the host machine, including factors such as the number of cores and single-thread performance.​
+    
+Scaling options:​
+
++ Vertical: deploy to a machine with larger CPU.​
+
++ Horizontal: deploy to a cluster of machines (e.g. Kubernetes, Docker Swarm, etc.)
+
+### Example (Docker Swarm):
+
+> This is for local small scale deployment, use Kubernetes for large scale production environment.
+
+> This example is tested on Linux nodes only, further configuration might be needed for Windows and macOS.
+
+#### 0. Prepare worker nodes
+
++ Make sure you have all your worker machines/VMs installed with [Docker Engine](https://docs.docker.com/engine/);
+
++ Take note of their IP addresses.
+
+#### 1. Set up cluster
+
+Select one machine as the manager, then open the terminal on this manager computer:
+
+``` sh
+docker swarm init --advertise-addr <MANAGER-IP>
+```
+
+Use the command printed from previous step to add worker nodes (looks like this). Run this command on all the worker nodes:
+
+``` sh
+docker swarm join --token kz5s954yi3oex3nedyz0fb0xx1 192.168.101.101:8008
+```
+
+After all your worker nodes joined, check if your cluster was set up properly:
+
+``` sh
+docker node ls
+```
+
+Deploy BQAT-Stateless to the cluster:
+
+``` sh
+docker stack deploy --compose-file compose.yaml bqat-stateless
+```
+
+Check service status
+
+``` sh
+docker stack services bqat-stateless
+```
+
+Scale up the service using the worker nodes (4 replicas in this example):
+
+``` sh
+docker service scale bqat-stateless_server=4
+```
+
+Bring down the service:
+
+``` sh
+docker stack rm bqat-stateless
+```
+
+> Please refers to Docker [official documentation](https://docs.docker.com/engine/swarm/) for further details.
