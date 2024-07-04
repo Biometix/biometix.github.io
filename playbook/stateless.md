@@ -167,7 +167,9 @@ Scale up the service using the worker nodes (4 replicas in this example):
 docker service scale bqat-stateless_server=4
 ```
 
-> Congratulations! The cluster has been set up! 🎉 You can now make requests to the endpoints as you typically would!
+> Congratulations! The cluster has been set up! 🎉 You can now make requests to the endpoints as you typically would! The loads will be distributed across the worker nodes.
+
+> Note: bring up more replicas than number of the physical machines might not further increase the throughput.
 
 #### Clean up
 
@@ -188,6 +190,5 @@ Remove the node from the cluster (on manager machine):
 ``` sh
 docker node rm <NODE-ID>
 ```
-
 
 > Please refers to Docker [official documentation](https://docs.docker.com/engine/swarm/) for further details.
