@@ -121,13 +121,13 @@ Scaling options:​
 
 > This example is tested on Linux nodes only, further configuration might be needed for Windows and macOS.
 
-#### 0. Prepare worker nodes
+#### Prepare worker nodes
 
 + Make sure you have all your worker machines/VMs installed with [Docker Engine](https://docs.docker.com/engine/);
 
 + Take note of their IP addresses.
 
-#### 1. Set up cluster
+#### Set up cluster
 
 Select one machine as the manager, then open the terminal on this manager computer:
 
@@ -147,6 +147,8 @@ After all your worker nodes joined, check if your cluster was set up properly:
 docker node ls
 ```
 
+#### Deploy to cluster
+
 Deploy BQAT-Stateless to the cluster:
 
 ``` sh
@@ -165,10 +167,27 @@ Scale up the service using the worker nodes (4 replicas in this example):
 docker service scale bqat-stateless_server=4
 ```
 
+> Congratulations! The cluster has been set up! 🎉 You can now make requests to the endpoints as you typically would!
+
+#### Clean up
+
 Bring down the service:
 
 ``` sh
 docker stack rm bqat-stateless
 ```
+
+Disconnect worker node (on the worker machine):
+
+``` sh
+docker swarm leave
+```
+
+Remove the node from the cluster (on manager machine):
+
+``` sh
+docker node rm <NODE-ID>
+```
+
 
 > Please refers to Docker [official documentation](https://docs.docker.com/engine/swarm/) for further details.
