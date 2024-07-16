@@ -99,9 +99,9 @@ graph LR
     upload(Upload) --> gui{Web}
     gui{Web GUI} --> api(BQAT-API)
     api(Backend) --> db[(Database)]
-    db[(Database)] --> report(EDA Report)
+    <!-- db[(Database)] --> report(EDA Report) -->
     db[(Database)] --> output(Raw CSV)
-    db[(Database)] --> outlier(Outlier Report)
+    <!-- db[(Database)] --> outlier(Outlier Detection) -->
 ```
 
 > BQAT GUI is a simple frontend version of BQAT API as an example project. 
