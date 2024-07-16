@@ -39,7 +39,7 @@ mindmap
 
 ## Overview
 
-[BQAT](https://github.com/Biometix) (Biometric Quality Assessment Tool) is a open-source biometric quality assessment tool for generating and analysing biometric samples’ quality against international standards as well as customised metrics. BQAT functions by taking an input directory of biometric data and producing both the raw quality information as well as an analysis report.
+[BQAT](https://github.com/Biometix) (Biometric Quality Assessment Tool) BQAT is an open-source biometric quality assessment tool for generating and analyzing biometric samples’ quality against international standards as well as customized metrics. BQAT functions by taking an input directory of biometric data and producing raw quality information and an analysis report.
 
 The quality of biometric samples is a key aspect of the performance and efficacy of a biometric system. Whilst there are a variety of tools suitable for each modality, this project is aimed to provide an open-source framework to support all common modalities and allow for expansion as new methods are developed. 
 

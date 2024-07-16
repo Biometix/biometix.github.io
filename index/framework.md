@@ -52,7 +52,7 @@ title: BQAT CLI
 ---
 graph LR
     input(Input Folder) --> cli{Command Line}
-    cli{Command Line} --> report(Report)
+    cli{Command Line} --> report(EDA Report)
     cli{Command Line} --> output(CSV)
     cli{Command Line} --> log(Log)
 ```
@@ -69,7 +69,7 @@ graph LR
     file(File System) --> api{Endpoints}
     upload(HTTP) --> api{Endpoints}
     api{Endpoints} --> db[(Database)]
-    db[(Database)] --> report(Report)
+    db[(Database)] --> report(EDA Report)
     db[(Database)] --> output(JSON)
     db[(Database)] --> log(Log)
 ```
@@ -99,7 +99,7 @@ graph LR
     upload(Upload) --> gui{Web}
     gui{Web GUI} --> api(BQAT-API)
     api(Backend) --> db[(Database)]
-    db[(Database)] --> report(Quality Report)
+    db[(Database)] --> report(EDA Report)
     db[(Database)] --> output(Raw CSV)
     db[(Database)] --> outlier(Outlier Report)
 ```
