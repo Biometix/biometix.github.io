@@ -90,35 +90,68 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 
 | Column           | Description |
 | ---------------- | ----------- |
-| file             | Path to the input file |
-| quality          | Overall image quality score |
-| background_uniformity | Image background uniformity |
-| illumination_uniformity | Image illumination uniformity |
-| luminance_mean | Mean of image luminance |
-| luminance_variance | Variance of image luminance |
-| under_exposure_prevention | Under exposure prevention |
-| over_exposure_prevention | Over exposure prevention |
-| dynamic_range | Image dynamic range |
-| sharpness | Image sharpness |
-| compression_artifacts | Artifacts detected for image compression |
-| natural_colour | Naturalness of image colour |
-| single_face_present | Probability of single face presented |
-| eyes_open | Probability of open eyes detected |
-| mouth_closed | Probability of closed mouth detected |
-| eyes_visible | Probability of visible eyes |
-| mouth_occlusion_prevention | Mouth occlusion prevention |
-| face_occlusion_prevention | Face occlusion prevention |
-| inter_eye_distance | Inter eye distance |
-| head_size | Head size |
-| leftward_crop_of_the_face_image | Left of the face crop |
-| rightward_crop_of_the_face_image | Right of the face crop |
-| downward_crop_of_the_face_image | Bottom of the face crop |
-| upward_crop_of_the_face_image | Top of the face crop |
-| head_pose_yaw | Yaw of head pose in degree |
-| head_pose_pitch | Pitch of head pose in degree |
-| head_pose_roll | Roll of head pose in degree |
-| expression_neutrality | Face expression neutrality |
-| no_head_coverings | Probability of no head coverings |
+| file             | Filename of the input |
+| quality          | [MagFace](https://github.com/IrvingMeng/MagFace)-based unified quality score measure |
+| background_uniformity | Gradient-based background uniformity |
+| illumination_uniformity | Illumination unformity by summing up the minima of the
+histograms of the left and the right side of the face |
+| luminance_mean | Luminance mean measure computed from the lumi-
+nance histogram |
+| luminance_variance | Luminance variance measure computed from the lumi-
+nance histogram |
+| under_exposure_prevention | Under-exposure prevention by computing the proportion
+of low-intensity pixels in the luminance image to assess
+the abscence of under-exposure |
+| over_exposure_prevention | Over-exposure prevention by computing the proportion
+of high-intensity pixels in the luminance image to assess
+the abscence of over-exposure |
+| dynamic_range | Dynamic range computed from the luminance histogram |
+| sharpness | Sharpness assessment based on a random forest clas-
+sifier trained by the OFIQ development team |
+| compression_artifacts | Assessment of the absence of compression artifact (both
+JPEG and JPEG2000) based on a CNN trained by the
+OFIQ development team |
+| natural_colour | Assessment of the naturalness of the colour based on
+the conversion of the RGB presentation of the image to
+the CIELAB colour space |
+| single_face_present | Assessment of the uniqueness of the most dominant
+face detected by comparing its size with the size of the
+second largest face detected |
+| eyes_open | Eyes openness assessment based on computing eyes
+aspect ratio from eye landmarks |
+| mouth_closed | Mouth closed assessment based on computing a ratio
+from mouth landmarks |
+| eyes_visible | Eyes visibility assessment by measuring the coverage of
+the eye visibility zone with the result of face occlusion
+segmentation computed during pre-processing |
+| mouth_occlusion_prevention | Assessment of the absence of mouth occlusion by mea-
+suring the coverage of the mouth region from mouth
+landmarks with the result of face occlusion segmentation
+computed on pre-processing |
+| face_occlusion_prevention | Assessment of the absence of face occlusion by mea-
+suring the coverage of the landmarked region with the
+result of face occlusion segmentation computed during
+pre-processing |
+| inter_eye_distance | Inter-eye distance assessment based on computing the
+Euclidean length of eyes' centres and multiplication with
+the secant of the yaw angle computed during pre-
+processing |
+| head_size | Size of the head based on computing the height of the
+face computed from facial landmarks with the height of
+the image |
+| leftward_crop_of_the_face_image | Left of the face image crop |
+| rightward_crop_of_the_face_image | Right of the face image crop |
+| downward_crop_of_the_face_image | Bottom of the face image crop |
+| upward_crop_of_the_face_image | Top of the face image crop |
+| head_pose_yaw | Pose angle yaw frontal alignment based on the [3DDFAV2](https://github.com/cleardusk/3DDFA_V2) |
+| head_pose_pitch | Pose angle pitch frontal alignment based on the [3DDFAV2](https://github.com/cleardusk/3DDFA_V2) |
+| head_pose_roll | Pose angle roll frontal alignment based on the [3DDFAV2](https://github.com/cleardusk/3DDFA_V2) |
+| expression_neutrality | Expression neutrality estimation based on a fu-
+sion of [HSEMotion](https://github.com/HSE-asavchenko/face-emotion-recognition) with [Efficient-Expression-Neutrality-Estimation](https://github.com/dasec/Efficient-Expression-Neutrality-Estimation) |
+| no_head_coverings | Assessment of the absence of head coverings by count-
+ing the pixels being labeled as head covers in the
+mask output by the face parsing computed during pre-
+processing |
 
 {: .highlight }
 > [OFIQ Project](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)

@@ -178,6 +178,7 @@ BQAT is available in multiple form factors:
 - [ ] Document image quality check for face modality
 - [ ] Contact lens detection feature for face modality
 - [ ] Face liveness detection feature for face modality
+- [ ] NFIQ1 as alternative fingerprint processing engine
 
 More to come! 🚀
 
