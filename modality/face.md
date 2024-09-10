@@ -108,8 +108,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 | eyes_visible | Eyes visibility assessment by measuring the coverage of the eye visibility zone with the result of face occlusion segmentation computed during pre-processing |
 | mouth_occlusion_prevention | Assessment of the absence of mouth occlusion by measuring the coverage of the mouth region from mouth landmarks with the result of face occlusion segmentation computed on pre-processing |
 | face_occlusion_prevention | Assessment of the absence of face occlusion by measuring the coverage of the landmarked region with the result of face occlusion segmentation computed during pre-processing |
-| inter_eye_distance | Inter-eye distance assessment based on computing the Euclidean length of eyes' centres and multiplication with
-the secant of the yaw angle computed during pre-processing |
+| inter_eye_distance | Inter-eye distance assessment based on computing the Euclidean length of eyes' centres and multiplication with the secant of the yaw angle computed during pre-processing |
 | head_size | Size of the head based on computing the height of the face computed from facial landmarks with the height of the image |
 | leftward_crop_of_the_face_image | Left of the face image crop |
 | rightward_crop_of_the_face_image | Right of the face image crop |
