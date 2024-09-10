@@ -53,7 +53,7 @@ Optional processing engines:
 
 ***
 
-__BQAT__:
+### __BQAT__:
 
 | Column           | Description |
 | ---------------- | ----------- |
@@ -83,7 +83,7 @@ __BQAT__:
 
 ---
 
-__OFIQ__:
+### __OFIQ__:
 
 {: .important }
 OFIQ engine is still in early stage of development, might be unstable, use with care.
@@ -125,7 +125,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 
 ---
 
-__BIQT__:
+### __BIQT__:
 
 | Column           | Description |
 | ---------------- | ----------- |
