@@ -148,7 +148,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-stateless">
 
-    Stateless version of BQAT API. No data will be stored on the server, similar to a serverless function.
+    Stateless version of BQAT API. No data will be stored on the server, could see as serverless function.
 
 + __[GUI](https://github.com/Biometix/bqat-gui)__
 

@@ -16,10 +16,13 @@ permalink: /changelog/
 
 ## BQAT-Core
 
+<a name="v1.4.3"></a>
+
+### v1.4.3 (2024-05-01)
+
 <a name="v1.4.2"></a>
 
 ### v1.4.2 (2024-05-01)
-
 
 #### 🛠 Fixes
 
@@ -33,14 +36,12 @@ permalink: /changelog/
 
 - Fix speech modality logging issue
 
-
 <a name="v1.4.0"></a>
 
 ### v1.4.0 (2024-04-10)
 
 #### 🚀 Features
 - Introduce OFIQ engine for face modality (alpha) [#15](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/15)
-
 
 #### 🛠 Fixes
 
@@ -54,7 +55,6 @@ permalink: /changelog/
 
 - Update iris engine resizing range to improve iris engine robustness
 
-
 <a name="v1.3.5"></a>
 
 ### v1.3.5 (2024-03-13)
@@ -62,7 +62,6 @@ permalink: /changelog/
 #### 🛠 Fixes
 
 - Fix fingerprint modality metrics naming issue [#20](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/20)
-
 
 <a name="v1.3.4"></a>
 
@@ -72,21 +71,17 @@ permalink: /changelog/
 
 - Fix fingerprint file format conversion issue [#19](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/19)
 
-
 <a name="v1.3.3"></a>
 
 ### v1.3.3 (2024-02-26)
 
 #### 🛠 Fixes
 
-
 - Lower resolution to improve engine robustness [#17](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/17)
-
 
 #### ⚙️ Miscellaneous Tasks
 
 - Add alternate conda env file for speech
-
 
 <a name="v1.3.2"></a>
 
@@ -94,9 +89,7 @@ permalink: /changelog/
 
 #### ⚙️ Miscellaneous Tasks
 
-
 - Update for refactoring image building configuration
-
 
 <a name="v1.3.1"></a>
 
@@ -104,9 +97,7 @@ permalink: /changelog/
 
 #### ⚙️ Miscellaneous Tasks
 
-
 - Cleanup cli log
-
 
 <a name="v1.3.0"></a>
 
@@ -123,7 +114,6 @@ permalink: /changelog/
 
 - Fix iris score issue with low sclera related values [#10](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/10)
 
-
 <a name="v1.2.2"></a>
 
 ### v1.2.2 (2023-06-09)
@@ -131,7 +121,6 @@ permalink: /changelog/
 #### 🛠 Fixes
 
 - Speech mode recursive glob
-
 
 <a name="v1.2.1"></a>
 
@@ -148,7 +137,6 @@ permalink: /changelog/
 #### ⚙️ Miscellaneous Tasks
 
 - Update Dockerfile and test cases for speech module
-
 
 <a name="v1.1.0"></a>
 
@@ -182,6 +170,38 @@ permalink: /changelog/
 
 
 ## BQAT-API
+
+<a name="v1.4.0"></a>
+
+### v1.4.0 (2024-09-09)
+
+#### 🚀 Features
+
+- Support OFIQ engine
+
+- Add engine selection flag
+
+- Add preprocessing flag
+
+- Support image resizing
+
+- Support image conversion
+
+- Add reporting flag
+
+- Add outlier detection flag
+
+- Support BQAT-GUI integration
+
+- Refactor task control endpoints
+
+- Add simple input data preview page
+
+- Support JP2, WSQ image preview
+
+#### ⚙️ Miscellaneous Tasks
+
+- Migrate to Pydantic V2
 
 <a name="v1.3.0"></a>
 
@@ -499,6 +519,127 @@ permalink: /changelog/
 ---
 
 ## BQAT-GUI
+
+<a name="v0.3.0"></a>
+### v0.3.0 (2024-09-09)
+
+#### 🚧 Refactor
+
+- Refactor project structure
+
+
+<a name="v0.2.5"></a>
+### v0.2.5 (2024-05-31)
+
+#### 🚀 Features
+
+- 💡 Add desktop version for BQAT
+
+- 🙌 Implement preprocess layout
+
+#### 🛠 Fixes
+
+- 🔧 Outlier reloading issue
+
+- Check report function not stop
+
+#### 🚧 Refactor
+
+- Initialise reports lifecycle
+
+#### 📚 Documentation
+
+- Modify binary image install&desktop development
+
+#### 🎨 Styling
+
+- Update the workflow text & icons on home page
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update text&button
+
+
+<a name="v0.2.4"></a>
+### v0.2.4 (2024-05-29)
+
+#### 🚀 Features
+
+- Configurate detector column options
+
+- 🙌 Make outlier request with configurations
+
+- Set match file by name&type
+
+#### ⚙️ Miscellaneous Tasks
+
+- Format code
+
+
+<a name="v0.2.3"></a>
+### v0.2.3 (2024-05-28)
+
+#### 🚀 Features
+
+- 🙌 Implement outlier detector section
+
+#### 🚧 Refactor
+
+- Refactor the structure of loading reports
+
+#### 📚 Documentation
+
+- 💡 Add comments for all methods
+
+
+<a name="v0.2.2"></a>
+### v0.2.2 (2024-05-22)
+
+#### 🚀 Features
+
+- 🙌  Implement scan local path
+
+#### 🚧 Refactor
+
+- Refactor the uploader section
+
+
+<a name="v0.2.1"></a>
+### v0.2.1 (2024-05-09)
+
+#### 🛠 Fixes
+
+- 🔧 Internal connnect & image ratio issue
+
+- 🔧 Internal connnect & image ratio issue
+
+- 🔧 Issue of image ratio when preview
+
+
+<a name="v0.2.0"></a>
+### v0.2.0 (2024-04-23)
+
+#### 🚀 Features
+
+- Make the home icons controllable.
+
+- Finish scan input page
+
+- Develop the basic framework of  BQAT new UI
+
+- Connect new UI with backend  server
+
+- Finish develop all basic features with backends
+
+#### 🎨 Styling
+
+- 💡 Add some icons for items
+
+#### ⚙️ Miscellaneous Tasks
+
+- Delete useless files
+
+- Remove useless files
 
 <a name="v0.1.9"></a>
 
