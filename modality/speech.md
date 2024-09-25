@@ -42,11 +42,11 @@ __Speech__:
 
 | Column        | Description |
 | ------------- | ----------- |
-| Naturalness   | Estimation of the naturalness of synthetic speech generated |
-| Quality       | Overall quality estimation of speech that sent through a communication system |
-| Noisiness     | Quality dimension of speech that leads to quality degradation |
-| Discontinuity | Quality dimension of speech that leads to quality degradation |
-| Coloration    | Quality dimension of speech that leads to quality degradation |
-| Loudness      | Quality dimension of speech that leads to quality degradation |
+| Quality       | Overall quality estimation of the speech audio file. |
+| Noisiness     | Quality degradation such as background, circuit, or coding noise. |
+| Discontinuity | Quality Isolated or non-stationary distortions, e.g. introduced by packet-loss or clipping. |
+| Coloration    | Quality degradation caused by frequency response distortions, e.g. introduced by bandwidth limitation, low bitrate codecs, or packet-loss concealment. |
+| Naturalness   | Estimation of the naturalness of synthetic speech. |
+| Loudness      | Influence of the loudness on the perceived quality of transmitted speech. |
 
-> [NISQA Model](https://www.isca-speech.org/archive/pdfs/interspeech_2021/mittag21_interspeech.pdf)
+> [NISQA Model](https://arxiv.org/abs/2104.09494)
