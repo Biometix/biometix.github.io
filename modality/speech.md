@@ -44,7 +44,7 @@ __Speech__:
 | ------------- | ----------- |
 | Quality       | Overall quality estimation of the speech audio file. |
 | Noisiness     | Quality degradation such as background, circuit, or coding noise. |
-| Discontinuity | Quality Isolated or non-stationary distortions, e.g. introduced by packet-loss or clipping. |
+| Discontinuity | Quality degradation caused by isolated or non-stationary distortions, e.g. introduced by packet-loss or clipping. |
 | Coloration    | Quality degradation caused by frequency response distortions, e.g. introduced by bandwidth limitation, low bitrate codecs, or packet-loss concealment. |
 | Naturalness   | Estimation of the naturalness of synthetic speech. |
 | Loudness      | Influence of the loudness on the perceived quality of transmitted speech. |
