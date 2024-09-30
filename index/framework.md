@@ -7,7 +7,7 @@ permalink: /framework/
 
 # BQAT Framework
 
- The BQAT (Biometric Quality Assessment Tool) framework consists of the [core](https://github.com/Biometix/bqat-core) algorithm component, a [command line user interface](https://github.com/Biometix/bqat-cli), [convenience web page for the API](https://github.com/Biometix/bqat-gui) and [web API](https://github.com/Biometix/bqat-api).
+ The BQAT (Biometric Quality Assessment Tool) framework consists of the [core](https://github.com/Biometix/bqat-core) algorithm component, a [command line interface](https://github.com/Biometix/bqat-cli), a [web API server](https://github.com/Biometix/bqat-api), and a [web application for the API](https://github.com/Biometix/bqat-gui).
 
 ``` mermaid
 ---
@@ -24,9 +24,9 @@ graph TD
 
 ## BQAT Core
 
-The core component of BQAT is implemented as a Python package, which links vendor algorithms together, including face, fingerprint, and iris modules. 
+The core component of BQAT is implemented as a Python package, which links vendor algorithms together, including face, fingerprint, iris and voice modules. 
 
-It will process the input biometric samples using the corresponding modality engine selected and will produce the quality assessment metrics as Python dict. 
+It will analyse the input biometric samples using the corresponding processing engine and produce the quality metrics. 
 
 ``` mermaid
 ---
@@ -42,7 +42,7 @@ graph LR
 
 ## Interfaces
 
-The different interface wrappers take care of the image loadings and then send them to the core component for processing. When the task is done, load the raw outputs and save them in their respective formats. 
+The BQAT core exposed via different interfaces (CLI, API, and GUI), which handle data loading, data management and task queueing.
 
 ***
 
@@ -57,7 +57,11 @@ graph LR
     cli{Command Line} --> log(Log)
 ```
 
-> BQAT CLI takes a folder in your file system as input and produces the raw output in CSV along with a brief statistic report. 
++ The BQAT CLI provides terminal commands to interact with BQAT core.
+
++ It takes a folder in your file system as input and produces the raw metrics in CSV along with a EDA report.
+
++ It is distributed as Docker container.
 
 ***
 
@@ -74,7 +78,15 @@ graph LR
     db[(Database)] --> log(Log)
 ```
 
-> BQAT API adds task management and storage on top of basic BQAT functionalities. It handles inputs in bulk as separate tasks, and saves the output into a backend database which can be accessed via RESTful API. It was designed to work as a backend container. 
++ The BQAT API adds task management and storage on top of BQAT core functionalities.
+
++ It handles inputs individual scanning tasks, and saves the output into a document database which can be accessed via RESTful API.
+
++ It is designed to be a web server that requires a frontend to interact with.
+
++ Vertical scaling only.
+
++ It is distributed as Docker container.
 
 ***
 
@@ -87,7 +99,17 @@ graph LR
     api{Endpoints} --> output(JSON Response)
 ```
 
-> BQAT Stateless is a simplified version of BQAT API. Removing the task management and storage, it will return the raw output as standard JSON responses. It handles biometric samples one by one, either in raw file or base64 string. 
++ BQAT Stateless is a stateless version of BQAT API. Without the task management and database, it will return the raw output as standard JSON responses.
+
++ It handles biometric samples asynchronously, either in raw file or base64 string.
+
++ It is designed to be a web server that requires a frontend to interact with, as well as a middleware to manage load balancing.
+
++ Vertical and horizontal scaling possible.
+
++ Serverless/FaaS deployment possible.
+
++ It is distributed as Docker container.
 
 ***
 
@@ -104,4 +126,107 @@ graph LR
     db[(Database)] --> outlier(Outliers Detected)
 ```
 
-> BQAT GUI is a simple frontend version of BQAT API as an example project. 
++ BQAT GUI is a web application for BQAT API.
+
++ Can be deployed as web site or desktop application.
+
++ Vertical scaling only.
+
++ It is distributed as Docker container.
+
+
+# System Architecture
+
+``` mermaid
+---
+title: BQAT Core
+config:
+  theme: mc
+  look: handDrawn
+  layout: elk
+---
+flowchart TD
+ subgraph s1["Python Package"]
+    n0["Python Interface"]
+    n0 --> n1["Face Engines"]
+    n1 --> a1["Biometix"]
+    n1 --> a2["OFIQ"]
+    n1 --> a3["BIQT"]
+    n0 --> n2["Iris Engine"]
+    n2 --> a4["BIQT"]
+    n0 --> n3["Fingerprint Engine"]
+    n3 --> a5["NFIQ2"]
+    n0 --> n4["Voice Engine"]
+    n4 --> a6["NISQA"]
+  end
+```
+
+---
+``` mermaid
+---
+title: BQAT CLI
+config:
+  theme: mc
+  look: handDrawn
+  layout: elk
+---
+flowchart TD
+  subgraph s1["Docker Container"]
+    n0["Python Commands"] --> n1["Ray Parallel Processing Framework"]
+    n1 --> n2["BQAT-Core"]
+  end
+  s1 --> n3["Shell Commands"]
+```
+
+---
+
+``` mermaid
+---
+title: BQAT API
+config:
+  theme: mc
+  look: handDrawn
+  layout: elk
+---
+flowchart TD
+  subgraph s1["FastAPI Web Server"]
+    n0["Web API Endpoints"] --> n1["Ray Parallel Processing Framework"]
+    n1 --> n2["BQAT-Core"]
+  end
+  s1 --> n3["Database (MongoDB)"]
+  s1 --> n4["Task Queue (Redis)"]
+
+```
+
+---
+``` mermaid
+---
+title: BQAT GUI
+config:
+  theme: mc
+  look: handDrawn
+  layout: elk
+---
+flowchart LR
+  subgraph s1["Docker Compose Stack"]
+    n1["Vue.js Web Application"] --> n2["BQAT-API"]
+  end
+```
+
+---
+
+``` mermaid
+---
+title: BQAT Stateless
+config:
+  theme: mc
+  look: handDrawn
+  layout: elk
+---
+flowchart TD
+  subgraph s1["FastAPI Web Server"]
+    n0["Web API Endpoints"] --> n1["BQAT-Core"]
+    n1["BQAT-Core"]
+  end
+
+```
