@@ -5,6 +5,8 @@ nav_order: 5
 permalink: /framework/
 ---
 
+# Framework
+
 ---
 <details open markdown="block">
   <summary>
@@ -17,7 +19,7 @@ permalink: /framework/
 
 ---
 
-# BQAT Framework
+## Project Diagram
 
  The BQAT (Biometric Quality Assessment Tool) framework consists of the [core](https://github.com/Biometix/bqat-core) algorithm component, a [command line interface](https://github.com/Biometix/bqat-cli), a [web API server](https://github.com/Biometix/bqat-api), and a [web application for the API](https://github.com/Biometix/bqat-gui).
 
@@ -34,7 +36,7 @@ graph TD
 ```
 
 
-## BQAT Core
+### BQAT Core
 
 The core component of BQAT is implemented as a Python package, which links vendor algorithms together, including face, fingerprint, iris and voice modules. 
 
@@ -52,7 +54,7 @@ graph LR
     core{Core} --> speech(Speech)
 ```
 
-## Interfaces
+### Interfaces
 
 The BQAT core exposed via different interfaces (CLI, API, and GUI), which handle data loading, data management and task queueing.
 
@@ -147,7 +149,7 @@ graph LR
 + It is distributed as Docker container.
 
 
-# Solution Architecture
+## Solution Architecture
 
 ``` mermaid
 ---
@@ -243,20 +245,20 @@ flowchart TD
 
 ```
 
-# System Requirements
+## System Requirements
 
-## Operating System
+### Operating System
 
 + x86 platform
 + Linux, Windows, macOS
 
 > Since data processing is compute-intensive, you may want to allocate more cpu/memory with the host machine for better performance and stability.
 
-## Runtime
+### Runtime
 
 BQAT deliverables are packaged as Docker containers, you will need Docker engine to host the container.
 
-## Performance Benchmark
+### Performance Benchmark
 
 | Mode | Throughput (per second) \| (per hour) |
 | --- | --- |
@@ -270,7 +272,7 @@ BQAT deliverables are packaged as Docker containers, you will need Docker engine
 
 > Baseline testing done on BQAT-CLI, BQAT-API/BQAT-GUI should return similar numbers, while performance of BQAT-Stateless will be determined by upstream load balancer/scheduler.
 
-## System Scaling
+### System Scaling
 
 BQAT-CLI, BQAT-API (which is the backend of BQAT-GUI) runs in single node configuration, only vertical scaling is supported. If you want to scale the system horizontally, you can turn to [BQAT-Stateless](https://biometix.github.io/playbook/stateless.html#scalability).
 
