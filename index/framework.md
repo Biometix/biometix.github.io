@@ -5,6 +5,18 @@ nav_order: 5
 permalink: /framework/
 ---
 
+---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # BQAT Framework
 
  The BQAT (Biometric Quality Assessment Tool) framework consists of the [core](https://github.com/Biometix/bqat-core) algorithm component, a [command line interface](https://github.com/Biometix/bqat-cli), a [web API server](https://github.com/Biometix/bqat-api), and a [web application for the API](https://github.com/Biometix/bqat-gui).
@@ -240,7 +252,7 @@ flowchart TD
 
 > Since data processing is compute-intensive, you may want to allocate more cpu/memory with the host machine for better performance and stability.
 
-## Docker
+## Runtime
 
 BQAT deliverables are packaged as Docker containers, you will need Docker engine to host the container.
 
