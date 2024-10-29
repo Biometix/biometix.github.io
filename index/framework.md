@@ -258,6 +258,10 @@ BQAT deliverables are packaged as Docker containers, you will need Docker engine
 
 > Baseline testing done on BQAT-CLI, BQAT-API/BQAT-GUI should return similar numbers, while performance of BQAT-Stateless will be determined by upstream load balancer/scheduler.
 
+## System Scaling
+
+BQAT-CLI, BQAT-API (which is the backend of BQAT-GUI) runs in single node configuration, only vertical scaling is supported. If you want to scale the system horizontally, you can turn to [BQAT-Stateless](https://biometix.github.io/playbook/stateless.html#scalability).
+
 In terms of cluster deployment for BQAT-Stateless:
 
 | Nodes | Throughput (per second) \| (per hour) |
