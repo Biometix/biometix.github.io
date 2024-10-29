@@ -135,7 +135,7 @@ graph LR
 + It is distributed as Docker container.
 
 
-# System Architecture
+# Solution Architecture
 
 ``` mermaid
 ---
@@ -230,3 +230,40 @@ flowchart TD
   end
 
 ```
+
+# System Requirements
+
+## Operating System
+
++ x86 platform
++ Linux, Windows, macOS
+
+> Since data processing is compute-intensive, you may want to allocate more cpu/memory with the host machine for better performance and stability.
+
+## Docker
+
+BQAT deliverables are packaged as Docker containers, you will need Docker engine to host the container.
+
+## Performance Benchmark
+
+| Mode | Throughput (per second) \| (per hour) |
+| --- | --- |
+| Face (BQAT) | 52 \| 187,200 |
+| Face (OFIQ) | 1.1 \| 3,960 |
+| Face (BIQT) | 4.7 \| 16,920 |
+| Fingerprint (NFIQ2) | 6.8 \| 24,480 |
+| Iris (BIQT) | 17.8 \| 64,080 |
+
+> Test platform: 6 cores / 12 threads CPU, 16GB of RAM.
+
+> Baseline testing done on BQAT-CLI, BQAT-API/BQAT-GUI should return similar numbers, while performance of BQAT-Stateless will be determined by upstream load balancer/scheduler.
+
+In terms of cluster deployment for BQAT-Stateless:
+
+| Nodes | Throughput (per second) \| (per hour) |
+| --- | --- |
+| 1 | 14.1 \| 50,760 |
+| 2 | 26.3 \| 94,680 |
+| 3 | 53.8 \| 193,680 |
+
+> Test done in iris mode.
