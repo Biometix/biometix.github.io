@@ -49,9 +49,9 @@ graph LR
 
 ## User Interface
 
-### Intro
+### Home
 
-Brief introduction to the BQAT workflow.
+This is the landing page, with a brief introduction to the BQAT workflow.
 
 ![Screenshot](../assets/images/screenshot_web_intro.png)
 
@@ -61,15 +61,15 @@ Import/select input data and submit analysis task.
 
 ![Screenshot](../assets/images/screenshot_web_input_select.png)
 
-1. Local file
+1. Local files
 
-  - The user could import dataset as zip file to the server.
+   - The user could import dataset as zip file to the server.
 
-  - Or may transfer the data to the data folder on the machine (if you run it on your local machine or have access to the machine).
+   - Or may transfer the data to the data folder on the machine (if you run it on your local machine or have access to the machine).
 
-2. Remote file
+2. Remote files
 
-  - The user could also upload files from the browser directely (limited number possible), and the data won't be saved on the server once processed.
+   - The user could also upload files from the browser directely (limited number possible), and the data won't be saved on the server once processed.
 
 ---
 
@@ -103,7 +103,7 @@ Preview/download output data.
 
 ---
 
-Indentify potential outliers using output data.
+Identify potential outliers using output data.
 
 ![Screenshot](../assets/images/screenshot_web_task_outlier.png)
 
@@ -117,7 +117,7 @@ Generate EDA report using output data.
 
 You may view/download the EDA report in this page. You can also share the report via the QR code.
 
-![Screenshot](../assets/images/screenshot_web_results.png)
+![Screenshot](../assets/images/screenshot_web_result.png)
 
 ### Data Management
 
@@ -139,9 +139,13 @@ You can inspect the data as well (WSQ fingerprint files supported).
 
 ![Screenshot](../assets/images/screenshot_raw.png)
 
+---
+
 ### EDA Report
 
 ![Screenshot](../assets/images/screenshot_report.png)
+
+---
 
 ### Outlier Detection
 
