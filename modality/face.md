@@ -57,7 +57,7 @@ Optional processing engines:
 ### BQAT:
 
 | Column           | Description |
-| ---------------- | ----------- |
+| ----------------      | ----------- |
 | file             | Path to the input file |
 | ipd              | Inter-pupillary distance |
 | confidence       | Confidence level of face dectection (not quality score) |
@@ -81,6 +81,40 @@ Optional processing engines:
 | glasses          | Glasses detected or not |
 | image_width      | Width of the input image in pixels |
 | image_height     | Height of the input image in pixels |
+| face_ratio       | Ratio of face area to the whole image |
+| brightness       | Average brightness of the image |
+| dynamic_range    | Dynamic range of the image |
+| sharpness        | Sharpness of the image |
+| contrast         | Contrast of the image |
+| face_offset_x    | Horizontal offset of the face from image centre |
+| face_offset_y    | Vertical offset of the face from image centre |
+| background_colour_name      | Background colour name |
+| background_colour_rgb       | Background colour RGB values |
+| background_colour_variance  | Background colour variance |
+| hair_coverage               | Coverage ratio of detected hair area to whole face bounding box |
+<!-- | blur_lap_var                | Laplacian variance of image as an indicator of blurriness | -->
+| blurriness                  | Blur effect metric. An estimate strength of perceptual blurriness |
+| gaze_right_x                | Right eyeball gazing direction offset percentage horizontal |
+| gaze_right_y                | Right eyeball gazing direction offset percentage vertical |
+| gaze_left_x                 | Left eyeball gazing direction offset percentage horizontal |
+| gaze_left_y                 | Left eyeball gazing direction offset percentage vertical |
+| pupil_colour_right_name     | Right pupil colour name |
+| pupil_colour_right_rgb      | Right pupil colour RGB values |
+| pupil_colour_left_name      | Left pupil colour name |
+| pupil_colour_left_rgb       | Left pupil colour RGB values |
+<!-- | brisque_quality             | Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image quality score |
+| age                         | Estimation of age |
+| gender                      | Estimation of gender |
+| ethnicity                   | Estimation of ethnicity |
+| emotion                     | Estimation of emotions |
+| is_hologram                 | Hologram effect detected or not |
+| holograms                   | Hologram area detected |
+| is_glare                    | Glare/Reflection on the image detected or not |
+| glares                      | Glare area detected | -->
+<!-- | headgear_detection          | Probability of religious headgear detected |
+| headgear_detection_dark     | Probability of black religious headgear detected | -->
+<!-- | colour_temperature          | Estimation of average colour temperature in Kelvin | -->
+| brightness_variance         | Estimation of image brightness variance |
 
 ---
 
@@ -95,7 +129,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 | file             | Filename of the input |
 | quality          | [MagFace](https://github.com/IrvingMeng/MagFace)-based unified quality score measure |
 | background_uniformity | Gradient-based background uniformity |
-| illumination_uniformity | Illumination unformity by summing up the minima of the histograms of the left and the right side of the face |
+| illumination_uniformity | Illumination uniformity by summing up the minima of the histograms of the left and the right side of the face |
 | luminance_mean | Luminance mean measure computed from the luminance histogram |
 | luminance_variance | Luminance variance measure computed from the luminance histogram |
 | under_exposure_prevention | Under-exposure prevention by computing the proportion of low-intensity pixels in the luminance image to assess the abscence of under-exposure |
@@ -110,7 +144,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 | eyes_visible | Eyes visibility assessment by measuring the coverage of the eye visibility zone with the result of face occlusion segmentation computed during pre-processing |
 | mouth_occlusion_prevention | Assessment of the absence of mouth occlusion by measuring the coverage of the mouth region from mouth landmarks with the result of face occlusion segmentation computed on pre-processing |
 | face_occlusion_prevention | Assessment of the absence of face occlusion by measuring the coverage of the landmarked region with the result of face occlusion segmentation computed during pre-processing |
-| inter_eye_distance | Inter-eye distance assessment based on computing the Euclidean length of eyes' centres and multiplication with the secant of the yaw angle computed during pre-processing |
+| inter_eye_distance | Inter-eye distance assessment based on computing the Euclidean length of eyes centres and multiplication with the secant of the yaw angle computed during pre-processing |
 | head_size | Size of the head based on computing the height of the face computed from facial landmarks with the height of the image |
 | leftward_crop_of_the_face_image | Left of the face image crop |
 | rightward_crop_of_the_face_image | Right of the face image crop |
@@ -120,7 +154,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 | head_pose_pitch | Pose angle pitch frontal alignment based on the [3DDFAV2](https://github.com/cleardusk/3DDFA_V2) |
 | head_pose_roll | Pose angle roll frontal alignment based on the [3DDFAV2](https://github.com/cleardusk/3DDFA_V2) |
 | expression_neutrality | Expression neutrality estimation based on a fusion of [HSEMotion](https://github.com/HSE-asavchenko/face-emotion-recognition) with [Efficient-Expression-Neutrality-Estimation](https://github.com/dasec/Efficient-Expression-Neutrality-Estimation) |
-| no_head_coverings | Assessment of the absence of head coverings by counting the pixels being labeled as head covers in the mask output by the face parsing computed during pre-processing |
+| no_head_coverings | Assessment of the absence of head coverings by counting the pixels being labelled as head covers in the mask output by the face parsing computed during pre-processing |
 
 {: .highlight }
 > [OFIQ Project](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html)

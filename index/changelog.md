@@ -520,6 +520,80 @@ permalink: /changelog/
 
 ## BQAT-GUI
 
+<a name="v0.3.11"></a>
+### v0.3.11 (2024-12-05)
+
+#### 🛠 Fixes
+
+- 🐛 Auth trategy issues
+
+- Minor refactor
+
+
+<a name="v0.3.10"></a>
+### v0.3.10 (2024-12-02)
+
+#### 🛠 Fixes
+
+- 🐛 Operational UI issues
+
+
+<a name="v0.3.9"></a>
+### v0.3.9 (2024-11-27)
+
+#### 🛠 Fixes
+
+- UI layout issues
+
+
+<a name="v0.3.8"></a>
+### v0.3.8 (2024-11-21)
+
+#### 🚀 Features
+
+- 💡 Support runtime environment variables
+
+
+<a name="v0.3.7"></a>
+### v0.3.7 (2024-10-29)
+
+#### 🚀 Features
+
+- 💡 Introduce file management tab (beta)
+
+- 💡 Introduce landing page (beta)
+
+- 🙌 Add fail safe logic that work with backend health check feature
+
+#### 🛠 Fixes
+
+- Improve outlier detection UX
+
+
+<a name="v0.3.6"></a>
+### v0.3.6 (2024-10-03)
+
+#### 🚀 Features
+
+- 🙌 Render audio player in preview
+
+#### 🛠 Fixes
+
+- Improve UX
+
+
+<a name="v0.3.1"></a>
+### v0.3.1 (2024-09-19)
+
+#### 🛠 Fixes
+
+- Task log loading issue
+
+- Collapse input folder view
+
+- Minor UX fixes
+
+
 <a name="v0.3.0"></a>
 ### v0.3.0 (2024-09-09)
 

@@ -47,6 +47,8 @@ graph LR
 
 ```
 
+> BQAT-GUI could also distrubuted as a desktop application, reach out to us for further detail.
+
 ## User Interface
 
 ### Home
@@ -150,6 +152,7 @@ You can inspect the data as well (WSQ fingerprint files supported).
 ### Outlier Detection
 
 ![Screenshot](../assets/images/screenshot_outlier.png)
+
 
 # BQAT-GUI lite
 
