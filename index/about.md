@@ -17,4 +17,4 @@ If you have any concern, please feel free to contact us:
 - [Biometix on Github](https://github.com/Biometix).
 - [Biometix Pty Ltd](https://www.biometix.com/)
 
-> Email: <info@biometix.com>
+> Email: <support@biometix.com>
