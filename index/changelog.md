@@ -17,26 +17,28 @@ permalink: /changelog/
 ## BQAT-Core
 
 <a name="v1.5.1"></a>
-# v1.5.1 (2024-11-18)
 
-## 🚀 Features
+### v1.5.1 (2024-11-18)
+
+#### 🚀 Features
 
 - Add metrics for image colour temperature (pro)
 
-## 🛠 Fixes
+#### 🛠 Fixes
 
 - Refactor speech engine to optimize container size
 - Better handling for failed face mesh detection
 
 
 <a name="v1.5.0"></a>
-# v1.5.0 (2024-11-07)
 
-## 🛠 Fixes
+### v1.5.0 (2024-11-07)
+
+#### 🛠 Fixes
 
 - Fix pupil location bug
 
-## 🚀 Features
+#### 🚀 Features
 
 - Add metrics for face location offset
 - Add metrics for face area ratio
@@ -51,27 +53,30 @@ permalink: /changelog/
 
 
 <a name="v1.4.5"></a>
-# v1.4.5 (2024-10-09)
 
-## 🛠 Fixes
+### v1.4.5 (2024-10-09)
+
+#### 🛠 Fixes
 
 - Fix OFIQ face engine folder mode output vaule type issue
 - Switch to system temporary directory for OFIQ folder mode
 
 
 <a name="v1.4.4"></a>
-# v1.4.4 (2024-09-26)
 
-## 🛠 Fixes
+### v1.4.4 (2024-09-26)
+
+#### 🛠 Fixes
 
 - Fix error log issue
 - Switch to system temporary directory for fingerprint conversion
 
 
 <a name="v1.4.3"></a>
-# v1.4.3 (2024-08-14)
 
-## 🛠 Fixes
+### v1.4.3 (2024-08-14)
+
+#### 🛠 Fixes
 
 - Rebuild OFIQ engine to support single file processing
 
