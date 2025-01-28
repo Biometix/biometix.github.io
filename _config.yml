@@ -34,9 +34,6 @@ kramdown:
 
 theme: just-the-docs
 
-plugins:
-  - "jekyll-github-metadata"
-
 last_modified_date: true
 
 # Google Analytics Tracking
