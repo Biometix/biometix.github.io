@@ -59,10 +59,10 @@ sudo chmod +x run.sh
 For Bash (Linux, macOS, Windows):
 
 ``` sh
-# Process all face images in data/ folder
+# Process all face images in 'data/' folder
 ./run.sh --input data/ --mode face
 
-# Process iris images in data/iris/ folder
+# Process iris images in 'data/iris/' folder
 ./run.sh --input data/iris/ --mode iris
 ```
 
@@ -77,10 +77,10 @@ e.g. input folder is `data/iris folder/`
 For PowerShell (Winodws, Linux):
 
 ``` ps
-# Process all face images in data/ folder
+# Process all face images in 'data/' folder
 .\run.ps1 --input data/ --mode face
 
-# Process iris images in data/iris/ folder
+# Process iris images in 'data/iris/' folder
 .\run.ps1 --input data/iris/ --mode iris
 ```
 

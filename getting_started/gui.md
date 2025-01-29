@@ -37,19 +37,18 @@ This project is run as a Docker stack which provides a simple web GUI for BQAT-A
 
 
 ``` sh
-# Start container stack
-docker compose up -d
+# Start BQAT GUI services
+docker compose --profile default up -d
 
-# Stop the services (ctrl + C)
-docker compose down
+# Stop the services
+docker compose --profile default down
 ```
 
-<a name="output">
-## Output
+Find the BQAT GUI at:
 
-Find the page at:
+* `localhost:9949`
 
-* `localhost:7860`
+> You may configure url, port, proxy and other settings in the compose file.
 
 ## Further Details
 {: .no_toc }

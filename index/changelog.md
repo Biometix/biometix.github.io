@@ -1,9 +1,11 @@
 ---
 layout: default
 title: CHANGELOG
-nav_order: 7
+nav_order: 8
 permalink: /changelog/
 ---
+
+# CHANGELOG
 
 <details open markdown="block">
   <summary>

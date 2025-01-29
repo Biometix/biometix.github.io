@@ -115,11 +115,11 @@ Generate EDA report using output data.
 
 ![Screenshot](../assets/images/screenshot_web_task_report.png)
 
-### Results EDA Report
+### Analysis Results
 
 You may view/download the EDA report in this page. You can also share the report via the QR code.
 
-![Screenshot](../assets/images/screenshot_web_result.png)
+![Screenshot](../assets/images/screenshot_web_results.png)
 
 ### Data Management
 

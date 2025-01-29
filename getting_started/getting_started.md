@@ -158,6 +158,14 @@ __Speech__:
 
 > [NISQA Model](https://www.isca-speech.org/archive/pdfs/interspeech_2021/mittag21_interspeech.pdf) -->
 
+## Output
+
+The output data returns in CSV or JSON, which can be imported by other tools for further data analysis.
+
 ## Report
 
-In addition to raw output, BQAT will produce a simple statistical [report](https://biometix.github.io/playbook/cli.html#quality-report) on those assessment metrics.
+To help you get a high level understanding of the output data, BQAT can produce a brief [EDA report](https://biometix.github.io/playbook/cli.html#quality-report) on those assessment metrics.
+
+## Advance Support
+
+

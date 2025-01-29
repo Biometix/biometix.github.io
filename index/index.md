@@ -185,4 +185,4 @@ More to come! 🚀
 ---
 
 {: .highlight }
-> Please contact us at info@biometix.com if you'd like more information.
+> Please [contact us](https://biometix.github.io/about/#about-us) if you'd like more information.
