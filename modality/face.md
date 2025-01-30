@@ -92,7 +92,7 @@ Optional processing engines:
 | background_colour_rgb       | Background colour RGB values |
 | background_colour_variance  | Background colour variance |
 | hair_coverage               | Coverage ratio of detected hair area to whole face bounding box |
-<!-- | blur_lap_var                | Laplacian variance of image as an indicator of blurriness | -->
+| brightness_variance         | Estimation of image brightness variance |
 | blurriness                  | Blur effect metric. An estimate strength of perceptual blurriness |
 | gaze_right_x                | Right eyeball gazing direction offset percentage horizontal |
 | gaze_right_y                | Right eyeball gazing direction offset percentage vertical |
@@ -102,7 +102,9 @@ Optional processing engines:
 | pupil_colour_right_rgb      | Right pupil colour RGB values |
 | pupil_colour_left_name      | Left pupil colour name |
 | pupil_colour_left_rgb       | Left pupil colour RGB values |
-<!-- | brisque_quality             | Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image quality score |
+
+<!-- | blur_lap_var                | Laplacian variance of image as an indicator of blurriness | 
+| brisque_quality             | Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image quality score |
 | age                         | Estimation of age |
 | gender                      | Estimation of gender |
 | ethnicity                   | Estimation of ethnicity |
@@ -110,11 +112,11 @@ Optional processing engines:
 | is_hologram                 | Hologram effect detected or not |
 | holograms                   | Hologram area detected |
 | is_glare                    | Glare/Reflection on the image detected or not |
-| glares                      | Glare area detected | -->
-<!-- | headgear_detection          | Probability of religious headgear detected |
-| headgear_detection_dark     | Probability of black religious headgear detected | -->
-<!-- | colour_temperature          | Estimation of average colour temperature in Kelvin | -->
-| brightness_variance         | Estimation of image brightness variance |
+| glares                      | Glare area detected |
+| headgear_detection          | Probability of religious headgear detected |
+| headgear_detection_dark     | Probability of black religious headgear detected |
+| colour_temperature          | Estimation of average colour temperature in Kelvin | 
+-->
 
 ---
 
