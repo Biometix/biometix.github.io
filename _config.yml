@@ -19,7 +19,8 @@ aux_links_new_tab: true
 #     url: https://biometix.com/
 mermaid:
   version: "11.4.1"
-  theme: "neutral"
+  init:
+    theme: "neutral"
 
 back_to_top: true
 back_to_top_text: "Back to top"
