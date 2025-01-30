@@ -46,6 +46,11 @@ The quality of biometric samples is a key aspect of the performance and efficacy
 ---
 
 ``` mermaid
+---
+config:
+  theme: neutral
+  layout: elk
+---
     graph LR
         subgraph title [ ]
             core[BQAT-Core] --> face("`__Face__`")
