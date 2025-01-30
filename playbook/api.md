@@ -20,6 +20,11 @@ nav_order: 2
 ## Setting Up
 
 ``` mermaid
+---
+config:
+  theme: neutral
+  layout: elk
+---
 
 graph TD
   download[Download the docker compose file] --> run(Spin up the container)
@@ -36,6 +41,11 @@ BQAT API is designed to be a self-contained backend service for biometrics analy
 ## Workflow
 
 ``` mermaid
+---
+config:
+  theme: neutral
+  layout: elk
+---
 
 flowchart LR
   A[Frontend] --> B([Biometrics])

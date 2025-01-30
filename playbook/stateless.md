@@ -18,7 +18,11 @@ nav_order: 3
 ## Setting Up
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph TD
   download[Download the docker compose file] --> run(Spin up the container)
   run --> doc{localhost:8848/docs}
@@ -30,7 +34,11 @@ graph TD
 ## Workflow
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph LR
   A[Frontend] --> B([Biometrics])
   B --> C{BQAT Stateless API}

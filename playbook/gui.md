@@ -21,7 +21,11 @@ nav_order: 4
 ## Setting Up
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph TD
     download[Download the docker compose file] --> run(Spin up the container)
     run --> web{Visit localhost:9949}
@@ -34,7 +38,11 @@ graph TD
 ## Workflow
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph LR
     input[Biometrics] --> upload(Upload data)
     subgraph bqat [BQAT Web GUI]
@@ -163,7 +171,11 @@ This version is a simple example web interface, which expose only the main biome
 ## Setting Up
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph TD
     download[Download the docker compose file] --> run(Spin up the container)
     run --> web{Visit localhost:7860}
@@ -176,7 +188,11 @@ graph TD
 ## Workflow
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph LR
     input[Biometrics] --> submit(Submit task)
     subgraph BQAT Web GUI

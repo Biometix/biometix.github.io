@@ -21,7 +21,11 @@ nav_order: 1
 
 
 ``` mermaid
-
+---
+config:
+  theme: neutral
+  layout: elk
+---
 graph TD
     download([Download the script to your working directory]) --> data(Creat input folder in the same directory)
     data --> run((Run command in terminal))

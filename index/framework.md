@@ -26,6 +26,9 @@ permalink: /framework/
 ``` mermaid
 ---
 title: Biometric Quality Assessment Tool
+config:
+  theme: neutral
+  layout: elk
 ---
 graph TD
     subgraph BQAT
@@ -45,6 +48,9 @@ It will analyse the input biometric samples using the corresponding processing e
 ``` mermaid
 ---
 title: BQAT Core
+config:
+  theme: neutral
+  layout: elk
 ---
 graph LR
     input(Biometric samples) --> core{Core}
@@ -63,6 +69,9 @@ The BQAT core exposed via different interfaces (CLI, API, and GUI), which handle
 ``` mermaid
 ---
 title: BQAT CLI
+config:
+  theme: neutral
+  layout: elk
 ---
 graph LR
     input(Input Folder) --> cli{Command Line}
@@ -82,6 +91,9 @@ graph LR
 ``` mermaid
 ---
 title: BQAT API
+config:
+  theme: neutral
+  layout: elk
 ---
 graph LR
     file(File System) --> api{Endpoints}
@@ -107,6 +119,9 @@ graph LR
 ``` mermaid
 ---
 title: BQAT Stateless
+config:
+  theme: neutral
+  layout: elk
 ---
 graph LR
     upload(HTTP) --> api{Endpoints}
@@ -130,6 +145,9 @@ graph LR
 ``` mermaid
 ---
 title: BQAT GUI
+config:
+  theme: neutral
+  layout: elk
 ---
 graph LR
     upload(Upload) --> gui{Web}
@@ -155,8 +173,7 @@ graph LR
 ---
 title: BQAT Core
 config:
-  theme: mc
-  look: handDrawn
+  theme: neutral
   layout: elk
 ---
 flowchart TD
@@ -180,8 +197,7 @@ flowchart TD
 ---
 title: BQAT CLI
 config:
-  theme: mc
-  look: handDrawn
+  theme: neutral
   layout: elk
 ---
 flowchart TD
@@ -198,8 +214,7 @@ flowchart TD
 ---
 title: BQAT API
 config:
-  theme: mc
-  look: handDrawn
+  theme: neutral
   layout: elk
 ---
 flowchart TD
@@ -217,8 +232,7 @@ flowchart TD
 ---
 title: BQAT GUI
 config:
-  theme: mc
-  look: handDrawn
+  theme: neutral
   layout: elk
 ---
 flowchart LR
@@ -233,8 +247,7 @@ flowchart LR
 ---
 title: BQAT Stateless
 config:
-  theme: mc
-  look: handDrawn
+  theme: neutral
   layout: elk
 ---
 flowchart TD
