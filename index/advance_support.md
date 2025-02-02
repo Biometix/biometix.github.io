@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Advance Support
-nav_order: 7
+nav_order: 6
 ---
 
 # Advance Support
