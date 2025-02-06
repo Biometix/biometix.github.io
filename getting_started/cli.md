@@ -56,7 +56,7 @@ sudo chmod +x run.sh
 + Open your CLI and navigate to this directory.
 + Enter the command below to run BQAT.
 
-For Bash (Linux, macOS, Windows):
+For Bash (Linux, macOS):
 
 ``` sh
 # Process all face images in 'data/' folder
@@ -74,7 +74,7 @@ e.g. input folder is `data/iris folder/`
 
 > Note: The path format of the mounted volumes in the run.sh may need modification for the specific shell (e.g. under Windows. Or you can use the powershell script as follows). 
 
-For PowerShell (Winodws, Linux):
+For PowerShell (Windows):
 
 ``` ps
 # Process all face images in 'data/' folder

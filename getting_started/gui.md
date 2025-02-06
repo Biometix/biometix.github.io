@@ -28,19 +28,23 @@ This project is run as a Docker stack which provides a simple web GUI for BQAT-A
 {: .no_toc }
 
 > [Download](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml){: .btn }
-
+  
 <a name="usage">
 ## Usage
 
-+ Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml) into your working directory.
++ Download the docker [compose file](https://raw.githubusercontent.com/Biometix/bqat-gui/main/compose.yaml) to your working directory.
 + Start the BQAT Web GUI service:
 
 
+### Start BQAT GUI services
+{: .no_toc }
 ``` sh
-# Start BQAT GUI services
 docker compose --profile default up -d
+```
 
-# Stop the services
+### Stop the services
+{: .no_toc }
+``` sh
 docker compose --profile default down
 ```
 

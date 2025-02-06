@@ -26,7 +26,7 @@ permalink: /changelog/
 
 - Add metrics for image colour temperature (pro)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Refactor speech engine to optimize container size
 - Better handling for failed face mesh detection
@@ -36,7 +36,7 @@ permalink: /changelog/
 
 ### v1.5.0 (2024-11-07)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix pupil location bug
 
@@ -58,7 +58,7 @@ permalink: /changelog/
 
 ### v1.4.5 (2024-10-09)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix OFIQ face engine folder mode output vaule type issue
 - Switch to system temporary directory for OFIQ folder mode
@@ -68,7 +68,7 @@ permalink: /changelog/
 
 ### v1.4.4 (2024-09-26)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix error log issue
 - Switch to system temporary directory for fingerprint conversion
@@ -78,7 +78,7 @@ permalink: /changelog/
 
 ### v1.4.3 (2024-08-14)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Rebuild OFIQ engine to support single file processing
 
@@ -86,7 +86,7 @@ permalink: /changelog/
 
 ### v1.4.2 (2024-05-01)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix reporting filepath label issue
 
@@ -94,7 +94,7 @@ permalink: /changelog/
 
 ### v1.4.1 (2024-04-22)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix speech modality logging issue
 
@@ -105,7 +105,7 @@ permalink: /changelog/
 #### 🚀 Features
 - Introduce OFIQ engine for face modality (alpha) [#15](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/15)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Iris resize and convert issue
 
@@ -113,7 +113,7 @@ permalink: /changelog/
 
 ### v1.3.6 (2024-04-04)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Update iris engine resizing range to improve iris engine robustness
 
@@ -121,7 +121,7 @@ permalink: /changelog/
 
 ### v1.3.5 (2024-03-13)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix fingerprint modality metrics naming issue [#20](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/20)
 
@@ -129,7 +129,7 @@ permalink: /changelog/
 
 ### v1.3.4 (2024-03-13)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix fingerprint file format conversion issue [#19](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/19)
 
@@ -137,7 +137,7 @@ permalink: /changelog/
 
 ### v1.3.3 (2024-02-26)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Lower resolution to improve engine robustness [#17](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/17)
 
@@ -172,7 +172,7 @@ permalink: /changelog/
 - Update face quality scoring with ISO/IEC 29794-1 standard scale (1-100) [#11](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/11)
 - Add glasses detection for face modality
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix iris score issue with low sclera related values [#10](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/10)
 
@@ -180,7 +180,7 @@ permalink: /changelog/
 
 ### v1.2.2 (2023-06-09)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Speech mode recursive glob
 
@@ -212,7 +212,7 @@ permalink: /changelog/
 - Disable df and bk
 - Add speech model [#3](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/3)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
  - Bug fixes
 
@@ -269,7 +269,7 @@ permalink: /changelog/
 
 ### v1.3.0 (2023-12-15)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 - Resolve test script issue
 
 #### ⚙️ Miscellaneous Tasks
@@ -285,7 +285,7 @@ permalink: /changelog/
 
 - Update iris engine
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix Python dependency issues
 - Fix endpoint path issues
@@ -320,7 +320,7 @@ permalink: /changelog/
  
 ### v1.6.1 (2024-05-01)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix conversion type issue.
 - Fix resizing width issue.
@@ -340,7 +340,7 @@ permalink: /changelog/
 
 - Update convenience script with dynamic shared memory allocation feature.
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix iris benchmarking sample file conflict issue. [#28](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/28)
 
@@ -361,7 +361,7 @@ permalink: /changelog/
 
 - Add report flag to let the user disable reporting feature. [#15](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/15)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 - Fix broken benchmarking module.
 
 #### ⚙️ Miscellaneous Tasks
@@ -407,7 +407,7 @@ permalink: /changelog/
  
 ### v1.2.4 (2023-06-09)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix speech mode recursive glob issue.
 
@@ -425,7 +425,7 @@ permalink: /changelog/
  
 ### v1.2.2 (2023-04-13)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Bug Fixes
 
@@ -457,7 +457,7 @@ permalink: /changelog/
 
 - Add filter flag [#2](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/2)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Fix OOM issue
 - Resolve "Output issue with small dataset" [#6](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat/-/issues/6)
@@ -489,7 +489,7 @@ permalink: /changelog/
 
 ### v0.4.1 (2023-12-15)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Resolve temp file conflict issue.
 
@@ -515,7 +515,7 @@ permalink: /changelog/
 
 - Update iris module
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Iris quality score
 - Fix base64 padding
@@ -582,10 +582,24 @@ permalink: /changelog/
 
 ## BQAT-GUI
 
+<a name="v0.3.12"></a>
+### v0.3.12 (2025-02-04)
+
+#### 🚀 Features
+
+- 💡 Fetch quality metric description from API
+
+- 💡 Better preview table for outliers
+
+#### 🛠️️ Fixes
+
+- Put default config file in the container
+
+
 <a name="v0.3.11"></a>
 ### v0.3.11 (2024-12-05)
 
-#### 🛠 Fixes
+#### 🛠️️️️ Fixes
 
 - 🐛 Auth trategy issues
 
@@ -595,7 +609,7 @@ permalink: /changelog/
 <a name="v0.3.10"></a>
 ### v0.3.10 (2024-12-02)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - 🐛 Operational UI issues
 
@@ -603,7 +617,7 @@ permalink: /changelog/
 <a name="v0.3.9"></a>
 ### v0.3.9 (2024-11-27)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - UI layout issues
 
@@ -627,7 +641,7 @@ permalink: /changelog/
 
 - 🙌 Add fail safe logic that work with backend health check feature
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Improve outlier detection UX
 
@@ -639,7 +653,7 @@ permalink: /changelog/
 
 - 🙌 Render audio player in preview
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Improve UX
 
@@ -647,7 +661,7 @@ permalink: /changelog/
 <a name="v0.3.1"></a>
 ### v0.3.1 (2024-09-19)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Task log loading issue
 
@@ -673,7 +687,7 @@ permalink: /changelog/
 
 - 🙌 Implement preprocess layout
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - 🔧 Outlier reloading issue
 
@@ -743,7 +757,7 @@ permalink: /changelog/
 <a name="v0.2.1"></a>
 ### v0.2.1 (2024-05-09)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - 🔧 Internal connnect & image ratio issue
 
@@ -791,7 +805,7 @@ permalink: /changelog/
 
 ### v0.1.8 (2023-08-14)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Resolve: Remove the samples and and associated documents after retrival [#6](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-gui/-/issues/6)
 
@@ -810,7 +824,7 @@ permalink: /changelog/
 
 ### v0.1.5 (2023-07-13)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - Hotfix
 
@@ -819,7 +833,7 @@ permalink: /changelog/
 
 ### v0.1.4 (2023-07-13)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 - hotfix-temp-folder
 
@@ -828,7 +842,7 @@ permalink: /changelog/
 
 ### v0.1.3 (2023-07-11)
 
-#### 🛠 Fixes
+#### 🛠️️ Fixes
 
 
 - Fix temporary export file issue [#2](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-gui/-/issues/2)
