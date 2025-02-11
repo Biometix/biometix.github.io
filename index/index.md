@@ -8,10 +8,16 @@ permalink: /
 _Latest News_
 
 {: .highlight }
-> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine (BQAT-CLI) 🚀 [Try it now](https://biometix.github.io/playbook/cli.html#alt-engine)!
+> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine 🚀 Try it now!
 
 {: .highlight }
->  BQAT-CLI [v1.6.1](https://github.com/Biometix/bqat-cli/releases/tag/v1.6.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions/1) 🎉
+>  BQAT-CLI [v1.6.1](https://github.com/Biometix/bqat-cli/tree/v1.6.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
+
+{: .highlight }
+>  BQAT-GUI [v0.3.13](https://github.com/Biometix/bqat-gui/tree/v0.3.13-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-gui/discussions) 🎉
+
+{: .highlight }
+>  BQAT-API [v1.4.4](https://github.com/Biometix/bqat-api/tree/v1.4.4-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 ---
 
@@ -184,6 +190,11 @@ BQAT is available in multiple form factors:
 - [ ] Contact lens detection feature for face modality
 - [ ] Face liveness detection feature for face modality
 - [ ] NFIQ1 as alternative fingerprint processing engine
+- [ ] Morphing detection
+- [ ] Spoofing detection
+- [ ] Iris PAD detection
+- [ ] Contact lens detection
+- [ ] GPU acceleration
 
 More to come! 🚀
 

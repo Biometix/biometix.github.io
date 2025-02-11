@@ -18,6 +18,35 @@ permalink: /changelog/
 
 ## BQAT-Core
 
+<a name="v1.6.0"></a>
+
+### v1.6.0 (2025-02-07)
+
+#### 🚀 Features
+
+- Add head location estimation
+
+
+<a name="v1.5.3"></a>
+
+### v1.5.3 (2025-02-03)
+
+#### 🛠️️ Fixes
+
+- Improve smile estimation performance
+- Improve eyeglasses detection performance
+
+
+<a name="v1.5.2"></a>
+
+### v1.5.2 (2024-12-05)
+
+#### 🚀 Features
+
+- Add support for CPU allocation control
+- Add metrics for colour temperature (pro)
+
+
 <a name="v1.5.1"></a>
 
 ### v1.5.1 (2024-11-18)
@@ -141,7 +170,7 @@ permalink: /changelog/
 
 - Lower resolution to improve engine robustness [#17](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-core/-/issues/17)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Add alternate conda env file for speech
 
@@ -149,7 +178,7 @@ permalink: /changelog/
 
 ### v1.3.2 (2023-12-14)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update for refactoring image building configuration
 
@@ -157,7 +186,7 @@ permalink: /changelog/
 
 ### v1.3.1 (2023-07-28)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Cleanup cli log
 
@@ -196,7 +225,7 @@ permalink: /changelog/
 
 ### v1.2.0 (2023-04-18)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update Dockerfile and test cases for speech module
 
@@ -220,7 +249,7 @@ permalink: /changelog/
 
 - Update readme
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Initial commit
 
@@ -232,6 +261,24 @@ permalink: /changelog/
 
 
 ## BQAT-API
+
+<a name="v1.4.4"></a>
+
+### v1.4.4 (2025-02-07)
+
+#### 🛠️️ Fixes
+
+- Fix beanie pydantic conflict model schema issue
+
+
+<a name="v1.4.3"></a>
+
+### v1.4.3 (2024-12-05)
+
+#### 🚀 Features
+
+- Improve host resources allocation config
+
 
 <a name="v1.4.0"></a>
 
@@ -261,7 +308,7 @@ permalink: /changelog/
 
 - Support JP2, WSQ image preview
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Migrate to Pydantic V2
 
@@ -272,7 +319,7 @@ permalink: /changelog/
 #### 🛠️️ Fixes
 - Resolve test script issue
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 - Rework docker image [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/9)
 
 - Rework dockerfile [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/9)
@@ -306,7 +353,7 @@ permalink: /changelog/
 
 - Update report title
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update cicd config
 
@@ -347,7 +394,7 @@ permalink: /changelog/
 - Fix speech modality logging issue.
 
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Improve logging readability.
 
@@ -364,7 +411,7 @@ permalink: /changelog/
 #### 🛠️️ Fixes
 - Fix broken benchmarking module.
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Revert opencv in nfiq2
 
@@ -386,7 +433,7 @@ permalink: /changelog/
 
 - Add reporting mode
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update readme
 
@@ -397,7 +444,7 @@ permalink: /changelog/
  
 ### v1.3.0 (2023-07-28)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Rebuild with bqat-core v1.3.1.
 - Update image dependencies
@@ -429,7 +476,7 @@ permalink: /changelog/
 
 - Bug Fixes
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update Dockerfile
 
@@ -467,7 +514,7 @@ permalink: /changelog/
 
 - Redo csv output function
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Initial commit
 
@@ -493,7 +540,7 @@ permalink: /changelog/
 
 - Resolve temp file conflict issue.
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update compose file.
 - Refactor build configuration [#5](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/5)
@@ -503,7 +550,7 @@ permalink: /changelog/
 
 ### v0.4.0 (2023-07-28)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Rebuilt with latest BQAT-core.
 
@@ -520,7 +567,7 @@ permalink: /changelog/
 - Iris quality score
 - Fix base64 padding
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update test cases for new metrics
 
@@ -543,7 +590,7 @@ permalink: /changelog/
 
 - Support base64url format
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update metadata
 
@@ -570,7 +617,7 @@ permalink: /changelog/
 
 ### v0.1.0 (2023-03-22)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Initial commit
 
@@ -581,6 +628,14 @@ permalink: /changelog/
 ---
 
 ## BQAT-GUI
+
+<a name="v0.3.13"></a>
+### v0.3.13 (2025-02-11)
+
+#### 🛠️️ Fixes
+
+- Outlier table bug resolved
+
 
 <a name="v0.3.12"></a>
 ### v0.3.12 (2025-02-04)
@@ -705,7 +760,7 @@ permalink: /changelog/
 
 - Update the workflow text & icons on home page
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Update text&button
 
@@ -721,7 +776,7 @@ permalink: /changelog/
 
 - Set match file by name&type
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Format code
 
@@ -785,7 +840,7 @@ permalink: /changelog/
 
 - 💡 Add some icons for items
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Delete useless files
 
@@ -815,7 +870,7 @@ permalink: /changelog/
 
 ### v0.1.6 (2023-07-28)
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 - Cleanup CSV output
 - Update compose configuration
@@ -859,7 +914,7 @@ permalink: /changelog/
 - Introduce Web GUI
 
 
-#### ⚙️ Miscellaneous Tasks
+#### 📎 Miscellaneous Tasks
 
 
 - Initial commit

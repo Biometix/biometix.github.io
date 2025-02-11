@@ -102,6 +102,10 @@ Optional processing engines:
 | pupil_colour_right_rgb      | Right pupil colour RGB values |
 | pupil_colour_left_name      | Left pupil colour name |
 | pupil_colour_left_rgb       | Left pupil colour RGB values |
+| head_top         | Top border of head location estimation |
+| head_bottom      | Bottom border of head location estimation |
+| head_right       | Right border of head location estimation |
+| head_left        | Left border of head location estimation |
 
 <!-- | blur_lap_var                | Laplacian variance of image as an indicator of blurriness | 
 | brisque_quality             | Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image quality score |
