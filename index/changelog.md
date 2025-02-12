@@ -532,6 +532,15 @@ permalink: /changelog/
 
 ## BQAT-Stateless
 
+<a name="v0.5.0"></a>
+
+### v0.5.0 (2025-02-11)
+
+#### 🚀 Features
+
+- Update core to 1.6.0
+- Add engine selection support [#9](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-stateless/-/issues/9)
+
 <a name="v0.4.1"></a>
 
 ### v0.4.1 (2023-12-15)

@@ -19,6 +19,9 @@ _Latest News_
 {: .highlight }
 >  BQAT-API [v1.4.4](https://github.com/Biometix/bqat-api/tree/v1.4.4-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
+{: .highlight }
+>  BQAT-Stateless [v0.5.0](https://github.com/Biometix/bqat-stateless/tree/v0.5.0-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-stateless/discussions) 🎉
+
 ---
 
 ![logo_bqat](../assets/images/logo-bqat.png)
