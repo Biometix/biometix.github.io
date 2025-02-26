@@ -20,7 +20,7 @@ _Latest News_
 >  BQAT-API [v1.4.4](https://github.com/Biometix/bqat-api/tree/v1.4.4-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 {: .highlight }
->  BQAT-Stateless [v0.5.0](https://github.com/Biometix/bqat-stateless/tree/v0.5.0-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-stateless/discussions) 🎉
+>  BQAT-Stateless [v0.5.1](https://github.com/Biometix/bqat-stateless/tree/v0.5.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-stateless/discussions) 🎉
 
 ---
 
@@ -173,9 +173,6 @@ BQAT is available in multiple form factors:
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-gui">
 
     Simple Web GUI for BQAT API. An easy to use user interface to the services.
-
-{: .highlight }
-> Let us know if you have any question on [GitHub Discussions](https://github.com/Biometix/bqat-cli/discussions)!
 
 ## Roadmap
 

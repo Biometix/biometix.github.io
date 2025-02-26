@@ -532,6 +532,14 @@ permalink: /changelog/
 
 ## BQAT-Stateless
 
+<a name="v0.5.1"></a>
+
+### v0.5.1 (2025-02-26)
+
+#### 🚀 Features
+
+- Expose configuration for server worker number as env veriable.
+
 <a name="v0.5.0"></a>
 
 ### v0.5.0 (2025-02-11)

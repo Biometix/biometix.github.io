@@ -56,8 +56,12 @@ graph LR
 
 Upload a biometric file for quality assessment:
 
-- **file**: biometric file
-- **modality**: specify modality of the biometric
+#### Query Parameters:
+- **modality**: specify modality of the biometric (face, fingerprint, iris, speech).
+- **engine**: specify processing engine for the biometric sample (bqat, ofiq, biqt).
+
+#### Body Parameters (data):
+- **file**: biometric file.
 
 ---
 
@@ -65,7 +69,21 @@ Upload a biometric file for quality assessment:
 
 Upload a biometric file (base64) for quality assessment:
 
-- **modality**: specify modality of the biometric.
+#### Query Parameters:
+- **urlsafe**: (bool) urlsafe encoded or not.
+
+#### Body Parameters (JSON):
+``` json
+{
+    "modality": "face",
+    "engine": "ofiq",
+    "type": "jpg",
+    "data": "<base64 string>",
+    "id": "123e4567-e89b-12d3-a456-426655440000",
+}
+```
+- **modality**: specify modality of the biometric (face, fingerprint, iris, speech).
+- **engine**: specify processing engine for the biometric sample (bqat, ofiq, biqt).
 - **type**: biometric file type (png, jpg, wav, jp2, etc.).
 - **data**: biometric file encoded as base64 string.
 - **id**: biometric file identifier.
@@ -113,9 +131,43 @@ JSON:
 }
 ```
 
+## Benchmark
+
+Test environment: 6 core/12 threads, 16 GB, LAN, 10 users
+
+| Test Cases  | RPS         | AVG Latency |
+| ----------- | ----------- | ----------- |
+| Face (BQAT) | 32.8        | 370ms       |
+| Face (OFIQ) | 0.4         | 6000ms      |
+| Face (BIQT) | 5.5         | 1700ms      |
+| Iris        | 23.6        | 800ms       |
+| Fingerprint | 10.2        | 1100ms      |
+
+> OFIQ is tested with 3 users rather than 10, that is the maximum possible for this environment. For the others, 10 might not be the upper limit.
+
+## Stability
+
+Due to the nature of OFIQ engine, each time it was called, there is a initialisation process which will take significant time to load the underlying models (4~7s), whereas the actual processing time of the image take 300~500ms. As a result, if you send the image one by one, the response time will be 4~7s per image. And because of this, it is difficult to achieve parallel processing due to excessive memory usage per request. This the reason for the 3 users limit in our test above, otherwise the container might crash due to OOM error.
+
+You can configre number of service workers via env variable `WORKERS`:
+
+``` yaml
+server:
+    image: ghcr.io/biometix/bqat-stateless:latest
+    shm_size: 8gb
+    # environment:
+    #   - WORKERS=3
+    ports:
+      - 8848:8848
+```
+
+By default, the number of workers is configured to be the number of the cores/threads of your CPU (80%~100% utilisation). You may increase the number to squeeze more performance out of the CPU or decrease it to make the system more stable.
+
+If you like to further increase the system throughput, you may either scale up by deploy to a container cluster with load balancer, or switch to [BQAT-API](https://biometix.github.io/playbook/api.html) for bulk processing.
+
 ## Scalability
 
-Due to BQAT's compute-intensive nature, the server’s throughput is primarily limited by the CPU of the host machine, including factors such as the number of cores and single-thread performance.​
+Due to BQAT's compute-intensive nature, the server’s throughput is primarily limited by the CPU and RAM of the host machine, including factors such as the number of cores, single-core performance, and RAM.​
     
 Scaling options:​
 
