@@ -7,6 +7,8 @@ nav_order: 1
 
 # BQAT CLI
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
+
 ---
 <details open markdown="block">
   <summary>

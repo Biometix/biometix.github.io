@@ -5,6 +5,12 @@ parent: Playbooks
 nav_order: 3
 ---
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-stateless">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-stateless">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-stateless">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
+<img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-stateless">
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -149,7 +155,7 @@ Test environment: 6 core/12 threads, 16 GB, LAN, 10 users
 
 Due to the nature of OFIQ engine, each time it was called, there is a initialisation process which will take significant time to load the underlying models (4~7s), whereas the actual processing time of the image take 300~500ms. As a result, if you send the image one by one, the response time will be 4~7s per image. And because of this, it is difficult to achieve parallel processing due to excessive memory usage per request. This the reason for the 3 users limit in our test above, otherwise the container might crash due to OOM error.
 
-You can configre number of service workers via env variable `WORKERS`:
+You can configre number of service workers via env variable `WORKERS` in the compose file:
 
 ``` yaml
 server:

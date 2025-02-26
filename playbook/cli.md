@@ -3,8 +3,13 @@ layout: default
 title: Commmand Line Tool
 parent: Playbooks
 nav_order: 1
-
 ---
+
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-cli">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-cli">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-cli">
+<img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-cli">
 
 <details open markdown="block">
   <summary>

@@ -5,6 +5,12 @@ parent: Playbooks
 nav_order: 4
 ---
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-gui">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-gui">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-gui">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
+<img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-gui">
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -15,8 +21,6 @@ nav_order: 4
 </details>
 
 ---
-
-# BQAT-GUI
 
 ## Setting Up
 
