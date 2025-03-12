@@ -13,7 +13,7 @@ Biometix offers a range of vendor-independent services and customised vendor-ind
 
 If you have any concern, please feel free to contact us: 
 
-- [Biometix on Linkin](https://www.linkedin.com/company/biometix/)
+- [Biometix on Linkedin](https://www.linkedin.com/company/biometix/)
 - [Biometix on Github](https://github.com/Biometix).
 - [Biometix Pty Ltd](https://www.biometix.com/)
 
