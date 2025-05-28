@@ -193,7 +193,6 @@ BQAT is available in multiple form factors:
 - [ ] Morphing detection
 - [ ] Spoofing detection
 - [ ] Iris PAD detection
-- [ ] Contact lens detection
 - [ ] GPU acceleration
 
 More to come! 🚀
