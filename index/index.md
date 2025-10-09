@@ -8,19 +8,14 @@ permalink: /
 _Latest News_
 
 {: .highlight }
-> Introducing the new [OFIQ](https://pages.nist.gov/ifpc/2022/presentations/2_IFPC2022_OFIQ_Overview_Stratmann.pdf) face processing engine 🚀 Try it now!
+> [!IMPORTANT]
+> [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) `v1.0.3` (Align with [ISO/IEC 29794-5](https://www.iso.org/standard/81005.html)) has been released and integrated with our face assessment engine 🚀 Try it now! [BQAT-API](https://github.com/Biometix/bqat-api) [BQAT-Core](https://github.com/Biometix/bqat-core)
+
+> [!IMPORTANT]
+> Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0` (Align with [ISO/IEC 29794-4:2024](https://www.iso.org/standard/83827.html) and [ISO/IEC 39794-2:2023](https://www.iso.org/standard/72153.html)) 🚀 Try it now! [BQAT-API](https://github.com/Biometix/bqat-api) [BQAT-Core](https://github.com/Biometix/bqat-core)
 
 {: .highlight }
->  BQAT-CLI [v1.6.1](https://github.com/Biometix/bqat-cli/tree/v1.6.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
-
-{: .highlight }
->  BQAT-GUI [v0.3.13](https://github.com/Biometix/bqat-gui/tree/v0.3.13-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-gui/discussions) 🎉
-
-{: .highlight }
->  BQAT-API [v1.4.4](https://github.com/Biometix/bqat-api/tree/v1.4.4-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
-
-{: .highlight }
->  BQAT-Stateless [v0.5.1](https://github.com/Biometix/bqat-stateless/tree/v0.5.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-stateless/discussions) 🎉
+>  BQAT-API [v1.6.0](https://github.com/Biometix/bqat-api/tree/v1.6.0-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 ---
 

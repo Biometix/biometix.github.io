@@ -18,9 +18,45 @@ permalink: /changelog/
 
 ## BQAT-Core
 
+<a name="v1.6.3"></a>
+### v1.6.3 (2025-09-16) 🆕
+
+#### 🚀 Features
+
+- Add image file metadata
+
+#### 🛠️️ Fixes
+
+- Refactor boolean value to numerical value
+- Refactor submodule import path logic
+- Fix face engine config issue
+- Fix NFIQ2 error message issue
+
+
+<a name="v1.6.2"></a>
+### v1.6.2 (2025-06-11)
+
+#### 🛠️️ Fixes
+
+- Refactor submodule logic of processing engines
+
+
+<a name="v1.6.1"></a>
+### v1.6.1 (2025-04-09)
+
+#### 🛠️️ Fixes
+
+- Fix overwritten issue for duplicated attributes in fusion mode
+- Fix overwritten issue for duplicated names in output specs 
+
+#### 📎 Miscellaneous
+
+- Refactor some error log handling logic
+
+
 <a name="v1.6.0"></a>
 
-### v1.6.0 (2025-02-07) 🆕
+### v1.6.0 (2025-02-07)
 
 #### 🚀 Features
 {: .no_toc }
@@ -313,9 +349,57 @@ permalink: /changelog/
 
 ## BQAT-API
 
+<a name="v1.6.0"></a>
+
+### v1.6.0 (2025-10-07) 🆕
+
+#### 🚀 Features
+
+- OFIQ upgrade to [v1.0.3](https://github.com/BSI-OFIQ/OFIQ-Project/releases/tag/v1.0.3)
+- NFIQ2 upgrade to [v2.3.0](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0)
+
+
+<a name="v1.5.2"></a>
+
+### v1.5.2 (2025-04-29)
+
+#### 🚀 Features
+
+- Support selected input rerun [#32](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/32)
+
+
+<a name="v1.5.1"></a>
+
+### v1.5.1 (2025-04-10)
+
+#### 🚀 Features
+
+- Support input file filter for fusion mode [#22](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/22)
+
+
+<a name="v1.5.0"></a>
+
+### v1.5.0 (2025-04-07)
+
+#### 🚀 Features
+
+- Support various benchmarking functionalities [#20](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/20)
+
+- Support file management feature [#14](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/14)
+
+- Support file deduplication [#14](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/14)
+
+- Support dataset modality estimation [#14](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/14)
+
+
+#### 📎 Miscellaneous
+
+- Refactor speech mode [#21](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/21)
+
+
 <a name="v1.4.4"></a>
 
-### v1.4.4 (2025-02-07) 🆕
+### v1.4.4 (2025-02-07)
 
 #### 🛠️️ Fixes
 {: .no_toc }
@@ -433,7 +517,7 @@ permalink: /changelog/
 
 <a name="v1.6.1"></a>
  
-### v1.6.1 (2024-05-01) 🆕
+### v1.6.1 (2024-05-01)
 
 #### 🛠️️ Fixes
 {: .no_toc }
@@ -632,12 +716,12 @@ permalink: /changelog/
 
 <a name="v0.5.1"></a>
 
-### v0.5.1 (2025-02-26) 🆕
+### v0.5.1 (2025-02-26)
 
 #### 🚀 Features
 {: .no_toc }
 
-- Expose configuration for server worker number as env veriable.
+- Expose configuration for server worker number as env variable.
 
 <a name="v0.5.0"></a>
 
@@ -769,7 +853,7 @@ permalink: /changelog/
 
 <a name="v0.3.13"></a>
 
-### v0.3.13 (2025-02-11) 🆕
+### v0.3.13 (2025-02-11)
 
 #### 🛠️️ Fixes
 {: .no_toc }
@@ -847,7 +931,7 @@ permalink: /changelog/
 
 - 💡 Introduce landing page (beta)
 
-- 🙌 Add fail safe logic that work with backend health check feature
+- 🙌 Add fail-safe logic that work with backend health check feature
 
 #### 🛠️️ Fixes
 {: .no_toc }
