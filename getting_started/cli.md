@@ -30,6 +30,7 @@ nav_order: 1
 Prerequisites:
 - [Docker](https://www.docker.com/)
 - Python
+- x86 CPU
 
 > You may use the legacy shell script which does not require Python.
 
@@ -52,12 +53,15 @@ pip install git+https://github.com/Biometix/bqat-cli.git#subdirectory=cli
 
 #### Pre-built executable
 
+> For offline deployment on Linux server.
+
 [Download](https://github.com/Biometix/bqat-cli/releases/download/v1.7.1-beta/bqat){: .btn }
 
 ``` sh
 # Grant execution permission to the EXE
 sudo chmod +x bqat
 ```
+
 
 <a name="usage">
 ## Usage
