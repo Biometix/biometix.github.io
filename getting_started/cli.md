@@ -22,9 +22,102 @@ nav_order: 1
 ---
 
 {: .important }
-> New version of `run.sh` is published, please download the [latest](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh) and replace the old one.
+> Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy `run.sh`.
 
-<a name="setup">
+
+## Setup
+
+Prerequisites:
+- [Docker](https://www.docker.com/)
+- Python
+
+> You may use the legacy shell script which does not require Python.
+
+### Download BQAT CLI
+{: .no_toc }
+
+#### Python wheel
+
+[Download](https://github.com/Biometix/bqat-cli/releases/download/v1.7.1-beta/bqat-1.7.1-py3-none-any.whl){: .btn }
+
+```sh
+pip install bqat-*-py3-none-any.whl
+```
+
+#### Install from source
+
+```sh
+pip install git+https://github.com/Biometix/bqat-cli.git#subdirectory=cli
+```
+
+#### Pre-built executable
+
+[Download](https://github.com/Biometix/bqat-cli/releases/download/v1.7.1-beta/bqat){: .btn }
+
+``` sh
+# Grant execution permission to the EXE
+sudo chmod +x bqat
+```
+
+<a name="usage">
+## Usage
+
++ Check if the installation is successful.
+
+  ```sh
+  bqat --verison
+  ```
+
++ (Optional) Run a benchmark test against your system.
+
+  ```sh
+  bqat -B
+  ```
+
++ Create a folder named `data` under your working directory and put your input files in this folder.
+
+  ```sh
+  mkdir data
+  ```
+  
++ Enter the command below to run BQAT.
+
+Examples:
+
+``` sh
+# Process all face images in 'data/' folder
+bqat --input data/ --mode face
+
+# Process iris images in 'data/iris/' folder
+bqat --input data/iris/ --mode iris
+```
+
+> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
+e.g. input folder is `data/iris folder/`
+```sh
+bqat --input "data/iris\ folder/" --mode iris
+```
+
+
+Get BQAT-CLI Update if available:
+
+``` sh
+bqat --update
+```
+
+<a name="uninstall">
+## Uninstall
+
+```sh
+bqat --uninstall
+```
+
+
+---
+
+<a name="legacy">
+## Legacy CLI
+
 ## Setup
 
 This tool is designed to be run as a Docker container via command line interface (terminal). For ease of use, a convenience script is provided. 
@@ -40,7 +133,6 @@ This tool is designed to be run as a Docker container via command line interface
 
 [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
 
-<a name="usage">
 ## Usage
 
 + Download the script above into your working directory.
@@ -98,7 +190,6 @@ Get BQAT-CLI Update if available:
 .\run.ps1 --update
 ```
 
-<a name="output">
 ## Output
 
 The outputs will be saved at: `data/output/`.

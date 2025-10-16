@@ -32,7 +32,7 @@ config:
   layout: elk
 ---
 graph TD
-    download([Download the script to your working directory]) --> data(Creat input folder in the same directory)
+    download([Install BQAT CLI]) --> data(Creat input folder (/data) in your workspace)
     data --> run((Run command in terminal))
     run --> output[Processing]
     output --> csv[Raw Data in CSV]
@@ -51,25 +51,34 @@ graph TD
 
 ---
 
-> The script might need to be granted execute permission 
+> If using pre-built binary, you need to grant execute permission to it. 
 
 ``` sh
-chmod +x *.sh
+chmod +x bqat
+```
+
+> And replace the command `bqat` with `./bqat`:
+
+``` sh
+./bqat --version
 ```
 
 ## Use Cases
-> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
-e.g. input folder is `data/iris folder/`
-```sh
-./run.sh --input "data/iris\ folder/" --mode iris
-```
 
 ### Validate Installation or Benchmarking
 
-If you want to validate your setup or benchmark your deployment machine: 
+To validate your setup or benchmark your machine: 
 
 ``` sh
-./run.sh --benchmarking # you can specify modality (face, iris, finger) just like regular run too.
+bqat --benchmarking # you can specify modality (face, iris, finger) just like regular run too.
+```
+
+``` sh
+bqat -B -M fingerprint # benchmark fingerprint analysis.
+```
+
+``` sh
+bqat -B -M face -E ofiq # benchmark face analysis with OFIQ engine.
 ```
 
 ### Analyze Iris Images
@@ -77,7 +86,7 @@ If you want to validate your setup or benchmark your deployment machine:
 If all the iris images are organised under the ‘data/input’ folder, the tool can be run in iris mode with the following command: 
 
 ``` sh
-./run.sh --input data/input/ --mode iris
+bqat --input data/input/ --mode iris
 ```
 
 ### Match Filename Pattern
@@ -85,7 +94,7 @@ If all the iris images are organised under the ‘data/input’ folder, the tool
 Should the fingerprint files follow a naming convention containing the text ‘finger’, such as finger_1.jpg or X_finger.png, they can be located and analysed using: 
 
 ``` sh
-./run.sh --input data/input/ --mode iris --filename "*FINGER*"
+bqat --input data/input/ --mode iris --filename "*FINGER*"
 ```
 
 ### Match Specific File Formats
@@ -93,7 +102,7 @@ Should the fingerprint files follow a naming convention containing the text ‘f
 If the input folder contains files in various formats and you want to focus on specific formats, the files can be identified and processed with this command: 
 
 ``` sh
-./run.sh --input data/input/ --mode iris --type "jp2,bmp"
+bqat --input data/input/ --mode iris --type "jp2,bmp"
 ```
 
 ### Pre-processing before Analyzing
@@ -101,14 +110,14 @@ If the input folder contains files in various formats and you want to focus on s
 Before initiating the fingerprint scanning process, the file format may need to be converted. Use the following command to convert files of `JP2` and `JPEG` to `PNG` (the default target format):
 
 ``` sh
-./run.sh --input data/input/ --mode fingerprint --convert "jp2,jpeg"
+bqat --input data/input/ --mode fingerprint --convert "jp2,jpeg"
 ```
 If there is specific requirement for the file format, the following command can be used to specify the target format, for example, `WSQ`:
 
 > All the pre-processing processes are temporary only for the following analysis task, it will not modify the input file, and won’t be kept after the analysis. 
 
 ``` sh
-./run.sh --input data/input/ --mode fingerprint --target wsq
+bqat --input data/input/ --mode fingerprint --target wsq
 ```
 
 ### Find Outliers using Filter
@@ -118,19 +127,27 @@ When a filter is applied, there is going to be 2 extra outputs, a quality report
 Get output of finderprint samples with `NFIQ2` score larger than 60:
 
 ``` sh
-./run.sh --input data/input/ --mode finger --query "NFIQ2>60"
+bqat --input data/input/ --mode finger --query "NFIQ2>60"
 ```
 
 Provide output CSV from previous run and apply filter: 
 
 ``` sh
-./run.sh --mode filter --input data/output.csv --query "NFIQ2<40"
+bqat --mode filter --input data/output.csv --query "NFIQ2<40"
 ```
 
 Selected columns and apply filter query to them:
 
 ``` sh
-./run.sh --mode filter --input data/output.csv --columns "NFIQ2,edge_std" --query "NFIQ2<40"
+bqat --mode filter --input data/output.csv --columns "NFIQ2,edge_std" --query "NFIQ2<40"
+```
+
+> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
+
+e.g. input folder is `data/iris folder/`
+
+```sh
+bqat --input "data/iris\ folder/" --mode iris
 ```
 
 <a name="alt-engine">
@@ -138,12 +155,40 @@ Selected columns and apply filter query to them:
 
 Currently, BQAT support 3 analysis engines for face modality:
 
-+ BQAT by Biometix (default)
-+ OFIQ from BSI (beta)
-+ BIQT from MITRE
++ BQAT (default engine created by Biometix)
++ OFIQ (from BSI)
++ BIQT (from MITRE)
 
 ``` sh
-./run.sh --mode face --input data/input/ --engine ofiq
+bqat --mode face --input data/input/ --engine ofiq
+```
+
+### Fusion Engine Mode
+
+Specify `fusion` as the engine will give you combined output from both BQAT and OFIQ:
+
+``` sh
+bqat --mode face --input data/input/ --engine fusion
+```
+
+You may combine more than one engine using code below:
+
+| Engine | Code |
+| --- | --- |
+| BQAT | 4 (100) |
+| OFIQ | 2 (010) |
+| BIQT | 1 (001) |
+
+BQAT and BIQT:
+
+``` sh
+bqat --mode face --input data/input/ --engine fusion --fusion 5
+```
+
+All 3 engines:
+
+``` sh
+bqat --mode face --input data/input/ --engine fusion --fusion 7
 ```
 
 ### Preprocessing Mode
@@ -156,48 +201,42 @@ The following example shows how you can send the folder `data/input/` in, and:
 + Resize the images by percentage (30% in this case)
 
 ``` sh
-./run.sh -M preprocess -I data/input/ --config png,0.3,rgb
+bqat -M preprocess -I data/input/ --config png,0.3,rgb
 ```
 
 And of course you could configured it to do single preprocess at a time.
 
 ``` sh
 # convert images to BMP
-./run.sh -M preprocess -I data/input/ --config bmp
+bqat -M preprocess -I data/input/ --config bmp
 
 # convert images to grayscale
-./run.sh -M preprocess -I data/input/ --config grayscale
+bqat -M preprocess -I data/input/ --config grayscale
 
 # resize images by width (300px in this case, height will be inferred accordingly, aspect ratio maintained)
-./run.sh -M preprocess -I data/input/ --config 300
+bqat -M preprocess -I data/input/ --config 300
 ```
 
 > In terms of resizing configuration, number smaller than 10 will be treated as percentage/magnification, for instance, 3.7 will be 370%, while 128, which is greater than 10, will be 128 in width.
 
 ### Miscellaneous
 
-If you just want to get the raw CSV output, you may disable reporting feature:
+Enable reporting to get a EDA report and preview page along with the raw CSV output:
 
 ``` sh
-./run.sh --input data/input/ --mode iris --reporting no
+bqat --input data/input/ --mode iris --reporting
 ```
 
 Process samples in /input, but limit to first 100k files:
 
 ``` sh
-./run.sh --input data/input/ --mode face --limit 100000
+bqat --input data/input/ --mode face --limit 100000
 ```
 
 Generate EDA report directly from existing CSV:
 
 ``` sh
-./run.sh --input data/results.csv --mode report
-```
-
-Update BQAT-CLI (pull the latest container):
-
-``` sh
-./run.sh --update
+bqat --input data/results.csv --mode report
 ```
 
 ## Option Flags
@@ -208,7 +247,8 @@ Short | Long            | Description
 `-I`  | `--input`       | (REQUIRED)  Specify input directory or CSV file for analysis.
 `-O`  | `--output`      | (OPTIONAL)  Specify output directory.
 `-R`  | `--reporting`   | (OPTIONAL)  Switch on/off EDA report generation (true, false).
-`-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt).
+`-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt, fusion).
+NA    | `--fusion`      | (OPTIONAL)  Fusion mode engine code.
 `-B`  | `--benchmarking`| (OPTIONAL)  Run system benchmarking analysis.
 `-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to process.
 `-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder.
@@ -221,6 +261,31 @@ NA    | `--columns`     | (OPTIONAL)  Select columns to investigate
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
 NA    | `--config`      | (OPTIONAL)  Configure preprocessing task ([target format],[target width],[color mode (grayscale, rgb)]").
 
+## Advanced
+
+Check verions:
+
+``` sh
+bqat --version
+```
+
+Update BQAT-CLI (pull the latest container):
+
+``` sh
+bqat --update
+```
+
+Uninstall BQAT-CLI (CLI tool and/or backend container):
+
+```sh
+bqat --uninstall
+```
+
+Specify alternative backend container:
+
+```sh
+bqat --tag ghcr.io/biometix/bqat-cli:v2.0.0
+```
 
 ## Output Example
 
