@@ -21,8 +21,8 @@ nav_order: 1
 
 ---
 
-{: .important }
-> Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy scripts.
+{: .highlight }
+> 🚀 Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy scripts.
 
 
 ## Setup
