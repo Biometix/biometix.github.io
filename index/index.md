@@ -13,17 +13,17 @@ _Latest News_
 {: .highlight }
 > Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0`!
 
-> 🚀 Try it now @[BQAT-CLI](https://github.com/Biometix/bqat-cli)!
+> 🚀 Try it now @[BQAT-CLI](https://biometix.github.io/getting_started/cli.html)!
 
 ---
 
 _Releases_
 
 {: .highlight }
->  BQAT-CLI [v1.7.1](https://biometix.github.io/getting_started/cli.html) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
+>  BQAT-CLI [v1.7.1](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
 
 {: .highlight }
->  BQAT-API [v1.6.0](https://biometix.github.io/getting_started/api.html) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
+>  BQAT-API [v1.6.0](https://biometix.github.io/changelog/#bqat-api) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 ---
 
