@@ -49,12 +49,13 @@ Optional processing engines:
 
 + [BQAT](https://biometix.github.io/modality/face.html#bqat) (default)
 + [OFIQ](https://biometix.github.io/modality/face.html#ofiq) (beta)
+  - [ISO/IEC 29794-5](https://www.iso.org/standard/81005.html)
 + [BIQT](https://biometix.github.io/modality/face.html#biqt) (beta)
 
 ***
 
 <a name="bqat">
-### BQAT:
+### BQAT
 
 | Column           | Description |
 | ----------------      | ----------- |
@@ -125,7 +126,7 @@ Optional processing engines:
 ---
 
 <a name="ofiq">
-### OFIQ:
+### OFIQ
 
 {: .important }
 OFIQ engine is still in early stage of development, might be unstable, use with care.
@@ -168,7 +169,7 @@ OFIQ engine is still in early stage of development, might be unstable, use with 
 ---
 
 <a name="biqt">
-### BIQT:
+### BIQT
 
 | Column           | Description |
 | ---------------- | ----------- |

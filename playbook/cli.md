@@ -32,7 +32,7 @@ config:
   layout: elk
 ---
 graph TD
-    download([Install BQAT CLI]) --> data(Creat input folder (/data) in your workspace)
+    download([Install BQAT CLI]) --> data(Creat input folder in your workspace)
     data --> run((Run command in terminal))
     run --> output[Processing]
     output --> csv[Raw Data in CSV]
@@ -45,11 +45,6 @@ graph TD
 
 ---
 
-> Before executing the command, the working directory should look like this: 
-
-![Screenshot](../assets/images/working-directory.png)
-
----
 
 > If using pre-built binary, you need to grant execute permission to it. 
 

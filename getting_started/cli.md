@@ -22,7 +22,7 @@ nav_order: 1
 ---
 
 {: .important }
-> Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy `run.sh`.
+> Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy scripts.
 
 
 ## Setup
@@ -126,14 +126,17 @@ This tool is designed to be run as a Docker container via command line interface
 {: .no_toc }
 
 #### Linux
+{: .no_toc }
 
 [Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
 
 #### Windows
+{: .no_toc }
 
 [Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
 
 ## Usage
+{: .no_toc }
 
 + Download the script above into your working directory.
 + Create a folder named `data` under your working directory and put your input files in this folder.
@@ -191,6 +194,7 @@ Get BQAT-CLI Update if available:
 ```
 
 ## Output
+{: .no_toc }
 
 The outputs will be saved at: `data/output/`.
 

@@ -8,10 +8,10 @@ permalink: /
 _Latest News_
 
 {: .highlight }
-> [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) `v1.0.3` ([ISO/IEC 29794-5](https://www.iso.org/standard/81005.html)) has been released and integrated in BQAT!
+> [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) `v1.0.3` has been released and integrated in BQAT!
 
 {: .highlight }
-> Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0` ([ISO/IEC 29794-4:2024](https://www.iso.org/standard/83827.html), [ISO/IEC 39794-2:2023](https://www.iso.org/standard/72153.html))!
+> Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0`!
 
 > 🚀 Try it now @[BQAT-CLI](https://github.com/Biometix/bqat-cli)!
 
@@ -20,9 +20,9 @@ _Latest News_
 _Releases_
 
 {: .highlight }
->  BQAT-CLI [v1.7.1](https://github.com/Biometix/bqat-cli/tree/v1.7.1-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
+>  BQAT-CLI [v1.7.1](https://biometix.github.io/getting_started/cli.html) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
 
->  BQAT-API [v1.6.0](https://github.com/Biometix/bqat-api/tree/v1.6.0-beta) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
+>  BQAT-API [v1.6.0](https://biometix.github.io/getting_started/api.html) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 ---
 
