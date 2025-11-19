@@ -18,6 +18,11 @@ permalink: /changelog/
 
 ## BQAT-Core
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-core">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-core">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-core">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-core">
+
 <a name="v1.6.4"></a>
 
 ### v1.6.4 (2025-10-29) 🆕
@@ -371,6 +376,11 @@ permalink: /changelog/
 
 ## BQAT-API
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-api">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-api">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-api">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-api">
+
 <a name="v1.6.0"></a>
 
 ### v1.6.0 (2025-10-07) 🆕
@@ -546,6 +556,15 @@ permalink: /changelog/
 
 ## BQAT-CLI
 
+[![GitHub Release](https://img.shields.io/github/v/release/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli)
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli)
+[![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=total)](https://pepy.tech/projects/bqat)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
+[![PyPI - Format](https://img.shields.io/pypi/format/bqat)](https://pypi.python.org/pypi/bqat)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bqat)](https://pypi.python.org/pypi/bqat)
 <a name="v1.8.4"></a>
 
 ### v1.8.4 (2025-11-12) 🆕
@@ -835,6 +854,11 @@ permalink: /changelog/
 
 ## BQAT-Stateless
 
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-stateless">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-stateless">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-stateless">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
+
 <a name="v0.5.1"></a>
 
 ### v0.5.1 (2025-02-26)
@@ -971,6 +995,11 @@ permalink: /changelog/
 ---
 
 ## BQAT-GUI
+
+<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-gui">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-gui">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-gui">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
 
 <a name="v0.3.13"></a>
 
