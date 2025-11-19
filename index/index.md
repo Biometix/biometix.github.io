@@ -7,20 +7,18 @@ permalink: /
 
 _Latest News_
 
-{: .highlight }
 > [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) `v1.0.3` has been released and integrated in BQAT!
 
-{: .highlight }
 > Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0`!
 
-> 🚀 Try it now @[BQAT-CLI](https://biometix.github.io/getting_started/cli.html)!
+> 🚀 Introducing ARM-based CPU support for [BQAT-CLI](https://biometix.github.io/getting_started/cli.html)!
 
 ---
 
 _Releases_
 
 {: .highlight }
->  BQAT-CLI [v1.7.1](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
+>  BQAT-CLI [v1.8.4](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
 
 {: .highlight }
 >  BQAT-API [v1.6.0](https://biometix.github.io/changelog/#bqat-api) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
@@ -145,7 +143,13 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-cli">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-cli">
 
-    BQAT in the terminal. A CLI tool for biometrics.
+    [![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
+    [![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
+    [![PyPI - Format](https://img.shields.io/pypi/format/bqat)](https://pypi.python.org/pypi/bqat)
+    [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bqat)](https://pypi.python.org/pypi/bqat)
+    [![PyPI - License](https://img.shields.io/pypi/l/bqat)](https://pypi.python.org/pypi/bqat)
+
+    BQAT in the terminal. A CLI tool for biometric quality assessment.
 
 + __[API](https://github.com/Biometix/bqat-api)__
 
@@ -165,7 +169,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-stateless">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-stateless">
 
-    Stateless version of BQAT API. No data will be stored on the server, could see as serverless function.
+    Stateless BQAT API. Single endpoint server, best for micro service deployment.
 
 + __[GUI](https://github.com/Biometix/bqat-gui)__
 
@@ -175,7 +179,7 @@ BQAT is available in multiple form factors:
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
     <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-gui">
 
-    Simple Web GUI for BQAT API. An easy to use user interface to the services.
+    Refernece frontend for BQAT API. An easy to use user interface to the BQAT services.
 
 ## Roadmap
 
@@ -187,6 +191,8 @@ BQAT is available in multiple form factors:
 - [x] Image formating feature as preprocess
 - [x] Image resizing feature as preprocess
 - [x] [OFIQ](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Freie-Software/OFIQ/OFIQ_node.html) processing engine for face modality
+- [x] ARM CPU support
+- [ ] Ray cluster based distributed processing for CLI and API
 - [ ] Duplicates removal feature for output
 - [ ] Identity removal feature as preprocess
 - [ ] Document image quality check for face modality

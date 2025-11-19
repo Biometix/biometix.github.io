@@ -20,7 +20,7 @@ nav_order: 6
 
 To process large datasets, you can apply the following strategies:
 
-+ You may deploy BQAT-Stateless as a [cluster](https://biometix.github.io/playbook/stateless.html#scalability) of containers across your array of servers.
++ You may deploy BQAT-Stateless as a [cluster](https://biometix.github.io/cookbook/stateless.html#scalability) of containers across your array of servers.
 + You may split the dataset into smaller chunks and process them in parallel using BQAT-CLI or BQAT-API (only vertical scaling is supported by default).
 
 Depend on your use case, you might need customised scaling solution in the cloud or on-premise. We will help to design and implement horizontal scaling for BQAT-CLI and BQAT-API (BQAT-GUI).

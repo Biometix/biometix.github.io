@@ -262,7 +262,7 @@ flowchart TD
 
 ### Operating System
 
-+ x86 platform
++ x86, ARM platform
 + Linux, Windows, macOS
 
 > Since data processing is compute-intensive, you may want to allocate more cpu/memory with the host machine for better performance and stability.
@@ -273,21 +273,36 @@ BQAT deliverables are packaged as Docker containers, you will need Docker engine
 
 ### Performance Benchmark
 
+Test Platform 1: 6/12 cores, amd64, Ubtuntu 25.10, 16 GB of RAM.
+
 | Mode | Throughput (per second) \| (per hour) |
 | --- | --- |
-| Face (BQAT) | 52 \| 187,200 |
-| Face (OFIQ) | 1.1 \| 3,960 |
-| Face (BIQT) | 4.7 \| 16,920 |
-| Fingerprint (NFIQ2) | 6.8 \| 24,480 |
-| Iris (BIQT) | 17.8 \| 64,080 |
+| Face (BQAT) | 9.86 \| 35,496 |
+| Face (OFIQ) | 1.02 \| 3,672 |
+| Face (BIQT) | 3.75 \| 13,500 |
+| Fingerprint (NFIQ2) | 7.16 \| 25,776 |
+| Iris (BIQT) | 18.63 \| 67,068 |
+| Speech (NISQA) | 0.77 \| 2,772 |
 
-> Test platform: 6 cores / 12 threads CPU, 16GB of RAM.
+Test Platform 2: 14 cores, arm64, macOS 15.6.1, 32 GB of RAM.
 
-> Baseline testing done on BQAT-CLI, BQAT-API/BQAT-GUI should return similar numbers, while performance of BQAT-Stateless will be determined by upstream load balancer/scheduler.
+| Mode | Throughput (per second) \| (per hour) |
+| --- | --- |
+| Face (BQAT) | 53.94 \| 194,184 |
+| Face (OFIQ) | 2.08 \| 74,88 |
+| Face (BIQT) | 8.54 \| 30,744 |
+| Fingerprint (NFIQ2) | 14.54 \| 52,344 |
+| Iris (BIQT) | 40.14 \| 144,504 |
+| Speech (NISQA) | 1.50 \| 5,400 |
+
+
+> Baseline testing conducted on BQAT-CLI, and BQAT-API/BQAT-GUI should return similar numbers, but performance of BQAT-Stateless will be determined by upstream load balancer/scheduler.
+
+> As new quality metrics added to the engine, the benchmark number above might not reflect the current status of the project.
 
 ### System Scaling
 
-BQAT-CLI, BQAT-API (which is the backend of BQAT-GUI) runs in single node configuration, only vertical scaling is supported. If you want to scale the system horizontally, you can turn to [BQAT-Stateless](https://biometix.github.io/playbook/stateless.html#scalability).
+BQAT-CLI, BQAT-API (which is the backend of BQAT-GUI) runs in single node configuration, only vertical scaling is supported. If you want to scale the system horizontally, you can turn to [BQAT-Stateless](https://biometix.github.io/cookbook/stateless.html#scalability).
 
 In terms of cluster deployment for BQAT-Stateless:
 

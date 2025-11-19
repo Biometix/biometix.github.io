@@ -59,4 +59,4 @@ The documentation of the API endpoints lives in:
 
 ## Further Details
 {: .no_toc }
-+ [API Playbook](https://biometix.github.io/playbook/api.html)
++ [API Cookbook](https://biometix.github.io/cookbook/api.html)

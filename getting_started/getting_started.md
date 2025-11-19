@@ -10,8 +10,9 @@ has_toc: false
 
 __Prerequisites__:
 
-+ [Docker container runtime](https://www.docker.com/)
-+ Linux, macOS, and Windows are all supported, as long as the container runtime is able to start the Docker image 
++ [Docker](https://www.docker.com/)
++ Linux, macOS, and Windows are supported
++ AMD64 and ARM64 are supported 
 
 ## Quick Start
 
@@ -164,8 +165,4 @@ The output data returns in CSV or JSON, which can be imported by other tools for
 
 ## Report
 
-To help you get a high level understanding of the output data, BQAT can produce a brief [EDA report](https://biometix.github.io/playbook/cli.html#quality-report) on those assessment metrics.
-
-## Advance Support
-
-
+To help you get a high level understanding of the output data, BQAT can produce a brief [EDA report](https://biometix.github.io/cookbook/cli.html#quality-report) on those assessment metrics.

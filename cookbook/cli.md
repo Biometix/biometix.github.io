@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Commmand Line Tool
-parent: Playbooks
+parent: Cookbooks
 nav_order: 1
 ---
 
@@ -45,6 +45,11 @@ graph TD
 
 ---
 
+## Install
+
+``` sh
+pip install bqat
+```
 
 > If using pre-built binary, you need to grant execute permission to it. 
 
@@ -65,7 +70,7 @@ chmod +x bqat
 To validate your setup or benchmark your machine: 
 
 ``` sh
-bqat --benchmarking # you can specify modality (face, iris, finger) just like regular run too.
+bqat --benchmark # you can specify modality (face, iris, finger) just like regular run too.
 ```
 
 ``` sh
@@ -219,7 +224,7 @@ bqat -M preprocess -I data/input/ --config 300
 Enable reporting to get a EDA report and preview page along with the raw CSV output:
 
 ``` sh
-bqat --input data/input/ --mode iris --reporting
+bqat --input data/input/ --mode iris --report
 ```
 
 Process samples in /input, but limit to first 100k files:
@@ -234,29 +239,37 @@ Generate EDA report directly from existing CSV:
 bqat --input data/results.csv --mode report
 ```
 
-## Option Flags
+## BQAT Task Flags
 
 Short | Long            | Description
 ----- | --------------- | -----------
 `-M`  | `--mode`        | (REQUIRED)  Specify BQAT running mode (fingerprint, face, iris, speech, filter, report, preprocessing).
 `-I`  | `--input`       | (REQUIRED)  Specify input directory or CSV file for analysis.
 `-O`  | `--output`      | (OPTIONAL)  Specify output directory.
-`-R`  | `--reporting`   | (OPTIONAL)  Switch on/off EDA report generation (true, false).
+`-R`  | `--report`      | (OPTIONAL)  Switch on/off EDA report generation (true, false).
 `-E`  | `--engine`      | (OPTIONAL)  Select alternative face analysis engine (bqat, ofiq, biqt, fusion).
 NA    | `--fusion`      | (OPTIONAL)  Fusion mode engine code.
-`-B`  | `--benchmarking`| (OPTIONAL)  Run system benchmarking analysis.
+`-B`  | `--benchmark`   | (OPTIONAL)  Run system benchmarking analysis.
 `-L`  | `--limit`       | (OPTIONAL)  Set a limit for number of files to process.
 `-F`  | `--filename`    | (OPTIONAL)  Specify filename pattern for searching in the folder.
 NA    | `--type`        | (OPTIONAL)  Specify file types to process in the input folder.
 `-C`  | `--convert`     | (OPTIONAL)  Specify file types to convert before processing.
 `-T`  | `--target`      | (OPTIONAL)  Specify target type to convert to.
-`-A`  | `--arm`         | (OPTIONAL)  Disable multithreading (For ARM64 platform)
 NA    | `--columns`     | (OPTIONAL)  Select columns to investigate
 `-Q`  | `--query`       | (OPTIONAL)  Queries to apply on the columns
 `-W`  | `--cwd`         | (OPTIONAL)  Specify current working directory for url in the report
 NA    | `--config`      | (OPTIONAL)  Configure preprocessing task ([target format],[target width],[color mode (grayscale, rgb)]").
 
-## Advanced
+## Python Entry Point Flags
+
+Short | Long            | Description
+----- | --------------- | -----------
+`-v`  | `--version`     | Display version info.
+NA    | `--help`        | Display BQAT task help info.
+NA    | `--update`      | Check for new version backend container.
+NA    | `--uninstall`   | Remove BQAT.
+NA    | `--tag`         | Specify backend container tag.
+NA    | `--shm`         | Specify shared memory allocated to the container.
 
 Check verions:
 
@@ -276,10 +289,16 @@ Uninstall BQAT-CLI (CLI tool and/or backend container):
 bqat --uninstall
 ```
 
+Configure shared memory allocated to docker container (will allocate half of the physical memory avaiable by default):
+
+```sh
+bqat --shm 8192MB [BQAT TASK OPTIONS]
+```
+
 Specify alternative backend container:
 
 ```sh
-bqat --tag ghcr.io/biometix/bqat-cli:v2.0.0
+bqat --tag ghcr.io/biometix/bqat-cli:v2.0.0 [BQAT TASK OPTIONS]
 ```
 
 ## Output Example
@@ -381,3 +400,91 @@ docker compose build
 ```
 
 <!-- > Note: For powershell (windows) replace volumn mounted in the script as: `-v ${PWD}/data:/app/data` -->
+
+
+
+---
+
+## Legacy CLI (Deprecated)
+
+## Setup
+
+This tool is designed to be run as a Docker container via command line interface (terminal). For ease of use, a convenience script is provided. 
+
+### Download the script
+{: .no_toc }
+
+#### Linux
+{: .no_toc }
+
+[Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
+
+#### Windows
+{: .no_toc }
+
+[Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
+
+## Usage
+{: .no_toc }
+
++ Download the script above into your working directory.
++ Create a folder named `data` under your working directory and put your input files in this folder.
+
+After the aforementioned steps, you should have a folder like this:
+
+![Screenshot](../assets/images/working-directory.png)
+
+``` sh
+# Grant execution permission to the script (for Linux shell script)
+sudo chmod +x run.sh
+```
+
++ Open your CLI and navigate to this directory.
++ Enter the command below to run BQAT.
+
+For Bash (Linux, macOS):
+
+``` sh
+# Process all face images in 'data/' folder
+./run.sh --input data/ --mode face
+
+# Process iris images in 'data/iris/' folder
+./run.sh --input data/iris/ --mode iris
+```
+
+> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
+e.g. input folder is `data/iris folder/`
+```sh
+./run.sh --input "data/iris\ folder/" --mode iris
+```
+
+> Note: The path format of the mounted volumes in the run.sh may need modification for the specific shell (e.g. under Windows. Or you can use the powershell script as follows). 
+
+For PowerShell (Windows):
+
+``` ps
+# Process all face images in 'data/' folder
+.\run.ps1 --input data/ --mode face
+
+# Process iris images in 'data/iris/' folder
+.\run.ps1 --input data/iris/ --mode iris
+```
+
+Get BQAT-CLI Update if available:
+
+``` sh
+# Linux
+./run.sh --update
+```
+
+``` ps
+# Windows
+.\run.ps1 --update
+```
+
+## Output
+{: .no_toc }
+
+The outputs will be saved at: `data/output/`.
+
+> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. "Read and write” permission is required for this folder. It should work as long as the folder was created before spinning up the server. Otherwise, the ownership of the folder will need to be changed.

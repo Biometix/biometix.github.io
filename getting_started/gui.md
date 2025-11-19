@@ -58,4 +58,4 @@ Find the BQAT GUI at:
 
 ## Further Details
 {: .no_toc }
-+ [Web GUI Playbook](https://biometix.github.io/playbook/gui.html)
++ [Web GUI Cookbook](https://biometix.github.io/cookbook/gui.html)

@@ -9,6 +9,9 @@ nav_order: 1
 
 <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
 
+[![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
+
 ---
 <details open markdown="block">
   <summary>
@@ -22,36 +25,31 @@ nav_order: 1
 ---
 
 {: .highlight }
-> 🚀 Introducing the new BQAT entry point! It is a python based CLI interface to replace the legacy scripts.
+> 🚀 Introducing the new [BQAT-CLI](https://pypi.org/project/bqat/) entry point! Now it is a pure python interface to replace the legacy scripts.
+
+{: .highlight }
+> 🌟 BQAT-CLI has been upgraded and now supports ARM-based CPUs! Whether you're on an Apple M‑series or a Qualcomm Snapdragon X‑series processor, you can leverage its performance for biometric data analysis.
 
 
 ## Setup
 
 Prerequisites:
 - [Docker](https://www.docker.com/)
-- Python
-- x86 CPU
+- Python (3.10+)
+- AMD64 or ARM64 CPUs with minimum of 8 GB RAM
 
-> You may use the legacy shell script which does not require Python.
-
-### Download BQAT CLI
+### Install BQAT CLI
 {: .no_toc }
 
-#### Python wheel
-
-[Download](https://github.com/Biometix/bqat-cli/releases/download/v1.7.1-beta/bqat-1.7.1-py3-none-any.whl){: .btn }
+#### Python application
 
 ```sh
-pip install bqat-*-py3-none-any.whl
+pip install bqat
 ```
 
-#### Install from source
+[BQAT](https://pypi.org/project/bqat/){: .btn }
 
-```sh
-pip install git+https://github.com/Biometix/bqat-cli.git#subdirectory=cli
-```
-
-#### Pre-built executable
+#### Pre-built static executable
 
 > For offline deployment on Linux server.
 
@@ -59,7 +57,7 @@ pip install git+https://github.com/Biometix/bqat-cli.git#subdirectory=cli
 
 ``` sh
 # Grant execution permission to the EXE
-sudo chmod +x bqat
+chmod +x bqat
 ```
 
 
@@ -75,13 +73,7 @@ sudo chmod +x bqat
 + (Optional) Run a benchmark test against your system.
 
   ```sh
-  bqat -B
-  ```
-
-+ Create a folder named `data` under your working directory and put your input files in this folder.
-
-  ```sh
-  mkdir data
+  bqat --benchmark
   ```
   
 + Enter the command below to run BQAT.
@@ -89,19 +81,15 @@ sudo chmod +x bqat
 Examples:
 
 ``` sh
-# Process all face images in 'data/' folder
-bqat --input data/ --mode face
+# Process all face images in 'data/'
+bqat --input data --mode face
 
-# Process iris images in 'data/iris/' folder
-bqat --input data/iris/ --mode iris
+# Process iris images in 'data/iris/'
+bqat --input data/iris --mode iris
+
+# Enable EDA report along with the output
+bqat --input data/fingerprint --mode fingerprint --report
 ```
-
-> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
-e.g. input folder is `data/iris folder/`
-```sh
-bqat --input "data/iris\ folder/" --mode iris
-```
-
 
 Get BQAT-CLI Update if available:
 
@@ -116,94 +104,12 @@ bqat --update
 bqat --uninstall
 ```
 
-
----
-
-<a name="legacy">
-## Legacy CLI
-
-## Setup
-
-This tool is designed to be run as a Docker container via command line interface (terminal). For ease of use, a convenience script is provided. 
-
-### Download the script
+## Further details about the command and advanced option flags
 {: .no_toc }
++ [Command Line Interface Cookbook](https://biometix.github.io/cookbook/cli.html)
 
-#### Linux
-{: .no_toc }
 
-[Bash](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.sh){: .btn }
-
-#### Windows
-{: .no_toc }
-
-[Powershell](https://raw.githubusercontent.com/Biometix/bqat-cli/main/run.ps1){: .btn }
-
-## Usage
-{: .no_toc }
-
-+ Download the script above into your working directory.
-+ Create a folder named `data` under your working directory and put your input files in this folder.
-
-After the aforementioned steps, you should have a folder like this:
-
-![Screenshot](../assets/images/working-directory.png)
-
-``` sh
-# Grant execution permission to the script (for Linux shell script)
-sudo chmod +x run.sh
-```
-
-+ Open your CLI and navigate to this directory.
-+ Enter the command below to run BQAT.
-
-For Bash (Linux, macOS):
-
-``` sh
-# Process all face images in 'data/' folder
-./run.sh --input data/ --mode face
-
-# Process iris images in 'data/iris/' folder
-./run.sh --input data/iris/ --mode iris
-```
-
-> Note: If there is any space along the filepath, wrap it with double quotes and escape the space.<br> Please refer to the example below: 
-e.g. input folder is `data/iris folder/`
-```sh
-./run.sh --input "data/iris\ folder/" --mode iris
-```
-
-> Note: The path format of the mounted volumes in the run.sh may need modification for the specific shell (e.g. under Windows. Or you can use the powershell script as follows). 
-
-For PowerShell (Windows):
-
-``` ps
-# Process all face images in 'data/' folder
-.\run.ps1 --input data/ --mode face
-
-# Process iris images in 'data/iris/' folder
-.\run.ps1 --input data/iris/ --mode iris
-```
-
-Get BQAT-CLI Update if available:
-
-``` sh
-# Linux
-./run.sh --update
-```
-
-``` ps
-# Windows
-.\run.ps1 --update
-```
-
+<a name="output">
 ## Output
-{: .no_toc }
 
-The outputs will be saved at: `data/output/`.
-
-## Further details about the command and other option flags
-{: .no_toc }
-+ [Command Line Interface Playbook](https://biometix.github.io/playbook/cli.html)
-
-> Note: The tool is designed to be executed with a `/data` folder in your working directory. The `/data` folder (where all the images are stored) will be mounted to the container. "Read and write” permission is required for this folder. It should work as long as the folder was created before spinning up the server. Otherwise, the ownership of the folder will need to be changed. 
+When the task completed, it will produce the quality metrics in a CSV file, a EDA report if enabled.

@@ -57,4 +57,4 @@ The documentation of the API endpoints lives in:
 
 ## Further Details
 {: .no_toc }
-+ [Stateless API Playbook](https://biometix.github.io/playbook/stateless.html)
++ [Stateless API Cookbook](https://biometix.github.io/cookbook/stateless.html)

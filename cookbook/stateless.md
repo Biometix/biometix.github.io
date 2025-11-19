@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stateless API
-parent: Playbooks
+parent: Cookbooks
 nav_order: 3
 ---
 
@@ -169,7 +169,7 @@ server:
 
 By default, the number of workers is configured to be the number of the cores/threads of your CPU (80%~100% utilisation). You may increase the number to squeeze more performance out of the CPU or decrease it to make the system more stable.
 
-If you like to further increase the system throughput, you may either scale up by deploy to a container cluster with load balancer, or switch to [BQAT-API](https://biometix.github.io/playbook/api.html) for bulk processing.
+If you like to further increase the system throughput, you may either scale up by deploy to a container cluster with load balancer, or switch to [BQAT-API](https://biometix.github.io/cookbook/api.html) for bulk processing.
 
 ## Scalability
 

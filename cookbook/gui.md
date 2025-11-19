@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Web GUI
-parent: Playbooks
+parent: Cookbooks
 nav_order: 4
 ---
 
