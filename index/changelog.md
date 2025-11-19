@@ -561,8 +561,8 @@ permalink: /changelog/
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli)
 [![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=total)](https://pepy.tech/projects/bqat)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=GREEN&left_text=total)](https://pepy.tech/projects/bqat)
 [![PyPI - Format](https://img.shields.io/pypi/format/bqat)](https://pypi.python.org/pypi/bqat)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bqat)](https://pypi.python.org/pypi/bqat)
 <a name="v1.8.4"></a>
