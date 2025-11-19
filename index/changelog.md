@@ -31,6 +31,7 @@ permalink: /changelog/
 <a name="v1.6.3"></a>
 
 ### v1.6.3 (2025-09-16)
+{: .no_toc }
 
 #### 🚀 Features
 {: .no_toc }
@@ -395,8 +396,10 @@ permalink: /changelog/
 <a name="v1.5.1"></a>
 
 ### v1.5.1 (2025-04-10)
+{: .no_toc }
 
 #### 🚀 Features
+{: .no_toc }
 
 - Support input file filter for fusion mode [#22](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/22)
 
@@ -404,8 +407,10 @@ permalink: /changelog/
 <a name="v1.5.0"></a>
 
 ### v1.5.0 (2025-04-07)
+{: .no_toc }
 
 #### 🚀 Features
+{: .no_toc }
 
 - Support various benchmarking functionalities [#20](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/20)
 
@@ -417,6 +422,7 @@ permalink: /changelog/
 
 
 #### 📎 Miscellaneous
+{: .no_toc }
 
 - Refactor speech mode [#21](https://gitlab.com/biometix/products/biometric-quality-assessment-tool/bqat-api/-/issues/21)
 
@@ -424,6 +430,7 @@ permalink: /changelog/
 <a name="v1.4.4"></a>
 
 ### v1.4.4 (2025-02-07)
+{: .no_toc }
 
 #### 🛠️️️ Fixes
 {: .no_toc }
@@ -541,7 +548,7 @@ permalink: /changelog/
 
 <a name="v1.8.4"></a>
 
-# v1.8.4 (2025-11-12) 🆕
+### v1.8.4 (2025-11-12) 🆕
 
 #### 🚀 Features
 {: .no_toc }
