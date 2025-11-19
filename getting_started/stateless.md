@@ -7,7 +7,7 @@ nav_order: 3
 
 # BQAT Stateless
 
-<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-stateless">
+[![GitHub Tag](https://img.shields.io/github/v/tag/biometix/bqat-stateless)](https://github.com/Biometix/bqat-stateless/releases)
 
 ---
 <details open markdown="block">

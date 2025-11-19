@@ -7,8 +7,7 @@ nav_order: 1
 
 # BQAT CLI
 
-<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
-
+[![GitHub Tag](https://img.shields.io/github/v/tag/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/releases)
 [![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
 
@@ -47,7 +46,7 @@ Prerequisites:
 pip install bqat
 ```
 
-[BQAT](https://pypi.org/project/bqat/){: .btn }
+[PyPI](https://pypi.org/project/bqat/){: .btn }
 
 #### Pre-built static executable
 
@@ -104,12 +103,11 @@ bqat --update
 bqat --uninstall
 ```
 
-## Further details about the command and advanced option flags
-{: .no_toc }
-+ [Command Line Interface Cookbook](https://biometix.github.io/cookbook/cli.html)
-
-
 <a name="output">
 ## Output
 
 When the task completed, it will produce the quality metrics in a CSV file, a EDA report if enabled.
+
+## Further details about the command and advanced option flags
+{: .no_toc }
++ [Command Line Interface Cookbook](https://biometix.github.io/cookbook/cli.html)

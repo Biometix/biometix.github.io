@@ -7,7 +7,7 @@ nav_order: 4
 
 # BQAT GUI
 
-<img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-gui">
+[![GitHub Tag](https://img.shields.io/github/v/tag/biometix/bqat-gui)](https://github.com/Biometix/bqat-gui/releases)
 
 ---
 <details open markdown="block">

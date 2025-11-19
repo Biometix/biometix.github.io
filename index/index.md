@@ -137,19 +137,18 @@ BQAT is available in multiple form factors:
 
 + __[CLI](https://github.com/Biometix/bqat-cli)__
 
-    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/biometix/bqat-cli">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/biometix/bqat-cli">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-cli">
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-cli">
-    <img alt="GitHub" src="https://img.shields.io/github/license/biometix/bqat-cli">
-
+    [![GitHub Release](https://img.shields.io/github/v/release/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/releases)
+    [![GitHub last commit](https://img.shields.io/github/last-commit/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli)
+    [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/issues)
+    [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli)
+    [![GitHub License](https://img.shields.io/github/license/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli#Apache-2.0-1-ov-file)
     [![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
     [![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
     [![PyPI - Format](https://img.shields.io/pypi/format/bqat)](https://pypi.python.org/pypi/bqat)
     [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bqat)](https://pypi.python.org/pypi/bqat)
     [![PyPI - License](https://img.shields.io/pypi/l/bqat)](https://pypi.python.org/pypi/bqat)
 
-    BQAT in the terminal. A CLI tool for biometric quality assessment.
+    BQAT in the terminal. A CLI tool for easy biometric quality assessment.
 
 + __[API](https://github.com/Biometix/bqat-api)__
 
