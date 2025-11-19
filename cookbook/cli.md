@@ -51,18 +51,6 @@ graph TD
 pip install bqat
 ```
 
-> If using pre-built binary, you need to grant execute permission to it. 
-
-``` sh
-chmod +x bqat
-```
-
-> And replace the command `bqat` with `./bqat`:
-
-``` sh
-./bqat --version
-```
-
 ## Use Cases
 
 ### Validate Installation or Benchmarking
@@ -237,6 +225,18 @@ Generate EDA report directly from existing CSV:
 
 ``` sh
 bqat --input data/results.csv --mode report
+```
+
+If using pre-built binary, you need to grant execute permission to it:
+
+``` sh
+chmod +x bqat
+```
+
+And replace the base command `bqat` with `./bqat`:
+
+``` sh
+./bqat --version
 ```
 
 ## BQAT Task Flags

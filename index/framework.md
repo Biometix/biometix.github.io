@@ -289,7 +289,7 @@ Test Platform 2: 14 cores, arm64, macOS 15.6.1, 32 GB of RAM.
 | Mode | Throughput (per second) \| (per hour) |
 | --- | --- |
 | Face (BQAT) | 53.94 \| 194,184 |
-| Face (OFIQ) | 2.08 \| 74,88 |
+| Face (OFIQ) | 2.08 \| 7,488 |
 | Face (BIQT) | 8.54 \| 30,744 |
 | Fingerprint (NFIQ2) | 14.54 \| 52,344 |
 | Iris (BIQT) | 40.14 \| 144,504 |

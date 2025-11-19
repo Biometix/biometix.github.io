@@ -10,7 +10,7 @@ nav_order: 1
 [![GitHub Tag](https://img.shields.io/github/v/tag/biometix/bqat-cli)](https://github.com/Biometix/bqat-cli/releases)
 [![PyPI - Version](https://img.shields.io/pypi/v/bqat)](https://pypi.python.org/pypi/bqat)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/bqat)](https://pypi.python.org/pypi/bqat)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/bqat)
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=total)](https://pepy.tech/projects/bqat)
 
 ---
 <details open markdown="block">
