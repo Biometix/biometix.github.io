@@ -40,8 +40,6 @@ Prerequisites:
 ### Install BQAT CLI
 {: .no_toc }
 
-#### Python application
-
 ```sh
 pip install bqat
 ```
