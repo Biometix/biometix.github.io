@@ -48,36 +48,17 @@ pip install bqat
 
 [PyPI](https://pypi.org/project/bqat/){: .btn }
 
-#### Pre-built static executable
-
-> For offline deployment on Linux server.
-
-[Download](https://github.com/Biometix/bqat-cli/releases/download/v1.7.1-beta/bqat){: .btn }
-
-``` sh
-# Grant execution permission to the EXE
-chmod +x bqat
-```
-
 
 <a name="usage">
 ## Usage
 
-+ Check if the installation is successful.
+To validate the installation, you could start a benchmark run.
 
-  ```sh
-  bqat --verison
-  ```
+```sh
+bqat --benchmark
+```
 
-+ (Optional) Run a benchmark test against your system.
-
-  ```sh
-  bqat --benchmark
-  ```
-  
-+ Enter the command below to run BQAT.
-
-Examples:
+Example use cases for biometric quality assessment:
 
 ``` sh
 # Process all face images in 'data/'
@@ -86,8 +67,17 @@ bqat --input data --mode face
 # Process iris images in 'data/iris/'
 bqat --input data/iris --mode iris
 
-# Enable EDA report along with the output
+# Process all face images using OFIQ engine
+bqat --input data --mode face --engine OFIQ
+
+# Enable EDA report for the assessment
 bqat --input data/fingerprint --mode fingerprint --report
+```
+
+Check current installed version:
+
+```sh
+bqat --verison
 ```
 
 Get BQAT-CLI Update if available:

@@ -143,9 +143,9 @@ bqat --input "data/iris\ folder/" --mode iris
 
 Currently, BQAT support 3 analysis engines for face modality:
 
-+ BQAT (default engine created by Biometix)
-+ OFIQ (from BSI)
-+ BIQT (from MITRE)
++ BQAT (native Biometix)
++ OFIQ (by BSI)
++ BIQT (by MITRE)
 
 ``` sh
 bqat --mode face --input data/input/ --engine ofiq
@@ -227,11 +227,13 @@ Generate EDA report directly from existing CSV:
 bqat --input data/results.csv --mode report
 ```
 
-If using pre-built binary, you need to grant execute permission to it:
+For offline deployment on Linux server, download the pre-built static binary, and grant execute permission:
 
 ``` sh
 chmod +x bqat
 ```
+
+[Download](https://github.com/Biometix/bqat-cli/releases/download/v1.8.4-beta/bqat){: .btn }
 
 And replace the base command `bqat` with `./bqat`:
 
