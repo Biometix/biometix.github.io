@@ -23,9 +23,20 @@ permalink: /changelog/
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-core">
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-core">
 
+<a name="v1.6.5"></a>
+
+### v1.6.5 (2026-01-27) 🆕
+
+#### 🚀 Features
+{: .no_toc }
+
+- Upgrade image file metadata module
+
+
 <a name="v1.6.4"></a>
 
-### v1.6.4 (2025-10-29) 🆕
+### v1.6.4 (2025-10-29)
+{: .no_toc }
 
 #### 📎 Miscellaneous
 {: .no_toc }
@@ -565,9 +576,47 @@ permalink: /changelog/
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/bqat?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=GREEN&left_text=total)](https://pepy.tech/projects/bqat)
 [![PyPI - Format](https://img.shields.io/pypi/format/bqat)](https://pypi.python.org/pypi/bqat)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bqat)](https://pypi.python.org/pypi/bqat)
+
+
+<a name="v1.8.7"></a>
+
+### v1.8.7 (2026-02-03) 🆕
+
+#### 🔧 Fixes
+{: .no_toc }
+
+- Resolve file extension handling issue.
+
+<a name="v1.8.6"></a>
+
+### v1.8.6 (2026-01-23)
+{: .no_toc }
+
+#### 🚀 Features
+{: .no_toc }
+
+- Preserve full path for input.
+- Upgrade OFIQ to v1.1.1
+
+#### 🔧 Fixes
+{: .no_toc }
+
+- Resolve WSQ conversion issue in preprocess mode.
+- Resolve Fusion engine logging issue.
+
+<a name="v1.8.5"></a>
+
+### v1.8.5 (2025-11-27)
+{: .no_toc }
+
+#### 🔧 Fixes
+{: .no_toc }
+
+- Resolve absolute path handling issue for input/output (CLI).
+
 <a name="v1.8.4"></a>
 
-### v1.8.4 (2025-11-12) 🆕
+### v1.8.4 (2025-11-12)
 
 #### 🚀 Features
 {: .no_toc }

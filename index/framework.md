@@ -84,7 +84,7 @@ graph LR
 
 + It takes a folder in your file system as input and produces the raw metrics in CSV along with a EDA report.
 
-+ It is distributed as Docker container.
++ It is distributed as Docker container as well as a Python entry point application.
 
 ***
 
@@ -202,43 +202,10 @@ config:
 ---
 flowchart TD
   subgraph s1["Docker Container"]
-    n0["Python Commands"] --> n1["Ray Parallel Processing Framework"]
-    n1 --> n2["BQAT-Core"]
+    n0["BQAT-Core"] --> n1["Ray Parallel Processing Framework"]
+    n1 --> n2["Python Interface"]
   end
-  s1 --> n3["Shell Commands"]
-```
-
----
-
-``` mermaid
----
-title: BQAT API
-config:
-  theme: neutral
-  layout: elk
----
-flowchart TD
-  subgraph s1["FastAPI Web Server"]
-    n0["Web API Endpoints"] --> n1["Ray Parallel Processing Framework"]
-    n1 --> n2["BQAT-Core"]
-  end
-  s1 --> n3["Database (MongoDB)"]
-  s1 --> n4["Task Queue (Redis)"]
-
-```
-
----
-``` mermaid
----
-title: BQAT GUI
-config:
-  theme: neutral
-  layout: elk
----
-flowchart LR
-  subgraph s1["Docker Compose Stack"]
-    n1["Vue.js Web Application"] --> n2["BQAT-API"]
-  end
+  s1 --> n3["Python CLI Commands"]
 ```
 
 ---
@@ -252,11 +219,42 @@ config:
 ---
 flowchart TD
   subgraph s1["FastAPI Web Server"]
-    n0["Web API Endpoints"] --> n1["BQAT-Core"]
-    n1["BQAT-Core"]
+    n0["BQAT-Core"] --> n1["Web API Endpoints"]
   end
-
 ```
+
+---
+
+``` mermaid
+---
+title: BQAT API
+config:
+  theme: neutral
+  layout: elk
+---
+flowchart LR
+  subgraph s1["FastAPI Web Server"]
+    n0["BQAT-Core"] --> n1["Ray Parallel Processing Framework"]
+    n1 --> n2["Web API Endpoints"]
+  end
+  s1 --> n3["Database (MongoDB)"]
+  s1 --> n4["Task Queue (Redis)"]
+```
+
+---
+``` mermaid
+---
+title: BQAT Web GUI / Desktop
+config:
+  theme: neutral
+  layout: elk
+---
+flowchart LR
+  subgraph s1["Docker Compose Stack"]
+    n1["Vue.js Web Application"] --> n2["BQAT-API"]
+  end
+```
+
 
 ## System Requirements
 

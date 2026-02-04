@@ -7,18 +7,18 @@ permalink: /
 
 _Latest News_
 
-> [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) `v1.0.3` has been released and integrated in BQAT!
+> [OFIQ](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/OFIQ/Overview_presentation_OFIQ.pdf?__blob=publicationFile&v=2) upgraded to [`v1.1.1`](https://github.com/BSI-OFIQ/OFIQ-Project/releases/tag/v1.1.1)!
 
-> Fingerprint processing engine upgraded to [NFIQ2](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0) `v2.3.0`!
+> Fingerprint processing engine [NFIQ2](https://www.nist.gov/services-resources/software/nfiq-2) upgraded to [`v2.3.0`](https://github.com/usnistgov/NFIQ2/releases/tag/v2.3.0)!
 
-> 🚀 Introducing ARM-based CPU support for [BQAT-CLI](https://biometix.github.io/getting_started/cli.html)!
+> 🚀 Introducing ARM CPU support for [BQAT-CLI](https://biometix.github.io/getting_started/cli.html)!
 
 ---
 
 _Releases_
 
 {: .highlight }
->  BQAT-CLI [v1.8.4](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
+>  BQAT-CLI [v1.8.7](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
 
 {: .highlight }
 >  BQAT-API [v1.6.0](https://biometix.github.io/changelog/#bqat-api) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
