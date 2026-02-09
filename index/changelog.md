@@ -617,6 +617,7 @@ permalink: /changelog/
 <a name="v1.8.4"></a>
 
 ### v1.8.4 (2025-11-12)
+{: .no_toc }
 
 #### 🚀 Features
 {: .no_toc }
