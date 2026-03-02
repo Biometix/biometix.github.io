@@ -21,7 +21,7 @@ _Releases_
 >  BQAT-CLI [v1.8.7](https://biometix.github.io/changelog/#bqat-cli) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-cli/discussions) 🎉
 
 {: .highlight }
->  BQAT-API [v1.6.0](https://biometix.github.io/changelog/#bqat-api) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
+>  BQAT-API [v1.6.2](https://biometix.github.io/changelog/#bqat-api) released! Join and share your ideas at [Discussions](https://github.com/Biometix/bqat-api/discussions) 🎉
 
 ---
 

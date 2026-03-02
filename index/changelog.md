@@ -392,9 +392,38 @@ permalink: /changelog/
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-api">
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-api">
 
+<a name="v1.6.2"></a>
+
+### v1.6.2 (2026-02-25) 🆕
+
+#### 📎 Miscellaneous
+{: .no_toc }
+
+- Update benchmarking module
+
+
+<a name="v1.6.1"></a>
+
+### v1.6.1 (2026-02-20)
+{: .no_toc }
+
+#### 🚀 Features
+{: .no_toc }
+
+- OFIQ upgrade to [v1.1.2](https://github.com/BSI-OFIQ/OFIQ-Project/releases/tag/v1.1.2)
+
+#### 🛠️️ Fixes
+{: .no_toc }
+
+- Fix rerun issue
+- Fix report retrieval issue
+- Fix data preview page template
+
+
 <a name="v1.6.0"></a>
 
-### v1.6.0 (2025-10-07) 🆕
+### v1.6.0 (2025-10-07)
+{: .no_toc }
 
 #### 🚀 Features
 {: .no_toc }
@@ -1051,9 +1080,29 @@ permalink: /changelog/
 <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/biometix/bqat-gui">
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/biometix/bqat-gui">
 
+<a name="v0.4.0"></a>
+
+### v0.4.0 (2026-02-19) 🆕
+
+#### 🚀 Features
+{: .no_toc }
+
+- Add data viewer component for preview and visualization
+
+- Add benchmarking tool
+
+- Add file manager tab
+
+#### ⚙️ Miscellaneous
+{: .no_toc }
+
+- Clean up env management
+
+
 <a name="v0.3.13"></a>
 
 ### v0.3.13 (2025-02-11)
+{: .no_toc }
 
 #### 🛠️️️ Fixes
 {: .no_toc }
